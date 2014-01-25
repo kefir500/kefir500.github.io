@@ -1,0 +1,76 @@
+body {
+	background-color: #333;
+	padding-top: 40px;
+	color: #eee;
+}
+
+a, #download {
+	color: #bd8;
+}
+
+a:hover, #download:hover {
+	color: #dfa;
+}
+
+img {
+	padding-bottom: 24px;
+}
+
+hr {
+	border-top: 1px solid #666;
+}
+
+ul {
+	padding-left: 17px;
+}
+
+h1, h2{
+	font-family: opensans;
+	margin-top: 8px;
+}
+
+.jumbotron {
+	color: #333;
+	background: url(../img/header.png) #dfa repeat-x;
+	padding-bottom: 0;
+}
+
+#header {
+	background: url(../img/logo.png) no-repeat left center;
+	padding-left: 220px;
+}
+
+.gears {
+	width: 423px;
+	height: 72px;
+	background: url(../img/gears-header.png) no-repeat bottom;
+}
+
+#content {
+	background: url(../img/gears-footer.png) no-repeat bottom left;
+}
+
+.row {
+	padding: 32px;
+	margin: 0px 0;
+}
+
+#div-download {
+	border-left: 3px solid #6c6;
+}
+
+#div-source {
+	border-left: 3px solid #6af;
+}
+
+#div-translate {
+	border-left: 3px solid #f0ad4e;
+}
+
+.btn-default {
+	background-color: #ddd;
+}
+
+.btn-warning, .btn-warning:hover {
+	color: black;
+}

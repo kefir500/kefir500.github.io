@@ -1,0 +1,135 @@
+body {
+	background-color: black;
+}
+
+a {
+	color: #58a;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #7ac;
+}
+
+a#gplus { color: #f86; }
+a#gplus:hover { color: #fa8; }
+
+a#apk-href { color: #8b1; }
+a#apk-href:hover { color: #ad2; }
+
+a#github {
+	display: block;
+	color: #ddd;
+	width: 32px;
+	height: 32px;
+	margin: 0 auto;
+	margin-top: 8px;
+	background-image: url(../img/github.png);
+}
+
+a#github:hover {
+	color: #fff;
+	background-position: 32px 0;
+}
+
+h3, h5, h6 {
+	color: #777;
+	font-family: opensans, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-weight: lighter;
+	font-style: none;
+	line-height: 1.4em;
+
+	margin-top: 0.2em;
+	margin-bottom: 0.5em;
+	line-height: 1.4em;
+}
+
+h3 {font-size: 1.6875em;}
+
+h5 {font-size: 1.125em;}
+
+h6 {font-size: 1em;}
+
+#content {
+	width: 536px;
+	height: 256px;
+	position: absolute;
+	top: 0;
+	bottom: 40px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+}
+
+#unniq, #sg , #apk{
+	background-image: url(../img/projects.png);
+	width: 170px;
+	height: 235px;
+	float: left;
+	margin: 4px;
+}
+
+#unniq {
+	background-position: 0 0;
+}
+
+#unniq:hover {
+	background-position: 170px 0;
+}
+
+#apk {
+	background-position: 0 235px;
+}
+
+#apk:hover {
+	background-position: 170px 235px;
+}
+
+#sg {
+	background-position: 0 470px;
+}
+
+#sg:hover {
+	background-position: 170px 470px;
+}
+
+#blur {
+	width: 690px;
+	height: 345px;
+	position: absolute;
+	display: none;
+	background-image: url(../img/blur.png);
+}
+
+/* Footer */
+
+* {margin:0; padding:0;}
+
+html, body {height: 100%;}
+
+#wrap {min-height: 100%;}
+
+#main {
+	overflow: auto;
+	padding-bottom: 43px; /* footer height */
+}
+
+#footer {
+	position: relative;
+	margin-top: -43px; /* - footer height */
+	height: 43px;
+	text-align: center;
+	font-size: 0.9em;
+	clear: both;
+}
+
+/* Footer Opera Fix */
+
+body:before {
+	content: "";
+	height: 100%;
+	float: left;
+	width: 0;
+	margin-top: -32767px;
+}
