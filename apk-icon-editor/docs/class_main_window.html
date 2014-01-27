@@ -162,6 +162,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a26d61e09aceb75b5dbac10ab20ccc7e4">apkUnpacked</a> (QString filename)</td></tr>
 <tr class="memdesc:a26d61e09aceb75b5dbac10ab20ccc7e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle APK unpacked from the <code>filename</code>. <br/></td></tr>
 <tr class="separator:a26d61e09aceb75b5dbac10ab20ccc7e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3eb66550eca41e390d3b9e0b3b4a4d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3eb66550eca41e390d3b9e0b3b4a4d6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#aa3eb66550eca41e390d3b9e0b3b4a4d6">resetSettings</a> ()</td></tr>
+<tr class="memdesc:aa3eb66550eca41e390d3b9e0b3b4a4d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset settings to default. <br/></td></tr>
+<tr class="separator:aa3eb66550eca41e390d3b9e0b3b4a4d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2142e5f7809428fd7c07e2a7e1101af9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2142e5f7809428fd7c07e2a7e1101af9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a2142e5f7809428fd7c07e2a7e1101af9">loadingComplete</a> (bool <a class="el" href="class_main_window.html#a672affe16bce13e5038cf5793818e6ad">success</a>=false, QString filename=NULL)</td></tr>
 <tr class="memdesc:a2142e5f7809428fd7c07e2a7e1101af9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close loading dialog. If <code>success</code>, sets  as the current APK. <br/></td></tr>
@@ -316,6 +320,39 @@ QMenu *&#160;</td><td class="memItemRight" valign="bottom"><b>menuRecent</b></td
 <tr class="memitem:ab27578cb7a2eadf929e138bf42e8b84f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab27578cb7a2eadf929e138bf42e8b84f"></a>
 QMenu *&#160;</td><td class="memItemRight" valign="bottom"><b>menuLang</b></td></tr>
 <tr class="separator:ab27578cb7a2eadf929e138bf42e8b84f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6256e79bc49de606c4aea00895d9c4f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6256e79bc49de606c4aea00895d9c4f8"></a>
+QMenu *&#160;</td><td class="memItemRight" valign="bottom"><b>menuPack</b></td></tr>
+<tr class="separator:a6256e79bc49de606c4aea00895d9c4f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbc4591091eb5675907e2358b7a4149c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acbc4591091eb5675907e2358b7a4149c"></a>
+QMenu *&#160;</td><td class="memItemRight" valign="bottom"><b>menuRatio</b></td></tr>
+<tr class="separator:acbc4591091eb5675907e2358b7a4149c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af33b96e13478809d0f9cd3a9c2b61500"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af33b96e13478809d0f9cd3a9c2b61500"></a>
+QActionGroup *&#160;</td><td class="memItemRight" valign="bottom"><b>groupRatio</b></td></tr>
+<tr class="separator:af33b96e13478809d0f9cd3a9c2b61500"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0574d2d7508c5ec69d4979b00f9c9e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0574d2d7508c5ec69d4979b00f9c9e9"></a>
+QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>actRatio0</b></td></tr>
+<tr class="separator:ab0574d2d7508c5ec69d4979b00f9c9e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab9982961074c4f2a82d24be6681eaab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab9982961074c4f2a82d24be6681eaab"></a>
+QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>actRatio1</b></td></tr>
+<tr class="separator:aab9982961074c4f2a82d24be6681eaab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3536982d7348c6857406f7dd1b5207a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3536982d7348c6857406f7dd1b5207a1"></a>
+QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>actRatio3</b></td></tr>
+<tr class="separator:a3536982d7348c6857406f7dd1b5207a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0722b60b8e2bcc03baa419430244affe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0722b60b8e2bcc03baa419430244affe"></a>
+QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>actRatio5</b></td></tr>
+<tr class="separator:a0722b60b8e2bcc03baa419430244affe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58bc084f7597109823d667f58beef95e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58bc084f7597109823d667f58beef95e"></a>
+QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>actRatio7</b></td></tr>
+<tr class="separator:a58bc084f7597109823d667f58beef95e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a737a96147377113e2ae1a0c281c47db8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a737a96147377113e2ae1a0c281c47db8"></a>
+QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>actRatio9</b></td></tr>
+<tr class="separator:a737a96147377113e2ae1a0c281c47db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a537d08bf67354910c600ba8fb05437c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a537d08bf67354910c600ba8fb05437c6"></a>
+QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>actPackSign</b></td></tr>
+<tr class="separator:a537d08bf67354910c600ba8fb05437c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac6299f59386d90ef27f9dfed7329ca0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac6299f59386d90ef27f9dfed7329ca0"></a>
+QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>actPackOptimize</b></td></tr>
+<tr class="separator:aac6299f59386d90ef27f9dfed7329ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add0e09393f7999fa35add2abcf5ef72f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add0e09393f7999fa35add2abcf5ef72f"></a>
 QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>actApkOpen</b></td></tr>
 <tr class="separator:add0e09393f7999fa35add2abcf5ef72f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -349,12 +386,15 @@ QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>actIconRevert</b
 <tr class="memitem:a37f4fcdb72f3b9aea974fece8f2667ea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a37f4fcdb72f3b9aea974fece8f2667ea"></a>
 QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>actIconBack</b></td></tr>
 <tr class="separator:a37f4fcdb72f3b9aea974fece8f2667ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afda1d50e1cba0c35832288cc95947ac8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afda1d50e1cba0c35832288cc95947ac8"></a>
-QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>actAutoUpdate</b></td></tr>
-<tr class="separator:afda1d50e1cba0c35832288cc95947ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bd23aad6d77a8ef3e59ec09a55fbea8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4bd23aad6d77a8ef3e59ec09a55fbea8"></a>
 QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>actAssoc</b></td></tr>
 <tr class="separator:a4bd23aad6d77a8ef3e59ec09a55fbea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c45b93063b2433bc8137e276dac45ee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c45b93063b2433bc8137e276dac45ee"></a>
+QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>actReset</b></td></tr>
+<tr class="separator:a4c45b93063b2433bc8137e276dac45ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afda1d50e1cba0c35832288cc95947ac8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afda1d50e1cba0c35832288cc95947ac8"></a>
+QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>actAutoUpdate</b></td></tr>
+<tr class="separator:afda1d50e1cba0c35832288cc95947ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b77da52146f578c7edbe2cb1e494359"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b77da52146f578c7edbe2cb1e494359"></a>
 QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>actWebsite</b></td></tr>
 <tr class="separator:a5b77da52146f578c7edbe2cb1e494359"><td class="memSeparator" colspan="2">&#160;</td></tr>

@@ -110,9 +110,9 @@ $(document).ready(function(){initNavTree('class_apk.html','');});
 <a href="#pub-slots">Public Slots</a> &#124;
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-slots">Private Slots</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_apk-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Apk Class Reference</div>  </div>
@@ -128,12 +128,6 @@ $(document).ready(function(){initNavTree('class_apk.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
 Public Slots</h2></td></tr>
-<tr class="memitem:a3348e96daf09834352d539f59f5ffcb8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apk.html#a3348e96daf09834352d539f59f5ffcb8">unpack</a> (QString _filename)</td></tr>
-<tr class="memdesc:a3348e96daf09834352d539f59f5ffcb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unpack APK by calling private <a class="el" href="class_apk.html#ab6c61af79c07917fa3de23f7e19d6097" title="Start immediate APK unpacking. ">doUnpack</a> method in a separate <a class="el" href="class_apk.html#aa6becac007a0cbdd8ec601d1d813996d" title="Separate thread to pack/unpack. ">thread</a>.  <a href="#a3348e96daf09834352d539f59f5ffcb8">More...</a><br/></td></tr>
-<tr class="separator:a3348e96daf09834352d539f59f5ffcb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b32dab89f25a6557d7a7460fbb1b664"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apk.html#a0b32dab89f25a6557d7a7460fbb1b664">pack</a> (QString _filename)</td></tr>
-<tr class="memdesc:a0b32dab89f25a6557d7a7460fbb1b664"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack APK by calling private <a class="el" href="class_apk.html#aa563bacf8cf6fa58de607903233a65d4" title="Start immediate APK packing. ">doPack</a> method in a separate <a class="el" href="class_apk.html#aa6becac007a0cbdd8ec601d1d813996d" title="Separate thread to pack/unpack. ">thread</a>.  <a href="#a0b32dab89f25a6557d7a7460fbb1b664">More...</a><br/></td></tr>
-<tr class="separator:a0b32dab89f25a6557d7a7460fbb1b664"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b450f3e80e0603d1f421030fde1d02f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b450f3e80e0603d1f421030fde1d02f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apk.html#a5b450f3e80e0603d1f421030fde1d02f">clearTemp</a> ()</td></tr>
 <tr class="memdesc:a5b450f3e80e0603d1f421030fde1d02f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete temporary files. <br/></td></tr>
@@ -168,28 +162,30 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac2fddd006f70075d19602b3e6e0aea65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_icon.html">Icon</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apk.html#ac2fddd006f70075d19602b3e6e0aea65">getIcon</a> (<a class="el" href="profile_8h.html#a4586bfea09f277b536782cbfeb55957e">Dpi</a> id) const </td></tr>
 <tr class="memdesc:ac2fddd006f70075d19602b3e6e0aea65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get APK icon from <a class="el" href="class_apk.html#a6b4984003023acb53d0b906f684f31bf" title="Stores [shared pointers to] loaded APK icons. ">icons</a> list.  <a href="#ac2fddd006f70075d19602b3e6e0aea65">More...</a><br/></td></tr>
 <tr class="separator:ac2fddd006f70075d19602b3e6e0aea65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad6aa1aa5d8809604ba7189680b4ef1e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aad6aa1aa5d8809604ba7189680b4ef1e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apk.html#aad6aa1aa5d8809604ba7189680b4ef1e">retranslate</a> ()</td></tr>
-<tr class="memdesc:aad6aa1aa5d8809604ba7189680b4ef1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update QString translations. <br/></td></tr>
-<tr class="separator:aad6aa1aa5d8809604ba7189680b4ef1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
-Private Slots</h2></td></tr>
-<tr class="memitem:ab6c61af79c07917fa3de23f7e19d6097"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apk.html#ab6c61af79c07917fa3de23f7e19d6097">doUnpack</a> ()</td></tr>
-<tr class="memdesc:ab6c61af79c07917fa3de23f7e19d6097"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start immediate APK unpacking.  <a href="#ab6c61af79c07917fa3de23f7e19d6097">More...</a><br/></td></tr>
-<tr class="separator:ab6c61af79c07917fa3de23f7e19d6097"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa563bacf8cf6fa58de607903233a65d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apk.html#aa563bacf8cf6fa58de607903233a65d4">doPack</a> ()</td></tr>
-<tr class="memdesc:aa563bacf8cf6fa58de607903233a65d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start immediate APK packing.  <a href="#aa563bacf8cf6fa58de607903233a65d4">More...</a><br/></td></tr>
-<tr class="separator:aa563bacf8cf6fa58de607903233a65d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a037e063c5bdade3422995cc59ffdb37f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apk.html#a037e063c5bdade3422995cc59ffdb37f">unpack</a> (QString <a class="el" href="class_apk.html#aff2035c89f2bb2f674f3044d142c54e5">filename</a>)</td></tr>
+<tr class="memdesc:a037e063c5bdade3422995cc59ffdb37f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unpack APK by calling private <a class="el" href="class_apk.html#ab6c61af79c07917fa3de23f7e19d6097" title="Start immediate APK unpacking. ">doUnpack</a> method in a separate #thread.  <a href="#a037e063c5bdade3422995cc59ffdb37f">More...</a><br/></td></tr>
+<tr class="separator:a037e063c5bdade3422995cc59ffdb37f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a608536399e28f3dd6f29ea8f871a7b90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apk.html#a608536399e28f3dd6f29ea8f871a7b90">pack</a> (QString <a class="el" href="class_apk.html#aff2035c89f2bb2f674f3044d142c54e5">filename</a>, short ratio, bool doSign, bool doOptimize)</td></tr>
+<tr class="memdesc:a608536399e28f3dd6f29ea8f871a7b90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack APK by calling private <a class="el" href="class_apk.html#a4383475c6eff3593363dc3ef8993da68" title="Start immediate APK packing. ">doPack</a> method in a separate #thread.  <a href="#a608536399e28f3dd6f29ea8f871a7b90">More...</a><br/></td></tr>
+<tr class="separator:a608536399e28f3dd6f29ea8f871a7b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad874892b872aba2f22668a8cc530163e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad874892b872aba2f22668a8cc530163e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Apk</b> (QObject *parent)</td></tr>
+<tr class="separator:ad874892b872aba2f22668a8cc530163e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a78534654d845bb893132169e6e0e08a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apk.html#a78534654d845bb893132169e6e0e08a7">die</a> (QString title, QString text) const </td></tr>
-<tr class="memdesc:a78534654d845bb893132169e6e0e08a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function has to be called on fatal error. Kills active thread and emits <a class="el" href="class_apk.html#a55e5c4ace9899c7f862fd8eb2db97263" title="This signal is emitted to send error message. ">error</a> signal.  <a href="#a78534654d845bb893132169e6e0e08a7">More...</a><br/></td></tr>
+<tr class="memdesc:a78534654d845bb893132169e6e0e08a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function has to be called on fatal error. Emits <a class="el" href="class_apk.html#a55e5c4ace9899c7f862fd8eb2db97263" title="This signal is emitted to send error message. ">error</a> signal and returns <code>FALSE</code>.  <a href="#a78534654d845bb893132169e6e0e08a7">More...</a><br/></td></tr>
 <tr class="separator:a78534654d845bb893132169e6e0e08a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7125e93e7a8a897638220fd3c6c0b26d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apk.html#a7125e93e7a8a897638220fd3c6c0b26d">getZipSuccess</a> (int code) const </td></tr>
 <tr class="memdesc:a7125e93e7a8a897638220fd3c6c0b26d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if 7za worked successfully by its exit code.  <a href="#a7125e93e7a8a897638220fd3c6c0b26d">More...</a><br/></td></tr>
 <tr class="separator:a7125e93e7a8a897638220fd3c6c0b26d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6c61af79c07917fa3de23f7e19d6097"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apk.html#ab6c61af79c07917fa3de23f7e19d6097">doUnpack</a> ()</td></tr>
+<tr class="memdesc:ab6c61af79c07917fa3de23f7e19d6097"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start immediate APK unpacking.  <a href="#ab6c61af79c07917fa3de23f7e19d6097">More...</a><br/></td></tr>
+<tr class="separator:ab6c61af79c07917fa3de23f7e19d6097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4383475c6eff3593363dc3ef8993da68"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apk.html#a4383475c6eff3593363dc3ef8993da68">doPack</a> (short ratio=9, bool doSign=true, bool doOptimize=true)</td></tr>
+<tr class="memdesc:a4383475c6eff3593363dc3ef8993da68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start immediate APK packing.  <a href="#a4383475c6eff3593363dc3ef8993da68">More...</a><br/></td></tr>
+<tr class="separator:a4383475c6eff3593363dc3ef8993da68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56361d61014d6ac18fa038b24135f5cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56361d61014d6ac18fa038b24135f5cb"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apk.html#a56361d61014d6ac18fa038b24135f5cb">readManifest</a> ()</td></tr>
 <tr class="memdesc:a56361d61014d6ac18fa038b24135f5cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read AndroidManifest.xml and save it to <a class="el" href="class_apk.html#ac1fbcda6ddc64e7e49185a8e13fd0d40" title="Stores AndroidManifest.xml. ">manifest</a> variable. <br/></td></tr>
@@ -206,10 +202,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apk.html#acd8ec2c0bcaa109c86f65d4b7db4fb16">saveIcons</a> () const </td></tr>
 <tr class="memdesc:acd8ec2c0bcaa109c86f65d4b7db4fb16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save icons from <a class="el" href="class_apk.html#a6b4984003023acb53d0b906f684f31bf" title="Stores [shared pointers to] loaded APK icons. ">icons</a> list to PNG images. <br/></td></tr>
 <tr class="separator:acd8ec2c0bcaa109c86f65d4b7db4fb16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e1edeae66d7c32e483368119ef617e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e1edeae66d7c32e483368119ef617e2"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apk.html#a8e1edeae66d7c32e483368119ef617e2">zip</a> () const </td></tr>
-<tr class="memdesc:a8e1edeae66d7c32e483368119ef617e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack APK using "7za" tool. <br/></td></tr>
-<tr class="separator:a8e1edeae66d7c32e483368119ef617e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3013a6bee6193d1c4358540b85aac0b6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3013a6bee6193d1c4358540b85aac0b6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apk.html#a3013a6bee6193d1c4358540b85aac0b6">zip</a> (short ratio=9) const </td></tr>
+<tr class="memdesc:a3013a6bee6193d1c4358540b85aac0b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack APK with specified compression <code>ratio</code> uusing "7za" tool. <br/></td></tr>
+<tr class="separator:a3013a6bee6193d1c4358540b85aac0b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a452824ee30ef35d9cdeb453add5aa9b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a452824ee30ef35d9cdeb453add5aa9b4"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apk.html#a452824ee30ef35d9cdeb453add5aa9b4">checkJavaInstalled</a> () const </td></tr>
 <tr class="memdesc:a452824ee30ef35d9cdeb453add5aa9b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if Java Runtime Environment is installed. <br/></td></tr>
@@ -220,8 +216,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a5b915470e034801fc246be7566dc1542"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1db7837398d51dc29668d56c73737b16"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1db7837398d51dc29668d56c73737b16"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apk.html#a1db7837398d51dc29668d56c73737b16">optimize</a> () const </td></tr>
-<tr class="memdesc:a1db7837398d51dc29668d56c73737b16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optimize APK (optional) using "zipalign" tool. <br/></td></tr>
+<tr class="memdesc:a1db7837398d51dc29668d56c73737b16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optimize APK using "zipalign" tool. <br/></td></tr>
 <tr class="separator:a1db7837398d51dc29668d56c73737b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa48f8bd5f3dab1d96ba946507b8a2150"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa48f8bd5f3dab1d96ba946507b8a2150"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apk.html#aa48f8bd5f3dab1d96ba946507b8a2150">finalize</a> ()</td></tr>
+<tr class="memdesc:aa48f8bd5f3dab1d96ba946507b8a2150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move the final APK from temporary to user-specified directory. <br/></td></tr>
+<tr class="separator:aa48f8bd5f3dab1d96ba946507b8a2150"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -237,23 +237,26 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 QList&lt; QSharedPointer&lt; <a class="el" href="class_icon.html">Icon</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apk.html#a6b4984003023acb53d0b906f684f31bf">icons</a></td></tr>
 <tr class="memdesc:a6b4984003023acb53d0b906f684f31bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores [shared pointers to] loaded APK icons. <br/></td></tr>
 <tr class="separator:a6b4984003023acb53d0b906f684f31bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6becac007a0cbdd8ec601d1d813996d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa6becac007a0cbdd8ec601d1d813996d"></a>
-QThread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apk.html#aa6becac007a0cbdd8ec601d1d813996d">thread</a></td></tr>
-<tr class="memdesc:aa6becac007a0cbdd8ec601d1d813996d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Separate thread to <a class="el" href="class_apk.html#a0b32dab89f25a6557d7a7460fbb1b664" title="Pack APK by calling private doPack method in a separate thread. ">pack</a>/<a class="el" href="class_apk.html#a3348e96daf09834352d539f59f5ffcb8" title="Unpack APK by calling private doUnpack method in a separate thread. ">unpack</a>. <br/></td></tr>
-<tr class="separator:aa6becac007a0cbdd8ec601d1d813996d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb790c74c573b02e2a48c602f1474706"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb790c74c573b02e2a48c602f1474706"></a>
-QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apk.html#abb790c74c573b02e2a48c602f1474706">strError</a></td></tr>
-<tr class="memdesc:abb790c74c573b02e2a48c602f1474706"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds static error text ("%APP% error"). <br/></td></tr>
-<tr class="separator:abb790c74c573b02e2a48c602f1474706"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92cc1521c6909b07b21e77c50a6019d9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92cc1521c6909b07b21e77c50a6019d9"></a>
-QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apk.html#a92cc1521c6909b07b21e77c50a6019d9">strErrorStart</a></td></tr>
-<tr class="memdesc:a92cc1521c6909b07b21e77c50a6019d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds static error text ("Error starting %APP%"). <br/></td></tr>
-<tr class="separator:a92cc1521c6909b07b21e77c50a6019d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a6454d495415a3c86fede364604aaf07c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6454d495415a3c86fede364604aaf07c"></a>
+static const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apk.html#a6454d495415a3c86fede364604aaf07c">STR_ERROR</a> = tr(&quot;%1 Error&quot;)</td></tr>
+<tr class="memdesc:a6454d495415a3c86fede364604aaf07c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error text template. <br/></td></tr>
+<tr class="separator:a6454d495415a3c86fede364604aaf07c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf538e15df9bf5aecf85528f17bf747b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf538e15df9bf5aecf85528f17bf747b"></a>
+static const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apk.html#aaf538e15df9bf5aecf85528f17bf747b">STR_ERRORSTART</a> = tr(&quot;Error starting &lt;b&gt;%1&lt;/b&gt;&quot;)</td></tr>
+<tr class="memdesc:aaf538e15df9bf5aecf85528f17bf747b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error text template. <br/></td></tr>
+<tr class="separator:aaf538e15df9bf5aecf85528f17bf747b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b00efaef66d774c5f8354c017a5fad9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b00efaef66d774c5f8354c017a5fad9"></a>
+static const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apk.html#a6b00efaef66d774c5f8354c017a5fad9">TEMPDIR_APK</a> = QDir::toNativeSeparators(TEMPDIR + &quot;apk/&quot;)</td></tr>
+<tr class="memdesc:a6b00efaef66d774c5f8354c017a5fad9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temporary directory for unpacked resources. <br/></td></tr>
+<tr class="separator:a6b00efaef66d774c5f8354c017a5fad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>APK manager class. </p>
-<p>Class for performing operations on APK files: <a class="el" href="class_apk.html#a0b32dab89f25a6557d7a7460fbb1b664" title="Pack APK by calling private doPack method in a separate thread. ">pack</a>, <a class="el" href="class_apk.html#a3348e96daf09834352d539f59f5ffcb8" title="Unpack APK by calling private doUnpack method in a separate thread. ">unpack</a>, <a class="el" href="class_apk.html#a5b915470e034801fc246be7566dc1542" title="Sign APK using &quot;signapk&quot; tool. ">sign</a> and <a class="el" href="class_apk.html#a1db7837398d51dc29668d56c73737b16" title="Optimize APK (optional) using &quot;zipalign&quot; tool. ">optimize</a>.<br/>
- Internal processes run in the separate <a class="el" href="class_apk.html#aa6becac007a0cbdd8ec601d1d813996d" title="Separate thread to pack/unpack. ">thread</a>.</p>
+<p>Class for performing operations on APK files: <a class="el" href="class_apk.html#a608536399e28f3dd6f29ea8f871a7b90" title="Pack APK by calling private doPack method in a separate #thread. ">pack</a>, <a class="el" href="class_apk.html#a037e063c5bdade3422995cc59ffdb37f" title="Unpack APK by calling private doUnpack method in a separate #thread. ">unpack</a>, <a class="el" href="class_apk.html#a5b915470e034801fc246be7566dc1542" title="Sign APK using &quot;signapk&quot; tool. ">sign</a> and <a class="el" href="class_apk.html#a1db7837398d51dc29668d56c73737b16" title="Optimize APK using &quot;zipalign&quot; tool. ">optimize</a>.<br/>
+ Internal processes run in the separate #thread.</p>
 <div class="image">
 <img src="apk.png" alt="apk.png"/>
 </div>
@@ -290,7 +293,7 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </table>
 </div><div class="memdoc">
 
-<p>This function has to be called on fatal error. Kills active thread and emits <a class="el" href="class_apk.html#a55e5c4ace9899c7f862fd8eb2db97263" title="This signal is emitted to send error message. ">error</a> signal. </p>
+<p>This function has to be called on fatal error. Emits <a class="el" href="class_apk.html#a55e5c4ace9899c7f862fd8eb2db97263" title="This signal is emitted to send error message. ">error</a> signal and returns <code>FALSE</code>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">title</td><td>Error message brief title. </td></tr>
@@ -298,11 +301,11 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>This function always returns FALSE. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>This function always returns <code>FALSE</code>. </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="aa563bacf8cf6fa58de607903233a65d4"></a>
+<a class="anchor" id="a4383475c6eff3593363dc3ef8993da68"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -312,21 +315,46 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
         <tr>
           <td class="memname">bool Apk::doPack </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>ratio</em> = <code>9</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>doSign</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>doOptimize</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Start immediate APK packing. </p>
-<dl class="section return"><dt>Returns</dt><dd>TRUE on success. </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>Function should return FALSE only if <a class="el" href="class_apk.html#a78534654d845bb893132169e6e0e08a7" title="This function has to be called on fatal error. Kills active thread and emits error signal...">die</a> method was called before. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>Probably such behavior (see <b>warning</b>) needs some refactoring. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ratio</td><td>7za compression ratio (0-9). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">doSign</td><td>If <code>TRUE</code>, sign APK. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">doOptimize</td><td>If <code>TRUE</code>, optimize APK. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>TRUE</code> on success. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This function MUST emit <a class="el" href="class_apk.html#a55e5c4ace9899c7f862fd8eb2db97263" title="This signal is emitted to send error message. ">error</a> or <a class="el" href="class_apk.html#a28c2509a1d0bf3b923d4ae1f00b666a5" title="This signal is emitted when APK is successfully packed. ">packed</a> signal before exit. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>Write a wrapper function to improve design. </dd></dl>
 
 </div>
 </div>
@@ -346,15 +374,15 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Start immediate APK unpacking. </p>
-<dl class="section return"><dt>Returns</dt><dd>TRUE on success. </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>Function should return FALSE only if <a class="el" href="class_apk.html#a78534654d845bb893132169e6e0e08a7" title="This function has to be called on fatal error. Kills active thread and emits error signal...">die</a> method was called before. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>Probably such behavior (see <b>warning</b>) needs some refactoring. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>TRUE</code> on success. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This function MUST emit <a class="el" href="class_apk.html#a55e5c4ace9899c7f862fd8eb2db97263" title="This signal is emitted to send error message. ">error</a> or <a class="el" href="class_apk.html#aa9833eec35bfe5797055f0614ab13233" title="This signal is emitted when APK is successfully unpacked. ">unpacked</a> signal before exit. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>Write a wrapper function to improve design. </dd></dl>
 
 </div>
 </div>
@@ -457,8 +485,8 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">TRUE</td><td>if 7za succesfully zipped/unzipped APK (#code equals 0). </td></tr>
-    <tr><td class="paramname">FALSE</td><td>if 7za did not finish successfully (#code is non-zero). </td></tr>
+    <tr><td class="paramname">\c</td><td>TRUE if 7za succesfully zipped/unzipped APK (#code equals 0). </td></tr>
+    <tr><td class="paramname">\c</td><td>FALSE if 7za did not finish successfully (#code is non-zero). </td></tr>
   </table>
   </dd>
 </dl>
@@ -508,32 +536,49 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 
 </div>
 </div>
-<a class="anchor" id="a0b32dab89f25a6557d7a7460fbb1b664"></a>
+<a class="anchor" id="a608536399e28f3dd6f29ea8f871a7b90"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Apk::pack </td>
           <td>(</td>
           <td class="paramtype">QString&#160;</td>
-          <td class="paramname"><em>_filename</em></td><td>)</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>ratio</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>doSign</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>doOptimize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Pack APK by calling private <a class="el" href="class_apk.html#aa563bacf8cf6fa58de607903233a65d4" title="Start immediate APK packing. ">doPack</a> method in a separate <a class="el" href="class_apk.html#aa6becac007a0cbdd8ec601d1d813996d" title="Separate thread to pack/unpack. ">thread</a>. </p>
+<p>Pack APK by calling private <a class="el" href="class_apk.html#a4383475c6eff3593363dc3ef8993da68" title="Start immediate APK packing. ">doPack</a> method in a separate #thread. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">_filename</td><td>Name of APK file to pack. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ratio</td><td>Compression ratio (0-9). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">doSign</td><td>If <code>TRUE</code>, sign APK. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">doOptimize</td><td>If <code>TRUE</code>, optimize APK. </td></tr>
   </table>
   </dd>
 </dl>
@@ -650,29 +695,21 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 
 </div>
 </div>
-<a class="anchor" id="a3348e96daf09834352d539f59f5ffcb8"></a>
+<a class="anchor" id="a037e063c5bdade3422995cc59ffdb37f"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Apk::unpack </td>
           <td>(</td>
           <td class="paramtype">QString&#160;</td>
-          <td class="paramname"><em>_filename</em></td><td>)</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Unpack APK by calling private <a class="el" href="class_apk.html#ab6c61af79c07917fa3de23f7e19d6097" title="Start immediate APK unpacking. ">doUnpack</a> method in a separate <a class="el" href="class_apk.html#aa6becac007a0cbdd8ec601d1d813996d" title="Separate thread to pack/unpack. ">thread</a>. </p>
+<p>Unpack APK by calling private <a class="el" href="class_apk.html#ab6c61af79c07917fa3de23f7e19d6097" title="Start immediate APK unpacking. ">doUnpack</a> method in a separate #thread. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">_filename</td><td>Name of APK file to unpack. </td></tr>

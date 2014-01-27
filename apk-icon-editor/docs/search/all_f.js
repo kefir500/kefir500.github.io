@@ -15,7 +15,7 @@ var searchData=
   ['setrect',['setRect',['../class_draw_area.html#add984b3b7d0e7db1e3c854e99e0cd448',1,'DrawArea']]],
   ['side',['side',['../struct_profile_1_1_dpi_preset.html#a0f03fcf539037a549d231b5e5c06c6fa',1,'Profile::DpiPreset']]],
   ['sign',['sign',['../class_apk.html#a5b915470e034801fc246be7566dc1542',1,'Apk']]],
-  ['strerror',['strError',['../class_apk.html#abb790c74c573b02e2a48c602f1474706',1,'Apk']]],
-  ['strerrorstart',['strErrorStart',['../class_apk.html#a92cc1521c6909b07b21e77c50a6019d9',1,'Apk']]],
+  ['str_5ferror',['STR_ERROR',['../class_apk.html#a6454d495415a3c86fede364604aaf07c',1,'Apk']]],
+  ['str_5ferrorstart',['STR_ERRORSTART',['../class_apk.html#aaf538e15df9bf5aecf85528f17bf747b',1,'Apk']]],
   ['success',['success',['../class_apk.html#a226344216ba32664b547ac03ce0ed7c0',1,'Apk::success()'],['../class_main_window.html#a672affe16bce13e5038cf5793818e6ad',1,'MainWindow::success()']]]
 ];

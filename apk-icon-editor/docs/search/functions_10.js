@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['version',['version',['../class_updater.html#a6500c0b914222140ce360c0e2561355c',1,'Updater']]]
+  ['unpack',['unpack',['../class_apk.html#a037e063c5bdade3422995cc59ffdb37f',1,'Apk']]],
+  ['unpacked',['unpacked',['../class_apk.html#aa9833eec35bfe5797055f0614ab13233',1,'Apk']]],
+  ['unzip',['unzip',['../class_apk.html#abd9cc2e9be70ee922ddc91d7a0184d88',1,'Apk']]]
 ];

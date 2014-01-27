@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['unpack',['unpack',['../class_apk.html#a3348e96daf09834352d539f59f5ffcb8',1,'Apk']]],
-  ['unpacked',['unpacked',['../class_apk.html#aa9833eec35bfe5797055f0614ab13233',1,'Apk']]],
-  ['unzip',['unzip',['../class_apk.html#abd9cc2e9be70ee922ddc91d7a0184d88',1,'Apk']]]
+  ['thumb',['thumb',['../class_profile.html#a633d4c64f95e9f26440277b1012e9263',1,'Profile']]],
+  ['title',['title',['../class_profile.html#a07512616b5722239870eb526bb529840',1,'Profile']]]
 ];
