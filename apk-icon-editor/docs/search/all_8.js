@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['icon',['Icon',['../class_icon.html',1,'Icon'],['../class_draw_area.html#a1c9b7ec7caf196848ec76718f6a86b30',1,'DrawArea::icon()'],['../class_icon.html#a2c06009b9034912dea464e9f3c3791f9',1,'Icon::Icon()'],['../class_icon.html#a5b72046eee2e0a4620b60380322a21e8',1,'Icon::Icon(QString filename)']]],
+  ['icon',['Icon',['../class_icon.html',1,'Icon'],['../class_icon.html#a2c06009b9034912dea464e9f3c3791f9',1,'Icon::Icon()'],['../class_icon.html#a5b72046eee2e0a4620b60380322a21e8',1,'Icon::Icon(QString filename)'],['../class_draw_area.html#a1c9b7ec7caf196848ec76718f6a86b30',1,'DrawArea::icon()']]],
   ['icon_2eh',['icon.h',['../icon_8h.html',1,'']]],
   ['iconopen',['iconOpen',['../class_main_window.html#a41136e954b8db8f92063905fb17e5eb6',1,'MainWindow']]],
   ['iconresize',['iconResize',['../class_main_window.html#a1415338e9247eb3c78975cfa0f363f69',1,'MainWindow']]],
@@ -13,6 +13,8 @@ var searchData=
   ['initlanguages',['initLanguages',['../class_main_window.html#a59f29f4d5c7709ca6ea78215f4395d11',1,'MainWindow']]],
   ['initprofiles',['initProfiles',['../class_main_window.html#a4b465d01af217dbebf699df62242dd72',1,'MainWindow']]],
   ['invaliddpi',['invalidDpi',['../class_main_window.html#a7a29e46bdac63885cbab125c89e1206e',1,'MainWindow']]],
+  ['isblur',['isBlur',['../class_icon.html#afdc62c82ae1da771a526b46e38b6999f',1,'Icon']]],
+  ['iscolor',['isColor',['../class_icon.html#a775c04bfda477a6c8d16476f998c3575',1,'Icon']]],
   ['isnull',['isNull',['../class_icon.html#a420897336443531d9cec0618c8000a5d',1,'Icon']]],
   ['item',['Item',['../struct_combo_list_1_1_item.html',1,'ComboList']]],
   ['itemchanged',['itemChanged',['../class_combo_list.html#aed4c3fc55fc3e14f531c3529b611d4c4',1,'ComboList']]],

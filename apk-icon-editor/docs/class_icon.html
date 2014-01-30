@@ -119,6 +119,8 @@ $(document).ready(function(){initNavTree('class_icon.html','');});
  <a href="class_icon.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="icon_8h_source.html">icon.h</a>&gt;</code></p>
+
+<p>Inherits QObject.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -129,9 +131,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5b72046eee2e0a4620b60380322a21e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_icon.html#a5b72046eee2e0a4620b60380322a21e8">Icon</a> (QString filename)</td></tr>
 <tr class="memdesc:a5b72046eee2e0a4620b60380322a21e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normal <a class="el" href="class_icon.html" title="QPixmap wrapper. ">Icon</a> constructor. The only way to load pixmap in it.  <a href="#a5b72046eee2e0a4620b60380322a21e8">More...</a><br/></td></tr>
 <tr class="separator:a5b72046eee2e0a4620b60380322a21e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac90078f9bd29f48894e7a516951139b8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_icon.html#ac90078f9bd29f48894e7a516951139b8">save</a> (QString filename=NULL) const </td></tr>
-<tr class="memdesc:ac90078f9bd29f48894e7a516951139b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save pixmap to given filename.  <a href="#ac90078f9bd29f48894e7a516951139b8">More...</a><br/></td></tr>
-<tr class="separator:ac90078f9bd29f48894e7a516951139b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71ac80e37df9da288c67b8fd9116f1e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_icon.html#a71ac80e37df9da288c67b8fd9116f1e2">save</a> (QString filename=NULL)</td></tr>
+<tr class="memdesc:a71ac80e37df9da288c67b8fd9116f1e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save pixmap to given filename.  <a href="#a71ac80e37df9da288c67b8fd9116f1e2">More...</a><br/></td></tr>
+<tr class="separator:a71ac80e37df9da288c67b8fd9116f1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4baa74a4dea7b3ca623a36fd7459aa5c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_icon.html#a4baa74a4dea7b3ca623a36fd7459aa5c">replace</a> (QPixmap _pixmap)</td></tr>
 <tr class="memdesc:a4baa74a4dea7b3ca623a36fd7459aa5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace <a class="el" href="class_icon.html#a998453885d0728b172c67f16b830ae03" title="Stores pixmap itself. ">pixmap</a> with the specified one.  <a href="#a4baa74a4dea7b3ca623a36fd7459aa5c">More...</a><br/></td></tr>
 <tr class="separator:a4baa74a4dea7b3ca623a36fd7459aa5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,10 +156,46 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_icon.html#a2c670ffd87f1430488807d7c307e68e5">height</a> () const </td></tr>
 <tr class="memdesc:a2c670ffd87f1430488807d7c307e68e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get <a class="el" href="class_icon.html#a998453885d0728b172c67f16b830ae03" title="Stores pixmap itself. ">pixmap</a> height. <br/></td></tr>
 <tr class="separator:a2c670ffd87f1430488807d7c307e68e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a853931db162e7b4cfbc5f1cb7642e77a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a853931db162e7b4cfbc5f1cb7642e77a"></a>
-QPixmap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_icon.html#a853931db162e7b4cfbc5f1cb7642e77a">getPixmap</a> () const </td></tr>
-<tr class="memdesc:a853931db162e7b4cfbc5f1cb7642e77a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get <a class="el" href="class_icon.html#a998453885d0728b172c67f16b830ae03" title="Stores pixmap itself. ">pixmap</a>. <br/></td></tr>
-<tr class="separator:a853931db162e7b4cfbc5f1cb7642e77a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad88a936694e31ec605390677b1dd2fbb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad88a936694e31ec605390677b1dd2fbb"></a>
+QPixmap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_icon.html#ad88a936694e31ec605390677b1dd2fbb">getPixmap</a> ()</td></tr>
+<tr class="memdesc:ad88a936694e31ec605390677b1dd2fbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get <a class="el" href="class_icon.html#a998453885d0728b172c67f16b830ae03" title="Stores pixmap itself. ">pixmap</a>. <br/></td></tr>
+<tr class="separator:ad88a936694e31ec605390677b1dd2fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af83c17888762dab4c54e1f712753c4dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af83c17888762dab4c54e1f712753c4dc"></a>
+QPixmap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_icon.html#af83c17888762dab4c54e1f712753c4dc">applyEffects</a> ()</td></tr>
+<tr class="memdesc:af83c17888762dab4c54e1f712753c4dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply graphic effects to <a class="el" href="class_icon.html#a998453885d0728b172c67f16b830ae03" title="Stores pixmap itself. ">pixmap</a>. <br/></td></tr>
+<tr class="separator:af83c17888762dab4c54e1f712753c4dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3885c39d1c799d7527525362ae7c02bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3885c39d1c799d7527525362ae7c02bc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_icon.html#a3885c39d1c799d7527525362ae7c02bc">setColorEnabled</a> (bool enable)</td></tr>
+<tr class="memdesc:a3885c39d1c799d7527525362ae7c02bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable "Colorize" effect. <br/></td></tr>
+<tr class="separator:a3885c39d1c799d7527525362ae7c02bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9d4f4785a71a80259a9624750a947ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9d4f4785a71a80259a9624750a947ef"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_icon.html#af9d4f4785a71a80259a9624750a947ef">setBlurEnabled</a> (bool enable)</td></tr>
+<tr class="memdesc:af9d4f4785a71a80259a9624750a947ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable "Blur" effect. <br/></td></tr>
+<tr class="separator:af9d4f4785a71a80259a9624750a947ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b3f1f653841058e137d3456583b9232"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b3f1f653841058e137d3456583b9232"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_icon.html#a0b3f1f653841058e137d3456583b9232">setColor</a> (QColor _color)</td></tr>
+<tr class="memdesc:a0b3f1f653841058e137d3456583b9232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set "Colorize" effect <code>color</code>. <br/></td></tr>
+<tr class="separator:a0b3f1f653841058e137d3456583b9232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a195f38846d31023fc9d2d90913d2a47d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a195f38846d31023fc9d2d90913d2a47d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_icon.html#a195f38846d31023fc9d2d90913d2a47d">setBlur</a> (qreal radius=0)</td></tr>
+<tr class="memdesc:a195f38846d31023fc9d2d90913d2a47d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set "Blur effect <code>radius</code>. <br/></td></tr>
+<tr class="separator:a195f38846d31023fc9d2d90913d2a47d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4d705587ea39758991ff065cb1b7eb0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac4d705587ea39758991ff065cb1b7eb0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_icon.html#ac4d705587ea39758991ff065cb1b7eb0">getColorEnabled</a> ()</td></tr>
+<tr class="memdesc:ac4d705587ea39758991ff065cb1b7eb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <code>TRUE</code> if "Colorize" effect is enabled. <br/></td></tr>
+<tr class="separator:ac4d705587ea39758991ff065cb1b7eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa10a008fa49a2ca465cc1971bb3e304f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa10a008fa49a2ca465cc1971bb3e304f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_icon.html#aa10a008fa49a2ca465cc1971bb3e304f">getBlurEnabled</a> ()</td></tr>
+<tr class="memdesc:aa10a008fa49a2ca465cc1971bb3e304f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <code>TRUE</code> if "Blur effect is enabled. <br/></td></tr>
+<tr class="separator:aa10a008fa49a2ca465cc1971bb3e304f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27a55e83f540515b81ebdaac97dbba35"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27a55e83f540515b81ebdaac97dbba35"></a>
+QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_icon.html#a27a55e83f540515b81ebdaac97dbba35">getColor</a> ()</td></tr>
+<tr class="memdesc:a27a55e83f540515b81ebdaac97dbba35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get "Colorize" effect <code>color</code>. <br/></td></tr>
+<tr class="separator:a27a55e83f540515b81ebdaac97dbba35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac77ec0b2e96cc26f80859a152ccd7a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac77ec0b2e96cc26f80859a152ccd7a6"></a>
+qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_icon.html#aac77ec0b2e96cc26f80859a152ccd7a6">getBlur</a> ()</td></tr>
+<tr class="memdesc:aac77ec0b2e96cc26f80859a152ccd7a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get "Blur effect <code>radius</code>. <br/></td></tr>
+<tr class="separator:aac77ec0b2e96cc26f80859a152ccd7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -165,6 +203,22 @@ Private Attributes</h2></td></tr>
 QPixmap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_icon.html#a998453885d0728b172c67f16b830ae03">pixmap</a></td></tr>
 <tr class="memdesc:a998453885d0728b172c67f16b830ae03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores pixmap itself. <br/></td></tr>
 <tr class="separator:a998453885d0728b172c67f16b830ae03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a775c04bfda477a6c8d16476f998c3575"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a775c04bfda477a6c8d16476f998c3575"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_icon.html#a775c04bfda477a6c8d16476f998c3575">isColor</a></td></tr>
+<tr class="memdesc:a775c04bfda477a6c8d16476f998c3575"><td class="mdescLeft">&#160;</td><td class="mdescRight">If <code>TRUE</code>, renders colorize effect. <br/></td></tr>
+<tr class="separator:a775c04bfda477a6c8d16476f998c3575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdc62c82ae1da771a526b46e38b6999f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afdc62c82ae1da771a526b46e38b6999f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_icon.html#afdc62c82ae1da771a526b46e38b6999f">isBlur</a></td></tr>
+<tr class="memdesc:afdc62c82ae1da771a526b46e38b6999f"><td class="mdescLeft">&#160;</td><td class="mdescRight">If <code>TRUE</code>, renders blur effect. <br/></td></tr>
+<tr class="separator:afdc62c82ae1da771a526b46e38b6999f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a910e308d3bac5f577fd589b723b29a3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a910e308d3bac5f577fd589b723b29a3b"></a>
+qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_icon.html#a910e308d3bac5f577fd589b723b29a3b">blur</a></td></tr>
+<tr class="memdesc:a910e308d3bac5f577fd589b723b29a3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores "Blur" effect radius. <br/></td></tr>
+<tr class="separator:a910e308d3bac5f577fd589b723b29a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d2456bbe8dd3ff3b43b4637591b6ed5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d2456bbe8dd3ff3b43b4637591b6ed5"></a>
+QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_icon.html#a3d2456bbe8dd3ff3b43b4637591b6ed5">color</a></td></tr>
+<tr class="memdesc:a3d2456bbe8dd3ff3b43b4637591b6ed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores "Colorize" effect preferences. <br/></td></tr>
+<tr class="separator:a3d2456bbe8dd3ff3b43b4637591b6ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacfc6212a6b56a524e3d753e9e2aa882"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aacfc6212a6b56a524e3d753e9e2aa882"></a>
 const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_icon.html#aacfc6212a6b56a524e3d753e9e2aa882">filename_original</a></td></tr>
 <tr class="memdesc:aacfc6212a6b56a524e3d753e9e2aa882"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores pixmap filename specified in constructor. Used to <a class="el" href="class_icon.html#a59bb03b768c719e966b22fa12b6c744c" title="Revert the original pixmap (loaded fron filename_original). ">revert</a> the original one. <br/></td></tr>
@@ -191,7 +245,7 @@ const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -269,7 +323,7 @@ const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 
 </div>
 </div>
-<a class="anchor" id="ac90078f9bd29f48894e7a516951139b8"></a>
+<a class="anchor" id="a71ac80e37df9da288c67b8fd9116f1e2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -278,7 +332,7 @@ const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
           <td>(</td>
           <td class="paramtype">QString&#160;</td>
           <td class="paramname"><em>filename</em> = <code>NULL</code></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">

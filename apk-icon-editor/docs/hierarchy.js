@@ -1,9 +1,11 @@
 var hierarchy =
 [
     [ "Profile::DpiPreset", "struct_profile_1_1_dpi_preset.html", null ],
-    [ "Icon", "class_icon.html", null ],
     [ "ComboList::Item", "struct_combo_list_1_1_item.html", null ],
     [ "Profile", "class_profile.html", null ],
+    [ "QDialog", null, [
+      [ "EffectsDialog", "class_effects_dialog.html", null ]
+    ] ],
     [ "QLabel", null, [
       [ "DrawArea", "class_draw_area.html", null ]
     ] ],
@@ -12,6 +14,7 @@ var hierarchy =
     ] ],
     [ "QObject", null, [
       [ "Apk", "class_apk.html", null ],
+      [ "Icon", "class_icon.html", null ],
       [ "Updater", "class_updater.html", null ]
     ] ],
     [ "QWidget", null, [

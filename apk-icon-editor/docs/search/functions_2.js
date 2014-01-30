@@ -6,6 +6,8 @@ var searchData=
   ['clearrecent',['clearRecent',['../class_main_window.html#a3729edb97bc825489535bf0d3d1edf98',1,'MainWindow']]],
   ['cleartemp',['clearTemp',['../class_apk.html#a5b450f3e80e0603d1f421030fde1d02f',1,'Apk']]],
   ['clicked',['clicked',['../class_draw_area.html#adc07b2b2ba7a9b1fb2585daec9327083',1,'DrawArea']]],
+  ['coloractivated',['colorActivated',['../class_effects_dialog.html#aeb482c464f0284047fe9cc704df85a37',1,'EffectsDialog']]],
+  ['colorize',['colorize',['../class_effects_dialog.html#a5b97537dd01be8948fd2552076a8bf72',1,'EffectsDialog']]],
   ['compare',['compare',['../class_updater.html#aa5deeef78f9ff30301e7e58f16202443',1,'Updater']]],
   ['confirmexit',['confirmExit',['../class_main_window.html#a56c5fe03f15bdaa34c990fc53bd6b976',1,'MainWindow']]],
   ['count',['count',['../class_profile.html#af34ae69391a1f834dba0520d31b0dfe9',1,'Profile']]],

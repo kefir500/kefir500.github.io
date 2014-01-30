@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['updater',['Updater',['../class_updater.html',1,'']]]
+  ['profile',['Profile',['../class_profile.html',1,'']]]
 ];

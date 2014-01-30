@@ -9,5 +9,6 @@ var searchData=
   ['resetsettings',['resetSettings',['../class_main_window.html#aa3eb66550eca41e390d3b9e0b3b4a4d6',1,'MainWindow']]],
   ['resize',['resize',['../class_icon.html#acf12adc9cb47edcc3d0bfdb47c6be8e5',1,'Icon']]],
   ['restoresettings',['restoreSettings',['../class_main_window.html#a3955ca5db289680247c46f97bd51f634',1,'MainWindow']]],
+  ['retranslate',['retranslate',['../class_effects_dialog.html#ae08e15c0a3aaccb0e8bd28f3d04849f7',1,'EffectsDialog']]],
   ['revert',['revert',['../class_icon.html#a59bb03b768c719e966b22fa12b6c744c',1,'Icon']]]
 ];
