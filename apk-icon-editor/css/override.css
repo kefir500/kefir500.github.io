@@ -20,7 +20,7 @@ hr {
 	border-top: 1px solid #666;
 }
 
-ul {
+.no-padding {
 	padding-left: 17px;
 }
 
@@ -65,6 +65,16 @@ h1, h2{
 
 #div-translate {
 	border-left: 3px solid #f0ad4e;
+}
+
+.version-new {
+	background: url(../img/version-new.png) no-repeat bottom right;
+	min-height: 52px;
+}
+
+.version-old {
+	background: url(../img/version-old.png) no-repeat bottom right;
+	min-height: 52px;
 }
 
 .btn-default {
