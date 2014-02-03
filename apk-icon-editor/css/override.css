@@ -29,6 +29,10 @@ h1, h2{
 	margin-top: 8px;
 }
 
+.navbar-right li {
+	padding-top: 13px;
+}
+
 .jumbotron {
 	color: #333;
 	background: url(../img/header.png) #dfa repeat-x;

@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html itemscope itemtype="http://schema.org/Article">
 	<head>
-	<title>APK Icon Editor</title>
+		<title>APK Icon Editor</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta itemprop="name" content="APK Icon Editor">
+		<meta itemprop="description" content="Edit and replace APK icons, easily and quickly. Written in C++ / Qt. Open source.">
+		<meta itemprop="image" content="http://kefir500.github.io/apk-icon-editor/img/logo.png">
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/footer.css" rel="stylesheet">
 		<link href="css/override.css" rel="stylesheet">
@@ -15,21 +18,24 @@
 	</head>
 	<body data-spy="scroll" data-target="#menu" data-offset="80">
 		<div id="wrap">
-			<div class="navbar navbar-inverse navbar-fixed-top"  id="menu" role="banner">
+			<div class="navbar navbar-inverse navbar-fixed-top" id="menu" role="navigation">
 				<div class="container">
-					<div class="navbar-header">
+					<div class="nav navbar-header">
 						<a class="navbar-brand" href="http://kefir500.github.io/apk-icon-editor/">APK Icon Editor</a>
 					</div>
-					<div class="navbar-collapse collapse" role="navigation">
+					<div class="navbar-collapse collapse">
 						<ul class="nav navbar-nav">
-							<li><a href="#home">Home</a></li>
+							<li><a href="download/" id="download">Download</a></li>
 							<li><a href="#description">Description</a></li>
 							<li><a href="#features">Features</a></li>
 							<li><a href="#requirements">Requirements</a></li>
 							<li><a href="#license">License</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
-							<li><a id="download" href="download/"><b>Download</b></a></li>
+							<li>
+								<!-- Google +1 -->
+								<div class="g-plusone" data-href="http://kefir500.github.io/apk-icon-editor/"></div>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -38,7 +44,7 @@
 			<div class="jumbotron" id="home">
 				<div id="header" class="container">
 					<h1>APK Icon Editor</h1>
-					<p>Edit and replace APK icons, easily and quickly.<br>Written in C++ / Qt. Open source.</p>
+					<p>Edit and replace APK icons, easily and quickly.<br>Free. Open source. Written in C++ / Qt.</p>
 					<p>
 						<a href="download/" class="btn btn-success btn-lg" role="button">Download</a>
 						<a href="#description" class="btn btn-primary btn-lg" role="button">Read more &raquo;</a>
@@ -76,7 +82,7 @@
 					<div class="col-md-5">
 						<div style="background: url(img/label1.png) no-repeat; padding-left:96px;">
 							<h2 id="description">Description</h2>
-							<b>APK Icon Editor</b> is the tool designed to easily edit and replace APK (Android Package) icons. Written in C++ and Qt framework. Open source.
+							<b>APK Icon Editor</b> is the <i>free</i> tool designed to easily edit and replace APK (Android Package) icons. Written in C++ and Qt framework. Open source.
 						</div>
 						<hr>
 						<div style="background: url(img/label2.png) no-repeat; padding-left:96px;">
@@ -122,5 +128,7 @@
 		<script type="text/javascript" src="js/scroll.js"></script>
 		
 		<!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23742388 = new Ya.Metrika({id:23742388, clickmap:true, trackLinks:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/23742388" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+		
+		<!-- Google +1 --><script type="text/javascript">(function() { var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true; po.src = 'https://apis.google.com/js/platform.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s); })();</script><!-- /Google +1 -->
 	</body>
 </html>
