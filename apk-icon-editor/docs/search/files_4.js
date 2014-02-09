@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['profile_2eh',['profile.h',['../profile_8h.html',1,'']]]
+  ['main_2eh',['main.h',['../main_8h.html',1,'']]],
+  ['mainwindow_2eh',['mainwindow.h',['../mainwindow_8h.html',1,'']]]
 ];

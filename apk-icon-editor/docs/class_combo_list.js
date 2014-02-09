@@ -2,6 +2,7 @@ var class_combo_list =
 [
     [ "Item", "struct_combo_list_1_1_item.html", "struct_combo_list_1_1_item" ],
     [ "ComboList", "class_combo_list.html#aee8bb2cc8d7bc33dbcc9b3dfc8b1e367", null ],
+    [ "addActions", "class_combo_list.html#a31c733a35216167e31e4c9d70b6a3147", null ],
     [ "addGroup", "class_combo_list.html#a9da6333a7918b1c2efeac6b66a648efc", null ],
     [ "addGroup", "class_combo_list.html#a9b4da739b3a9c1d9b1aa24a31a2053c4", null ],
     [ "addItem", "class_combo_list.html#aa2945b111bf31d3fcc83f90e12004dc9", null ],

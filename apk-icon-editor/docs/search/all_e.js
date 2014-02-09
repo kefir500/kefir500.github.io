@@ -10,5 +10,6 @@ var searchData=
   ['resize',['resize',['../class_icon.html#acf12adc9cb47edcc3d0bfdb47c6be8e5',1,'Icon']]],
   ['restoresettings',['restoreSettings',['../class_main_window.html#a3955ca5db289680247c46f97bd51f634',1,'MainWindow']]],
   ['retranslate',['retranslate',['../class_effects_dialog.html#ae08e15c0a3aaccb0e8bd28f3d04849f7',1,'EffectsDialog']]],
-  ['revert',['revert',['../class_icon.html#a59bb03b768c719e966b22fa12b6c744c',1,'Icon']]]
+  ['revert',['revert',['../class_icon.html#a59bb03b768c719e966b22fa12b6c744c',1,'Icon']]],
+  ['rotate',['rotate',['../class_effects_dialog.html#a4d2c2f25e65c24214d379177785afdbf',1,'EffectsDialog']]]
 ];

@@ -1,6 +1,7 @@
 var searchData=
 [
   ['data',['data',['../struct_combo_list_1_1_item.html#ae06614cb8d28dbd2e27318f3926713fd',1,'ComboList::Item']]],
+  ['depth',['depth',['../class_icon.html#af8201f55eb6e01e7c08818caa91e59a3',1,'Icon']]],
   ['die',['die',['../class_apk.html#a78534654d845bb893132169e6e0e08a7',1,'Apk']]],
   ['dopack',['doPack',['../class_apk.html#a4383475c6eff3593363dc3ef8993da68',1,'Apk']]],
   ['dounpack',['doUnpack',['../class_apk.html#ab6c61af79c07917fa3de23f7e19d6097',1,'Apk']]],

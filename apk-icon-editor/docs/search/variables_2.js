@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['data',['data',['../struct_combo_list_1_1_item.html#ae06614cb8d28dbd2e27318f3926713fd',1,'ComboList::Item']]]
+  ['color',['color',['../class_icon.html#a3d2456bbe8dd3ff3b43b4637591b6ed5',1,'Icon']]],
+  ['combo',['combo',['../class_combo_list.html#abd6b5ccc1c0ef36f3fa12429f374c1cc',1,'ComboList']]]
 ];

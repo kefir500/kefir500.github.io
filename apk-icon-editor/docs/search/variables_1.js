@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['color',['color',['../class_icon.html#a3d2456bbe8dd3ff3b43b4637591b6ed5',1,'Icon']]],
-  ['combo',['combo',['../class_combo_list.html#abd6b5ccc1c0ef36f3fa12429f374c1cc',1,'ComboList']]]
+  ['background',['background',['../class_draw_area.html#ac06d385848bcbda15791aa701b5b9efe',1,'DrawArea']]],
+  ['blur',['blur',['../class_icon.html#a910e308d3bac5f577fd589b723b29a3b',1,'Icon']]]
 ];

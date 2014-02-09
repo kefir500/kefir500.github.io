@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['side',['side',['../struct_profile_1_1_dpi_preset.html#a0f03fcf539037a549d231b5e5c06c6fa',1,'Profile::DpiPreset']]],
-  ['str_5ferror',['STR_ERROR',['../class_apk.html#a6454d495415a3c86fede364604aaf07c',1,'Apk']]],
-  ['str_5ferrorstart',['STR_ERRORSTART',['../class_apk.html#aaf538e15df9bf5aecf85528f17bf747b',1,'Apk']]]
+  ['rect_5fh',['rect_h',['../class_draw_area.html#ad1c7bec2ba9a03a28fe978fd1e781b04',1,'DrawArea']]],
+  ['rect_5fw',['rect_w',['../class_draw_area.html#a95c1833eec2eba04ffb28fab1cb39331',1,'DrawArea']]]
 ];
