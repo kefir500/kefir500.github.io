@@ -20,6 +20,13 @@ hr {
 	border-top: 1px solid #666;
 }
 
+.anchor {
+	display: block;
+	position: relative;
+	top: -60px;
+	visibility: hidden;
+}
+
 .no-padding {
 	padding-left: 17px;
 }
@@ -31,12 +38,6 @@ h1, h2{
 
 .navbar-right li {
 	padding-top: 13px;
-}
-
-.jumbotron {
-	color: #333;
-	background: url(../img/header.png) #dfa repeat-x;
-	padding-bottom: 0;
 }
 
 #header {
@@ -52,11 +53,6 @@ h1, h2{
 
 #content {
 	background: url(../img/gears-footer.png) no-repeat bottom left;
-}
-
-.row {
-	padding: 32px;
-	margin: 0px 0;
 }
 
 #div-download {
@@ -81,10 +77,27 @@ h1, h2{
 	min-height: 52px;
 }
 
+/* Bootstrap override */
+
+.jumbotron {
+	color: #333;
+	background: url(../img/header.png) #dfa repeat-x;
+	padding-bottom: 0;
+}
+
+.row {
+	padding: 32px;
+	margin: 0px 0;
+}
+
 .btn-default {
 	background-color: #ddd;
 }
 
 .btn-warning, .btn-warning:hover {
 	color: black;
+}
+
+.glyphicon {
+vertical-align: -10%;
 }

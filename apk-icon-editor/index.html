@@ -25,10 +25,11 @@
 					</div>
 					<div class="navbar-collapse collapse">
 						<ul class="nav navbar-nav">
+							<li style="display:none;"><a href="#none">None</a></li>
 							<li><a href="download/" id="download">Download</a></li>
 							<li><a href="#description">Description</a></li>
 							<li><a href="#features">Features</a></li>
-							<li><a href="#requirements">Requirements</a></li>
+							<li><a href="#contact">Contact</a></li>
 							<li><a href="#license">License</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
@@ -52,8 +53,9 @@
 				</div>
 				<div class="container gears"></div>
 			</div>
-
+			
 			<div class="container" id="content">
+				<a class="anchor" id="none"></a>
 				<div class="row">
 					<div id="div-download" class="col-md-4">
 						<h2>Download</h2>
@@ -80,13 +82,13 @@
 
 				<div class="row" style="padding: 32px 0">
 					<div class="col-md-5">
-						<div style="background: url(img/label1.png) no-repeat; padding-left:96px;">
-							<h2 id="description">Description</h2>
+						<div style="background: url(img/label-description.png) no-repeat; padding-left:96px;">
+							<a class="anchor" id="description"></a><h2>Description</h2>
 							<b>APK Icon Editor</b> is the <i>free</i> tool designed to easily edit and replace APK (Android Package) icons. Written in C++ and Qt framework. Open source.
 						</div>
 						<hr>
-						<div style="background: url(img/label2.png) no-repeat; padding-left:96px;">
-							<h2 id="features">Features</h2>
+						<div style="background: url(img/label-features.png) no-repeat; padding-left:96px;">
+							<a class="anchor" id="features"></a><h2>Features</h2>
 							<ul class="no-padding">
 								<li>Edit, replace and extract APK icons;</li>
 								<li>Sign and optimize APKs;</li>
@@ -96,13 +98,22 @@
 							</ul>
 						</div>
 						<hr>
-						<div style="background: url(img/label3.png) no-repeat; min-height:96px; padding-left:96px;">
-							<h2 id="requirements">Requirements</h2>
+						<div id="shake" style="background: url(img/label-contact.png) no-repeat; min-height:96px; padding-left:96px;">
+							<a class="anchor" id="contact"></a><h2>Contact</h2>
+							Have any suggestions? Found a bug?<br>Let us know so we can fix it!<br>
+							<ul class="no-padding">
+								<li><a href="mailto:kefir500@gmail.com?subject=APK%20Icon%20Editor%20[Issue]">Report via e-mail</a></li>
+								<li><a href="https://github.com/kefir500/apk-icon-editor/issues/new/" target="_blank">Report at GitHub</a></li>
+							</ul>
+						</div>
+						<hr>
+						<div style="background: url(img/label-requirements.png) no-repeat; min-height:96px; padding-left:96px;">
+							<a class="anchor" id="requirements"></a><h2>Requirements</h2>
 							<a href="http://java.com/download/" target="_blank">Java Runtime Environment (JRE)</a><br><i>(Optional, for signing APKs)</i>
 						</div>
 						<hr>
-						<div style="background: url(img/label4.png) no-repeat; min-height:96px; padding-left:96px;">
-							<h2 id="license">License</h2>
+						<div style="background: url(img/label-license.png) no-repeat; min-height:96px; padding-left:96px;">
+							<a class="anchor" id="license"></a><h2>License</h2>
 							<a href="http://www.gnu.org/licenses/gpl-2.0.html" target="_blank">GNU General Public License v2.0</a>
 						</div>
 					</div>
@@ -119,13 +130,19 @@
 
 		<div id="footer">
 			<div class="container">
-				<p>&copy; Qwerty Minds 2014&ensp;|&ensp;<a href="https://github.com/kefir500/apk-icon-editor/" target="_blank">GitHub</a>&ensp;|&ensp;<a href="https://github.com/kefir500/apk-icon-editor/blob/master/AUTHORS.md">Authors</a>&ensp;|&ensp;<a href="http://www.gnu.org/licenses/gpl-2.0.html" target="_blank">License</a></p>
+				<p>&copy; Qwerty Minds 2014
+					&ensp;|&ensp;<a href="https://github.com/kefir500/apk-icon-editor/" target="_blank">GitHub</a>
+					&ensp;|&ensp;<a href="https://github.com/kefir500/apk-icon-editor/blob/master/AUTHORS.md">Authors</a>
+					&ensp;|&ensp;<a href="http://www.gnu.org/licenses/gpl-2.0.html" target="_blank">License</a>
+					&ensp;|&ensp;<a href="#contact">Contact</a>
+				</p>
 			</div>
 		</div>
 		
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/scroll.js"></script>
+		<script type="text/javascript" src="js/anchors.js"></script>
 		
 		<!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23742388 = new Ya.Metrika({id:23742388, clickmap:true, trackLinks:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/23742388" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
 		
