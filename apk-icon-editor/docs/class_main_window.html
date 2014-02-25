@@ -154,10 +154,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a29e86e3ab640b1264689760a6fcb5c53">apkSave</a> ()</td></tr>
 <tr class="memdesc:a29e86e3ab640b1264689760a6fcb5c53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save APK (calls "Save" dialog). <br/></td></tr>
 <tr class="separator:a29e86e3ab640b1264689760a6fcb5c53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab76d17113835abaad02fda5a1c3b69c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab76d17113835abaad02fda5a1c3b69c2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#ab76d17113835abaad02fda5a1c3b69c2">apkPacked</a> (QString filename)</td></tr>
-<tr class="memdesc:ab76d17113835abaad02fda5a1c3b69c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle APK packed from the <code>filename</code>. <br/></td></tr>
-<tr class="separator:ab76d17113835abaad02fda5a1c3b69c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74dde2698941871692a76f9a81f36f99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a74dde2698941871692a76f9a81f36f99">apkPacked</a> (QString filename, bool isSuccess=true, QString text=false)</td></tr>
+<tr class="separator:a74dde2698941871692a76f9a81f36f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26d61e09aceb75b5dbac10ab20ccc7e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a26d61e09aceb75b5dbac10ab20ccc7e4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a26d61e09aceb75b5dbac10ab20ccc7e4">apkUnpacked</a> (QString filename)</td></tr>
 <tr class="memdesc:a26d61e09aceb75b5dbac10ab20ccc7e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle APK unpacked from the <code>filename</code>. <br/></td></tr>
@@ -166,10 +164,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#aa3eb66550eca41e390d3b9e0b3b4a4d6">resetSettings</a> ()</td></tr>
 <tr class="memdesc:aa3eb66550eca41e390d3b9e0b3b4a4d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset settings to default. <br/></td></tr>
 <tr class="separator:aa3eb66550eca41e390d3b9e0b3b4a4d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2142e5f7809428fd7c07e2a7e1101af9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2142e5f7809428fd7c07e2a7e1101af9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a2142e5f7809428fd7c07e2a7e1101af9">loadingComplete</a> (bool <a class="el" href="class_main_window.html#a672affe16bce13e5038cf5793818e6ad">success</a>=false, QString filename=NULL)</td></tr>
-<tr class="memdesc:a2142e5f7809428fd7c07e2a7e1101af9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close loading dialog. If <code>success</code>, sets  as the current APK. <br/></td></tr>
-<tr class="separator:a2142e5f7809428fd7c07e2a7e1101af9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41136e954b8db8f92063905fb17e5eb6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a41136e954b8db8f92063905fb17e5eb6">iconOpen</a> (QString filename=NULL)</td></tr>
 <tr class="separator:a41136e954b8db8f92063905fb17e5eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31681492ac6b2a51ded7f5ba47f7f173"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a31681492ac6b2a51ded7f5ba47f7f173">iconSave</a> (QString filename=NULL)</td></tr>
@@ -230,8 +224,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a3729edb97bc825489535bf0d3d1edf98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b88ebaca8472d1370dc3f8935f53587"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a6b88ebaca8472d1370dc3f8935f53587">newVersion</a> (QString version)</td></tr>
 <tr class="separator:a6b88ebaca8472d1370dc3f8935f53587"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a732cf9a40fb05d4718dca051b32213ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a732cf9a40fb05d4718dca051b32213ef">loading</a> (short percentage, QString text=NULL)</td></tr>
-<tr class="separator:a732cf9a40fb05d4718dca051b32213ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16d8242cfce67398e6d34ff2a7ac334b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a16d8242cfce67398e6d34ff2a7ac334b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a16d8242cfce67398e6d34ff2a7ac334b">authDropbox</a> ()</td></tr>
+<tr class="memdesc:a16d8242cfce67398e6d34ff2a7ac334b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show "Enter Dropbox code" message. <br/></td></tr>
+<tr class="separator:a16d8242cfce67398e6d34ff2a7ac334b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac97b1db1cd09ee1a7f9ed868f492120d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac97b1db1cd09ee1a7f9ed868f492120d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#ac97b1db1cd09ee1a7f9ed868f492120d">uploaded</a> (bool isSuccess=true)</td></tr>
+<tr class="memdesc:ac97b1db1cd09ee1a7f9ed868f492120d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show "Uploaded" message. <br/></td></tr>
+<tr class="separator:ac97b1db1cd09ee1a7f9ed868f492120d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a672affe16bce13e5038cf5793818e6ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a672affe16bce13e5038cf5793818e6ad">success</a> (QString title, QString text)</td></tr>
 <tr class="separator:a672affe16bce13e5038cf5793818e6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85267a88468451fbadd0b2fbabe10043"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a85267a88468451fbadd0b2fbabe10043">warning</a> (QString title, QString text)</td></tr>
@@ -283,18 +283,24 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a1502a1eb9f6c40237273c5b8d1d784ec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1502a1eb9f6c40237273c5b8d1d784ec"></a>
 <a class="el" href="class_draw_area.html">DrawArea</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>drawArea</b></td></tr>
 <tr class="separator:a1502a1eb9f6c40237273c5b8d1d784ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13be0319c101c2c56fd64904bc1ccb6e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13be0319c101c2c56fd64904bc1ccb6e"></a>
-<a class="el" href="class_combo_list.html">ComboList</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>profiles</b></td></tr>
-<tr class="separator:a13be0319c101c2c56fd64904bc1ccb6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad442530e5caf8e10143fca5bcf7b0571"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad442530e5caf8e10143fca5bcf7b0571"></a>
+<a class="el" href="class_combo_list.html">ComboList</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>devices</b></td></tr>
+<tr class="separator:ad442530e5caf8e10143fca5bcf7b0571"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc9577c3b41969d400c53b032b29fcb5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc9577c3b41969d400c53b032b29fcb5"></a>
 QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><b>btnPack</b></td></tr>
 <tr class="separator:abc9577c3b41969d400c53b032b29fcb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae938e9971e5f5df489bf7df77df1b09b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae938e9971e5f5df489bf7df77df1b09b"></a>
+QCheckBox *&#160;</td><td class="memItemRight" valign="bottom"><b>checkDropbox</b></td></tr>
+<tr class="separator:ae938e9971e5f5df489bf7df77df1b09b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb2d259f190f69c17c7ed6ed3c507e6a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb2d259f190f69c17c7ed6ed3c507e6a"></a>
 <a class="el" href="class_effects_dialog.html">EffectsDialog</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>effects</b></td></tr>
 <tr class="separator:adb2d259f190f69c17c7ed6ed3c507e6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bef2acb008897184818f8e97f791610"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3bef2acb008897184818f8e97f791610"></a>
-QProgressDialog *&#160;</td><td class="memItemRight" valign="bottom"><b>progress</b></td></tr>
-<tr class="separator:a3bef2acb008897184818f8e97f791610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c9d14178bb9d203bcff2d4f5b150b12"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c9d14178bb9d203bcff2d4f5b150b12"></a>
+<a class="el" href="class_progress_dialog.html">ProgressDialog</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>loadingDialog</b></td></tr>
+<tr class="separator:a9c9d14178bb9d203bcff2d4f5b150b12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91aba2131acf7a70a97238902c68a5f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91aba2131acf7a70a97238902c68a5f1"></a>
+<a class="el" href="class_progress_dialog.html">ProgressDialog</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>uploadDialog</b></td></tr>
+<tr class="separator:a91aba2131acf7a70a97238902c68a5f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad168e858031e5ae29e3b5041b1bcf7dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad168e858031e5ae29e3b5041b1bcf7dc"></a>
 QSignalMapper *&#160;</td><td class="memItemRight" valign="bottom"><b>mapLang</b></td></tr>
 <tr class="separator:ad168e858031e5ae29e3b5041b1bcf7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -310,9 +316,6 @@ QTranslator *&#160;</td><td class="memItemRight" valign="bottom"><b>translatorQt
 <tr class="memitem:a4d8dbbb57b71b4fde207e465526a6753"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d8dbbb57b71b4fde207e465526a6753"></a>
 QSettings *&#160;</td><td class="memItemRight" valign="bottom"><b>settings</b></td></tr>
 <tr class="separator:a4d8dbbb57b71b4fde207e465526a6753"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ee9aa33ec8f680c71834d6da17ab122"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ee9aa33ec8f680c71834d6da17ab122"></a>
-QWinTaskbarButton *&#160;</td><td class="memItemRight" valign="bottom"><b>taskbar</b></td></tr>
-<tr class="separator:a8ee9aa33ec8f680c71834d6da17ab122"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ca04227e7d71b036ccd0ed4176a5561"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ca04227e7d71b036ccd0ed4176a5561"></a>
 QMenu *&#160;</td><td class="memItemRight" valign="bottom"><b>menuFile</b></td></tr>
 <tr class="separator:a2ca04227e7d71b036ccd0ed4176a5561"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -430,6 +433,9 @@ QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>actAbout</b></td
 <tr class="memitem:a7497f6eb1c568475b402e87da57299fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7497f6eb1c568475b402e87da57299fb"></a>
 <a class="el" href="class_updater.html">Updater</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>updater</b></td></tr>
 <tr class="separator:a7497f6eb1c568475b402e87da57299fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ca0e898ae8f48495b9d9ccf98f1f865"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ca0e898ae8f48495b9d9ccf98f1f865"></a>
+<a class="el" href="class_dropbox.html">Dropbox</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>dropbox</b></td></tr>
+<tr class="separator:a8ca0e898ae8f48495b9d9ccf98f1f865"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab54d9707eaa625506a1d188d633dc4d9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab54d9707eaa625506a1d188d633dc4d9"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>currentLang</b></td></tr>
 <tr class="separator:ab54d9707eaa625506a1d188d633dc4d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -441,6 +447,55 @@ QStringList&#160;</td><td class="memItemRight" valign="bottom"><b>recent</b></td
 <tr class="separator:a95fd9b110a4099b64d3df22619ed0491"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a74dde2698941871692a76f9a81f36f99"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::apkPacked </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isSuccess</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>text</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Handle packed APK. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Name of the packed APK file. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">isSuccess</td><td><code>FALSE</code> if APK is packed with warnings. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">text</td><td>Additional message text. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a611d33e479dd4e14727665e87b955452"></a>
 <div class="memitem">
 <div class="memproto">
@@ -570,48 +625,6 @@ QStringList&#160;</td><td class="memItemRight" valign="bottom"><b>recent</b></td
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Name of the file to save image to. If <code>NULL</code>, shows "Save" dialog. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a732cf9a40fb05d4718dca051b32213ef"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MainWindow::loading </td>
-          <td>(</td>
-          <td class="paramtype">short&#160;</td>
-          <td class="paramname"><em>percentage</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">QString&#160;</td>
-          <td class="paramname"><em>text</em> = <code>NULL</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Show "Loading" dialog with the given parameters. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">percentage</td><td>Loading progress (0-100). </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">text</td><td>Additional loading text. </td></tr>
   </table>
   </dd>
 </dl>

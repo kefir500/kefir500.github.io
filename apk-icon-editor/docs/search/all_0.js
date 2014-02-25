@@ -10,11 +10,14 @@ var searchData=
   ['apk',['Apk',['../class_apk.html',1,'']]],
   ['apk_2eh',['apk.h',['../apk_8h.html',1,'']]],
   ['apkload',['apkLoad',['../class_main_window.html#a4ce2b283be3eac01c203967201781f5d',1,'MainWindow']]],
-  ['apkpacked',['apkPacked',['../class_main_window.html#ab76d17113835abaad02fda5a1c3b69c2',1,'MainWindow']]],
+  ['apkpacked',['apkPacked',['../class_main_window.html#a74dde2698941871692a76f9a81f36f99',1,'MainWindow']]],
   ['apksave',['apkSave',['../class_main_window.html#a29e86e3ab640b1264689760a6fcb5c53',1,'MainWindow']]],
   ['apkunpacked',['apkUnpacked',['../class_main_window.html#a26d61e09aceb75b5dbac10ab20ccc7e4',1,'MainWindow']]],
   ['applyeffects',['applyEffects',['../class_icon.html#af83c17888762dab4c54e1f712753c4dc',1,'Icon']]],
   ['associate',['associate',['../class_main_window.html#ad7543899d37d0a9a5615701209ba020c',1,'MainWindow']]],
   ['at',['at',['../class_profile.html#a7b1fa578d26398256d921d9cee01e2ce',1,'Profile']]],
+  ['auth',['auth',['../class_dropbox.html#afce1b39fb55e25050dd6654ff4e1723f',1,'Dropbox']]],
+  ['auth_5frequired',['auth_required',['../class_dropbox.html#ad61365e213d4af7be55cb02c6e76cff0',1,'Dropbox']]],
+  ['authdropbox',['authDropbox',['../class_main_window.html#a16d8242cfce67398e6d34ff2a7ac334b',1,'MainWindow']]],
   ['apk_20icon_20editor',['APK Icon Editor',['../index.html',1,'']]]
 ];

@@ -12,6 +12,8 @@ var searchData=
   ['getflipy',['getFlipY',['../class_icon.html#aae6975d7b1cdfdb2781b567db86a34bc',1,'Icon']]],
   ['geticon',['getIcon',['../class_apk.html#ac2fddd006f70075d19602b3e6e0aea65',1,'Apk::getIcon()'],['../class_draw_area.html#a4656672ca0755e8e5d92cb0cbacbb31c',1,'DrawArea::getIcon()']]],
   ['getpixmap',['getPixmap',['../class_icon.html#ad88a936694e31ec605390677b1dd2fbb',1,'Icon']]],
+  ['getstring',['getString',['../class_input_dialog.html#addb72bb58b069da317a13f53c5c5b382',1,'InputDialog']]],
+  ['gettoken',['getToken',['../class_dropbox.html#a55131282437fde72aab906e1654f8419',1,'Dropbox']]],
   ['getzipsuccess',['getZipSuccess',['../class_apk.html#a7125e93e7a8a897638220fd3c6c0b26d',1,'Apk']]],
   ['groupchanged',['groupChanged',['../class_combo_list.html#a33f6d1046377b47a1754f3692656b7f7',1,'ComboList']]]
 ];

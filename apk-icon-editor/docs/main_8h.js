@@ -1,5 +1,6 @@
 var main_8h =
 [
+    [ "QT5_2_0", "main_8h.html#a0c2ca8cdafaea7c6fe9125e9500617f0", null ],
     [ "APP", "main_8h.html#a8ef89c780dc1e96e66e2e322ba0565ca", null ],
     [ "TEMPDIR", "main_8h.html#a284db20ffc934bcda5e167132bc18404", null ],
     [ "URL_BUGS", "main_8h.html#a6220d9de2c804db0a2886b6fe961be33", null ],

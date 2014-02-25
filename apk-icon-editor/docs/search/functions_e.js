@@ -3,6 +3,7 @@ var searchData=
   ['save',['save',['../class_icon.html#a71ac80e37df9da288c67b8fd9116f1e2',1,'Icon']]],
   ['saveicons',['saveIcons',['../class_apk.html#acd8ec2c0bcaa109c86f65d4b7db4fb16',1,'Apk']]],
   ['setactiveapk',['setActiveApk',['../class_main_window.html#a76d46858f93ead5f5303ec3a1c4b5428',1,'MainWindow']]],
+  ['setallowcancel',['setAllowCancel',['../class_progress_dialog.html#a875156e38c35a3b9824b1e7e9dc5480b',1,'ProgressDialog']]],
   ['setangle',['setAngle',['../class_icon.html#a5c4cf3e33d5d524aa369aa63b16f3561',1,'Icon']]],
   ['setback',['setBack',['../class_draw_area.html#a36a80edaae71babd44a6cd42facacce0',1,'DrawArea']]],
   ['setblur',['setBlur',['../class_effects_dialog.html#abc26e5092fd4440c0668c3042307de90',1,'EffectsDialog::setBlur()'],['../class_icon.html#a0157d944e60c90beaf039a94d0d27e3f',1,'Icon::setBlur()']]],
@@ -16,14 +17,17 @@ var searchData=
   ['setdepth',['setDepth',['../class_icon.html#a80530d419c345c72c59adcb38c88d04b',1,'Icon']]],
   ['setflipx',['setFlipX',['../class_effects_dialog.html#a05e4299af6c35d0ce52bc445503d815c',1,'EffectsDialog::setFlipX()'],['../class_icon.html#a2b7de6ca1370b9fd1cf55394c6ff6dc1',1,'Icon::setFlipX()']]],
   ['setflipy',['setFlipY',['../class_effects_dialog.html#a1f13857bef7708728f267330f4b5a697',1,'EffectsDialog::setFlipY()'],['../class_icon.html#a97da806f43a247c6457bb549b3b0ea1b',1,'Icon::setFlipY()']]],
-  ['seticon',['setIcon',['../class_draw_area.html#aa2e5a4d6eb8b96820747a78d8ccd710d',1,'DrawArea']]],
+  ['seticon',['setIcon',['../class_progress_dialog.html#ad7bc716cbd96270aa1668683d2d479b1',1,'ProgressDialog::setIcon()'],['../class_draw_area.html#aa2e5a4d6eb8b96820747a78d8ccd710d',1,'DrawArea::setIcon()']]],
   ['setitemvisible',['setItemVisible',['../class_combo_list.html#ae7542e40ff6222897ddfd9128323f04d',1,'ComboList']]],
   ['setlabeltext',['setLabelText',['../class_combo_list.html#a9d9f16e3f0e84ee6c61403ff7b8d6100',1,'ComboList']]],
   ['setlanguage',['setLanguage',['../class_main_window.html#aeb0c14a45d89db212d3c8298665b0999',1,'MainWindow']]],
   ['setpreviewcolor',['setPreviewColor',['../class_main_window.html#ac924ca9651b4ee354ae2de12bf1b40cc',1,'MainWindow']]],
+  ['setprogress',['setProgress',['../class_progress_dialog.html#ab5d86e214713f352f3cfcaa807d6aaa5',1,'ProgressDialog']]],
   ['setrect',['setRect',['../class_draw_area.html#add984b3b7d0e7db1e3c854e99e0cd448',1,'DrawArea']]],
   ['setrotation',['setRotation',['../class_effects_dialog.html#a985836fc4e03ec18a3913a7495fa4490',1,'EffectsDialog']]],
+  ['settext',['setText',['../class_progress_dialog.html#a21d91aa0b0028c48d4976d7f00f125d6',1,'ProgressDialog']]],
+  ['settoken',['setToken',['../class_dropbox.html#a76afc9990c8141600c74975f1ec2be9f',1,'Dropbox']]],
   ['showeffectsdialog',['showEffectsDialog',['../class_main_window.html#ac0a9ce347a0583d1c66892a24a3511df',1,'MainWindow']]],
   ['sign',['sign',['../class_apk.html#a5b915470e034801fc246be7566dc1542',1,'Apk']]],
-  ['success',['success',['../class_apk.html#a226344216ba32664b547ac03ce0ed7c0',1,'Apk::success()'],['../class_main_window.html#a672affe16bce13e5038cf5793818e6ad',1,'MainWindow::success()']]]
+  ['success',['success',['../class_main_window.html#a672affe16bce13e5038cf5793818e6ad',1,'MainWindow']]]
 ];

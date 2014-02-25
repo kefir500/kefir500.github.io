@@ -1,7 +1,10 @@
 var searchData=
 [
+  ['cancel',['cancel',['../class_progress_dialog.html#acb8da6f43595b8d1e696d51d3aebe604',1,'ProgressDialog::cancel()'],['../class_dropbox.html#a0edb20014d3ca3186922662657daaf90',1,'Dropbox::cancel()']]],
+  ['cancelled',['cancelled',['../class_dropbox.html#a66c2d08024c76721e072f951f342103d',1,'Dropbox']]],
   ['catchreply',['catchReply',['../class_updater.html#a96ccc8bc0c505151625632f527880db0',1,'Updater']]],
   ['check',['check',['../class_updater.html#a603683a04ff12fafc7e8f769fbf96fe0',1,'Updater']]],
+  ['checkinput',['checkInput',['../class_input_dialog.html#a6ed69be0a522ae250999371b42abcb86',1,'InputDialog']]],
   ['checkjavainstalled',['checkJavaInstalled',['../class_apk.html#a452824ee30ef35d9cdeb453add5aa9b4',1,'Apk']]],
   ['clearrecent',['clearRecent',['../class_main_window.html#a3729edb97bc825489535bf0d3d1edf98',1,'MainWindow']]],
   ['cleartemp',['clearTemp',['../class_apk.html#a5b450f3e80e0603d1f421030fde1d02f',1,'Apk']]],

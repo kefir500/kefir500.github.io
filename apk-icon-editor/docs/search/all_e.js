@@ -1,15 +1,13 @@
 var searchData=
 [
-  ['readmanifest',['readManifest',['../class_apk.html#a56361d61014d6ac18fa038b24135f5cb',1,'Apk']]],
-  ['rect_5fh',['rect_h',['../class_draw_area.html#ad1c7bec2ba9a03a28fe978fd1e781b04',1,'DrawArea']]],
-  ['rect_5fw',['rect_w',['../class_draw_area.html#a95c1833eec2eba04ffb28fab1cb39331',1,'DrawArea']]],
-  ['refresh',['refresh',['../class_combo_list.html#ac6a2bd0c88665b14de9e6b685f209b64',1,'ComboList']]],
-  ['refreshrecent',['refreshRecent',['../class_main_window.html#a1bcbd172eb69785821cd46ebc1b4fee0',1,'MainWindow']]],
-  ['replace',['replace',['../class_icon.html#a4baa74a4dea7b3ca623a36fd7459aa5c',1,'Icon']]],
-  ['resetsettings',['resetSettings',['../class_main_window.html#aa3eb66550eca41e390d3b9e0b3b4a4d6',1,'MainWindow']]],
-  ['resize',['resize',['../class_icon.html#acf12adc9cb47edcc3d0bfdb47c6be8e5',1,'Icon']]],
-  ['restoresettings',['restoreSettings',['../class_main_window.html#a3955ca5db289680247c46f97bd51f634',1,'MainWindow']]],
-  ['retranslate',['retranslate',['../class_effects_dialog.html#ae08e15c0a3aaccb0e8bd28f3d04849f7',1,'EffectsDialog']]],
-  ['revert',['revert',['../class_icon.html#a59bb03b768c719e966b22fa12b6c744c',1,'Icon']]],
-  ['rotate',['rotate',['../class_effects_dialog.html#a4d2c2f25e65c24214d379177785afdbf',1,'EffectsDialog']]]
+  ['pack',['pack',['../class_apk.html#a608536399e28f3dd6f29ea8f871a7b90',1,'Apk']]],
+  ['packed',['packed',['../class_apk.html#a94f1e2e978ba6c8d9ea13ef965e7a839',1,'Apk']]],
+  ['parsetoken',['parseToken',['../class_dropbox.html#a7c7c1b34d7a13fec3e93c13fa5f20790',1,'Dropbox']]],
+  ['pixmap',['pixmap',['../class_icon.html#a998453885d0728b172c67f16b830ae03',1,'Icon']]],
+  ['presets',['presets',['../class_profile.html#a132f03e858864d6475ce6e2987ba6b25',1,'Profile']]],
+  ['profile',['Profile',['../class_profile.html',1,'']]],
+  ['profile_2eh',['profile.h',['../profile_8h.html',1,'']]],
+  ['profiles',['profiles',['../class_profile.html#a522fa404f27beff082d248e06a075a25',1,'Profile']]],
+  ['progress',['progress',['../class_progress_dialog.html#ac77fd60f589962c95ff50b3f2e623de9',1,'ProgressDialog::progress()'],['../class_dropbox.html#a42c9fef043100fbfa178522c6f86bdc5',1,'Dropbox::progress()']]],
+  ['progressdialog',['ProgressDialog',['../class_progress_dialog.html',1,'']]]
 ];

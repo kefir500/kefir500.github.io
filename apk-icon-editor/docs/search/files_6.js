@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['updater_2eh',['updater.h',['../updater_8h.html',1,'']]]
+  ['main_2eh',['main.h',['../main_8h.html',1,'']]],
+  ['mainwindow_2eh',['mainwindow.h',['../mainwindow_8h.html',1,'']]]
 ];

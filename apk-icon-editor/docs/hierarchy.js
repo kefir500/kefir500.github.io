@@ -4,7 +4,9 @@ var hierarchy =
     [ "ComboList::Item", "struct_combo_list_1_1_item.html", null ],
     [ "Profile", "class_profile.html", null ],
     [ "QDialog", null, [
-      [ "EffectsDialog", "class_effects_dialog.html", null ]
+      [ "EffectsDialog", "class_effects_dialog.html", null ],
+      [ "InputDialog", "class_input_dialog.html", null ],
+      [ "ProgressDialog", "class_progress_dialog.html", null ]
     ] ],
     [ "QLabel", null, [
       [ "DrawArea", "class_draw_area.html", null ]
@@ -14,6 +16,7 @@ var hierarchy =
     ] ],
     [ "QObject", null, [
       [ "Apk", "class_apk.html", null ],
+      [ "Dropbox", "class_dropbox.html", null ],
       [ "Icon", "class_icon.html", null ],
       [ "Updater", "class_updater.html", null ]
     ] ],
