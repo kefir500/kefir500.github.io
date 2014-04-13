@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>APK Icon Editor</title>
+		<link href="../../css/fonts.css" rel="stylesheet">
+		<script type="text/javascript" src="onedrive.js"></script>
+		<style>
+			body {
+				background-color: #d8e0ff;
+			}
+			h1, h4 {
+				font-family: opensans;
+				font-weight: 100;
+				margin-bottom: 0;
+			}
+			h4 {
+				margin-top: 6px;
+				margin-bottom: 14px;
+			}
+			p {
+				font-family: opensans;
+			}
+			#wrap {
+				width: 100%;
+				background-color: #c8d0f0;
+			}
+			#main {
+				width: 600px;
+				height: 360px;
+				margin: auto;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background: url(bg.png) no-repeat top right;
+			}
+			#logo {
+				float: left;
+				width: 128px;
+				height: 128px;
+				background-image: url(logo.png);
+				margin: 18px 24px 0 0;
+			}
+			#hr {
+				width: 256px;
+				height: 1px;
+				margin-left: 152px;
+				background-image: url(hr.png);
+			}
+			input {
+				background-color: white;
+				text-align: center;
+				font-family: opensans;
+				font-size: 1.2em;
+				width: 100%;
+				margin-top: 10px;
+				padding: 10px 0;
+				cursor: text;
+			}
+			#nojs {
+				display: none;
+			}
+		</style>
+		<noscript>
+			<style>
+				#js { display: none; }
+				#nojs { display: inline; }
+			</style>
+		</noscript>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="main">
+				<div id="logo"></div>
+				<h1>APK Icon Editor</h1>
+				<h4><b>OneDrive</b> upload</h4>
+				<div id="hr"></div>
+				<p id="js">
+					Paste the following code into <b>APK Icon Editor</b>:<br>
+					<script>
+						document.write('<input type="text" readonly onclick="select()" value="' + getCode() + '">');
+					</script>
+				</p>
+				<p id="nojs">
+					JavaScript is disabled in your browser.<br>
+					Copy the <b>CODE</b> from your address bar
+					<br>(<code>http://kefir500.github.io/apk-icon-editor/onedrive?code=<b><i>CODE</i></b></code>)
+					<br>and paste it to <b>APK Icon Editor</b>.
+				</p>
+			</div>
+		</div>
+</html>
