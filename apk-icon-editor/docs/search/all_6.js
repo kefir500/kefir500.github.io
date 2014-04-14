@@ -10,10 +10,13 @@ var searchData=
   ['getdpititle',['getDpiTitle',['../class_profile.html#a18dc76af312f6fae2b2c70b4129568dd',1,'Profile']]],
   ['getflipx',['getFlipX',['../class_icon.html#afbafed87ddd4ca47f497c9a1004240ac',1,'Icon']]],
   ['getflipy',['getFlipY',['../class_icon.html#aae6975d7b1cdfdb2781b567db86a34bc',1,'Icon']]],
-  ['geticon',['getIcon',['../class_apk.html#ac2fddd006f70075d19602b3e6e0aea65',1,'Apk::getIcon()'],['../class_draw_area.html#a4656672ca0755e8e5d92cb0cbacbb31c',1,'DrawArea::getIcon()']]],
+  ['getfolderid',['getFolderID',['../class_google_drive.html#ad033ee2f499c02da858b71a9d33df7fd',1,'GoogleDrive::getFolderID()'],['../class_one_drive.html#ad728fcbbbda953928df4d2ab9df4ea15',1,'OneDrive::getFolderID()']]],
+  ['geticon',['getIcon',['../class_apk.html#ac2fddd006f70075d19602b3e6e0aea65',1,'Apk::getIcon()'],['../class_cloud.html#a64aca4a54293aa8902a46d5964d11f4c',1,'Cloud::getIcon()'],['../class_draw_area.html#a4656672ca0755e8e5d92cb0cbacbb31c',1,'DrawArea::getIcon()']]],
   ['getpixmap',['getPixmap',['../class_icon.html#ad88a936694e31ec605390677b1dd2fbb',1,'Icon']]],
   ['getstring',['getString',['../class_input_dialog.html#addb72bb58b069da317a13f53c5c5b382',1,'InputDialog']]],
-  ['gettoken',['getToken',['../class_dropbox.html#a55131282437fde72aab906e1654f8419',1,'Dropbox']]],
+  ['gettitle',['getTitle',['../class_cloud.html#adcb418b41f22258270189726da83413f',1,'Cloud']]],
+  ['gettoken',['getToken',['../class_cloud.html#afc14627087c06961835ebb16d2c8ac41',1,'Cloud']]],
   ['getzipsuccess',['getZipSuccess',['../class_apk.html#a7125e93e7a8a897638220fd3c6c0b26d',1,'Apk']]],
+  ['googledrive',['GoogleDrive',['../class_google_drive.html',1,'']]],
   ['groupchanged',['groupChanged',['../class_combo_list.html#a33f6d1046377b47a1754f3692656b7f7',1,'ComboList']]]
 ];

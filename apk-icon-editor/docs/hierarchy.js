@@ -16,7 +16,11 @@ var hierarchy =
     ] ],
     [ "QObject", null, [
       [ "Apk", "class_apk.html", null ],
-      [ "Dropbox", "class_dropbox.html", null ],
+      [ "Cloud", "class_cloud.html", [
+        [ "Dropbox", "class_dropbox.html", null ],
+        [ "GoogleDrive", "class_google_drive.html", null ],
+        [ "OneDrive", "class_one_drive.html", null ]
+      ] ],
       [ "Icon", "class_icon.html", null ],
       [ "Updater", "class_updater.html", null ]
     ] ],

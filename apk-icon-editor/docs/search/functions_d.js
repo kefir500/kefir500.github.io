@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['readfile',['readFile',['../class_cloud.html#a241c18e01b24f1eb8db5202e20c935d0',1,'Cloud']]],
   ['readmanifest',['readManifest',['../class_apk.html#a56361d61014d6ac18fa038b24135f5cb',1,'Apk']]],
   ['refresh',['refresh',['../class_combo_list.html#ac6a2bd0c88665b14de9e6b685f209b64',1,'ComboList']]],
   ['refreshrecent',['refreshRecent',['../class_main_window.html#a1bcbd172eb69785821cd46ebc1b4fee0',1,'MainWindow']]],

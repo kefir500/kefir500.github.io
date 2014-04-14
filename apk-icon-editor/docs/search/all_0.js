@@ -16,8 +16,8 @@ var searchData=
   ['applyeffects',['applyEffects',['../class_icon.html#af83c17888762dab4c54e1f712753c4dc',1,'Icon']]],
   ['associate',['associate',['../class_main_window.html#ad7543899d37d0a9a5615701209ba020c',1,'MainWindow']]],
   ['at',['at',['../class_profile.html#a7b1fa578d26398256d921d9cee01e2ce',1,'Profile']]],
-  ['auth',['auth',['../class_dropbox.html#afce1b39fb55e25050dd6654ff4e1723f',1,'Dropbox']]],
-  ['auth_5frequired',['auth_required',['../class_dropbox.html#ad61365e213d4af7be55cb02c6e76cff0',1,'Dropbox']]],
-  ['authdropbox',['authDropbox',['../class_main_window.html#a16d8242cfce67398e6d34ff2a7ac334b',1,'MainWindow']]],
+  ['auth',['auth',['../class_cloud.html#a73e0324219b033cef404ad62463b4f30',1,'Cloud']]],
+  ['auth_5frequired',['auth_required',['../class_cloud.html#a10906fdd1e6e7d9347fd0cf3ee31b326',1,'Cloud']]],
+  ['authcloud',['authCloud',['../class_main_window.html#a026d39b0e0cb3ee07329d49cf1a0c4fe',1,'MainWindow']]],
   ['apk_20icon_20editor',['APK Icon Editor',['../index.html',1,'']]]
 ];

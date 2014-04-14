@@ -180,13 +180,13 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="class_profile.html#a7b1fa578d26398256d921d9cee01e2ce">Profile</a>
 </li>
 <li>auth()
-: <a class="el" href="class_dropbox.html#afce1b39fb55e25050dd6654ff4e1723f">Dropbox</a>
+: <a class="el" href="class_cloud.html#a73e0324219b033cef404ad62463b4f30">Cloud</a>
 </li>
 <li>auth_required()
-: <a class="el" href="class_dropbox.html#ad61365e213d4af7be55cb02c6e76cff0">Dropbox</a>
+: <a class="el" href="class_cloud.html#a10906fdd1e6e7d9347fd0cf3ee31b326">Cloud</a>
 </li>
-<li>authDropbox()
-: <a class="el" href="class_main_window.html#a16d8242cfce67398e6d34ff2a7ac334b">MainWindow</a>
+<li>authCloud()
+: <a class="el" href="class_main_window.html#a026d39b0e0cb3ee07329d49cf1a0c4fe">MainWindow</a>
 </li>
 </ul>
 
@@ -209,11 +209,11 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 
 <h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
 <li>cancel()
-: <a class="el" href="class_dropbox.html#a0edb20014d3ca3186922662657daaf90">Dropbox</a>
+: <a class="el" href="class_cloud.html#af652b1976338e947c61f59badd50a130">Cloud</a>
 , <a class="el" href="class_progress_dialog.html#acb8da6f43595b8d1e696d51d3aebe604">ProgressDialog</a>
 </li>
 <li>cancelled()
-: <a class="el" href="class_dropbox.html#a66c2d08024c76721e072f951f342103d">Dropbox</a>
+: <a class="el" href="class_cloud.html#acf76388bb0521feaf584cadd83047fd9">Cloud</a>
 </li>
 <li>catchReply()
 : <a class="el" href="class_updater.html#a96ccc8bc0c505151625632f527880db0">Updater</a>
@@ -257,6 +257,10 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>count()
 : <a class="el" href="class_profile.html#af34ae69391a1f834dba0520d31b0dfe9">Profile</a>
 </li>
+<li>createFolder()
+: <a class="el" href="class_google_drive.html#ab66a11088cf92f1415c3bea8bfe4dc3d">GoogleDrive</a>
+, <a class="el" href="class_one_drive.html#a67c93aaddd239e532868b2bfe253471d">OneDrive</a>
+</li>
 <li>currentGroupIndex()
 : <a class="el" href="class_combo_list.html#a0c313891afef7be56533a32560a684aa">ComboList</a>
 </li>
@@ -285,9 +289,6 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>doUnpack()
 : <a class="el" href="class_apk.html#ab6c61af79c07917fa3de23f7e19d6097">Apk</a>
 </li>
-<li>doUpload()
-: <a class="el" href="class_dropbox.html#a6ed02355af8d47d5ccf548260dce0ae4">Dropbox</a>
-</li>
 <li>download()
 : <a class="el" href="class_updater.html#a5cdc3c1e627194e2374e9b9b5fe2190a">Updater</a>
 </li>
@@ -297,7 +298,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
 <li>error()
 : <a class="el" href="class_apk.html#a55e5c4ace9899c7f862fd8eb2db97263">Apk</a>
-, <a class="el" href="class_dropbox.html#a512058a8fc37d8d063bf31c4767123dd">Dropbox</a>
+, <a class="el" href="class_cloud.html#a967ac6f41a0b46fdd711559fd3d7467f">Cloud</a>
 , <a class="el" href="class_main_window.html#a611d33e479dd4e14727665e87b955452">MainWindow</a>
 </li>
 </ul>
@@ -309,6 +310,9 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 </li>
 <li>finish()
 : <a class="el" href="class_progress_dialog.html#a9ab19f8b78f08a63f554b2521bd850a0">ProgressDialog</a>
+</li>
+<li>finished()
+: <a class="el" href="class_cloud.html#a4816ea1bd5f1ace45bb8bd42dccadc5a">Cloud</a>
 </li>
 <li>flipX()
 : <a class="el" href="class_effects_dialog.html#ae509df981142105a89181c9d0eb0be56">EffectsDialog</a>
@@ -350,8 +354,13 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>getFlipY()
 : <a class="el" href="class_icon.html#aae6975d7b1cdfdb2781b567db86a34bc">Icon</a>
 </li>
+<li>getFolderID()
+: <a class="el" href="class_google_drive.html#ad033ee2f499c02da858b71a9d33df7fd">GoogleDrive</a>
+, <a class="el" href="class_one_drive.html#ad728fcbbbda953928df4d2ab9df4ea15">OneDrive</a>
+</li>
 <li>getIcon()
 : <a class="el" href="class_apk.html#ac2fddd006f70075d19602b3e6e0aea65">Apk</a>
+, <a class="el" href="class_cloud.html#a64aca4a54293aa8902a46d5964d11f4c">Cloud</a>
 , <a class="el" href="class_draw_area.html#a4656672ca0755e8e5d92cb0cbacbb31c">DrawArea</a>
 </li>
 <li>getPixmap()
@@ -360,8 +369,11 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>getString()
 : <a class="el" href="class_input_dialog.html#addb72bb58b069da317a13f53c5c5b382">InputDialog</a>
 </li>
+<li>getTitle()
+: <a class="el" href="class_cloud.html#adcb418b41f22258270189726da83413f">Cloud</a>
+</li>
 <li>getToken()
-: <a class="el" href="class_dropbox.html#a55131282437fde72aab906e1654f8419">Dropbox</a>
+: <a class="el" href="class_cloud.html#afc14627087c06961835ebb16d2c8ac41">Cloud</a>
 </li>
 <li>getZipSuccess()
 : <a class="el" href="class_apk.html#a7125e93e7a8a897638220fd3c6c0b26d">Apk</a>
@@ -430,7 +442,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="class_apk.html#a0d2abf22edfd7369472a19030af9cb60">Apk</a>
 </li>
 <li>login()
-: <a class="el" href="class_dropbox.html#a44f990df53a69d9d28e0a331aafbfb92">Dropbox</a>
+: <a class="el" href="class_cloud.html#adf7ceabda02e0309da1563798d231e20">Cloud</a>
 </li>
 </ul>
 
@@ -457,15 +469,27 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="class_apk.html#a94f1e2e978ba6c8d9ea13ef965e7a839">Apk</a>
 </li>
 <li>parseToken()
-: <a class="el" href="class_dropbox.html#a7c7c1b34d7a13fec3e93c13fa5f20790">Dropbox</a>
+: <a class="el" href="class_cloud.html#a0efb7c92a154078e6fbc9c8a33a55e5d">Cloud</a>
+</li>
+<li>paste()
+: <a class="el" href="class_input_dialog.html#ab84ca7269b92177a5c031821ec95c433">InputDialog</a>
+</li>
+<li>processReply()
+: <a class="el" href="class_cloud.html#a0ee105540ed6124c0cc8bcd862b075d7">Cloud</a>
+, <a class="el" href="class_dropbox.html#a1407dfc920a370344cab46e681319cf4">Dropbox</a>
+, <a class="el" href="class_google_drive.html#a424eb76809956efcd9603e6f920e68f9">GoogleDrive</a>
+, <a class="el" href="class_one_drive.html#af4e12b8b4e95f437ab45c672911e39b8">OneDrive</a>
 </li>
 <li>progress()
-: <a class="el" href="class_dropbox.html#a42c9fef043100fbfa178522c6f86bdc5">Dropbox</a>
+: <a class="el" href="class_cloud.html#aeb4c18faca7c9f6b225d57a0c735c517">Cloud</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
+<li>readFile()
+: <a class="el" href="class_cloud.html#a241c18e01b24f1eb8db5202e20c935d0">Cloud</a>
+</li>
 <li>readManifest()
 : <a class="el" href="class_apk.html#a56361d61014d6ac18fa038b24135f5cb">Apk</a>
 </li>
@@ -526,6 +550,9 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="class_effects_dialog.html#a6e98a93497fc4675125cc014a0541ded">EffectsDialog</a>
 , <a class="el" href="class_icon.html#af9d4f4785a71a80259a9624750a947ef">Icon</a>
 </li>
+<li>setClientID()
+: <a class="el" href="class_cloud.html#a778670ae00b613a6c7136699129b0e54">Cloud</a>
+</li>
 <li>setColor()
 : <a class="el" href="class_effects_dialog.html#ac01b156676a8ab494f5ce32f6b647139">EffectsDialog</a>
 , <a class="el" href="class_icon.html#a0b3f1f653841058e137d3456583b9232">Icon</a>
@@ -558,7 +585,8 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 , <a class="el" href="class_icon.html#a97da806f43a247c6457bb549b3b0ea1b">Icon</a>
 </li>
 <li>setIcon()
-: <a class="el" href="class_draw_area.html#aa2e5a4d6eb8b96820747a78d8ccd710d">DrawArea</a>
+: <a class="el" href="class_cloud.html#a86b64986177a1d451504100061e8c27c">Cloud</a>
+, <a class="el" href="class_draw_area.html#aa2e5a4d6eb8b96820747a78d8ccd710d">DrawArea</a>
 , <a class="el" href="class_progress_dialog.html#ad7bc716cbd96270aa1668683d2d479b1">ProgressDialog</a>
 </li>
 <li>setItemVisible()
@@ -582,17 +610,47 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>setRotation()
 : <a class="el" href="class_effects_dialog.html#a985836fc4e03ec18a3913a7495fa4490">EffectsDialog</a>
 </li>
+<li>setSecret()
+: <a class="el" href="class_cloud.html#afab3ac63ba378c45338a047092d67f22">Cloud</a>
+</li>
 <li>setText()
 : <a class="el" href="class_progress_dialog.html#a21d91aa0b0028c48d4976d7f00f125d6">ProgressDialog</a>
 </li>
+<li>setTitle()
+: <a class="el" href="class_cloud.html#a21d50b685573f7f63269bf3b20bc4b10">Cloud</a>
+</li>
 <li>setToken()
-: <a class="el" href="class_dropbox.html#a76afc9990c8141600c74975f1ec2be9f">Dropbox</a>
+: <a class="el" href="class_cloud.html#a752a8eae604facc81335b3d41f23d4ae">Cloud</a>
+</li>
+<li>setUrlAuth()
+: <a class="el" href="class_cloud.html#a1bb242c1b7b9eb999f79b94b443ee77b">Cloud</a>
+</li>
+<li>setUrlFiles()
+: <a class="el" href="class_cloud.html#a1aacb6781c1fea48702e306cbac8f5bb">Cloud</a>
+</li>
+<li>setUrlRedirect()
+: <a class="el" href="class_cloud.html#aec0a3fefb1f6d6b2a8aaf0e8606d9359">Cloud</a>
+</li>
+<li>setUrlStatus()
+: <a class="el" href="class_cloud.html#a75e1113d9892522fd21677c59723830e">Cloud</a>
+</li>
+<li>setUrlToken()
+: <a class="el" href="class_cloud.html#abda76a812da9d649b8fa20bc7423226b">Cloud</a>
+</li>
+<li>setUrlUpload()
+: <a class="el" href="class_cloud.html#a41e44e387bd1421af1d0db68f2219b98">Cloud</a>
 </li>
 <li>showEffectsDialog()
 : <a class="el" href="class_main_window.html#ac0a9ce347a0583d1c66892a24a3511df">MainWindow</a>
 </li>
 <li>sign()
 : <a class="el" href="class_apk.html#a5b915470e034801fc246be7566dc1542">Apk</a>
+</li>
+<li>startUpload()
+: <a class="el" href="class_cloud.html#a49a6ab49e17c506094f9e4692f8f59cb">Cloud</a>
+, <a class="el" href="class_dropbox.html#a42622e4bfed1b1b4dbceb17230d1afab">Dropbox</a>
+, <a class="el" href="class_google_drive.html#a15e6535a2ee9a6401aa77a024f5f257a">GoogleDrive</a>
+, <a class="el" href="class_one_drive.html#a194ca2d44b9f56812e3773c91877ddb8">OneDrive</a>
 </li>
 <li>success()
 : <a class="el" href="class_main_window.html#a672affe16bce13e5038cf5793818e6ad">MainWindow</a>
@@ -621,11 +679,8 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="class_apk.html#abd9cc2e9be70ee922ddc91d7a0184d88">Apk</a>
 </li>
 <li>upload()
-: <a class="el" href="class_dropbox.html#a94eaeb6ecb612dcc13a2d5dcb68616ac">Dropbox</a>
-</li>
-<li>uploaded()
-: <a class="el" href="class_dropbox.html#a9484e1126ff2c20bbdefe4d96b2196cc">Dropbox</a>
-, <a class="el" href="class_main_window.html#ac97b1db1cd09ee1a7f9ed868f492120d">MainWindow</a>
+: <a class="el" href="class_cloud.html#a56a4236ac8aee6b96d8897105f033968">Cloud</a>
+, <a class="el" href="class_main_window.html#a8ddc24261082725aed310d9b2752c564">MainWindow</a>
 </li>
 </ul>
 

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['cancel',['cancel',['../class_progress_dialog.html#acb8da6f43595b8d1e696d51d3aebe604',1,'ProgressDialog::cancel()'],['../class_dropbox.html#a0edb20014d3ca3186922662657daaf90',1,'Dropbox::cancel()']]],
-  ['cancelled',['cancelled',['../class_dropbox.html#a66c2d08024c76721e072f951f342103d',1,'Dropbox']]],
+  ['cancel',['cancel',['../class_cloud.html#af652b1976338e947c61f59badd50a130',1,'Cloud::cancel()'],['../class_progress_dialog.html#acb8da6f43595b8d1e696d51d3aebe604',1,'ProgressDialog::cancel()']]],
+  ['cancelled',['cancelled',['../class_cloud.html#acf76388bb0521feaf584cadd83047fd9',1,'Cloud']]],
   ['catchreply',['catchReply',['../class_updater.html#a96ccc8bc0c505151625632f527880db0',1,'Updater']]],
   ['check',['check',['../class_updater.html#a603683a04ff12fafc7e8f769fbf96fe0',1,'Updater']]],
   ['checkinput',['checkInput',['../class_input_dialog.html#a6ed69be0a522ae250999371b42abcb86',1,'InputDialog']]],
@@ -9,6 +9,8 @@ var searchData=
   ['clearrecent',['clearRecent',['../class_main_window.html#a3729edb97bc825489535bf0d3d1edf98',1,'MainWindow']]],
   ['cleartemp',['clearTemp',['../class_apk.html#a5b450f3e80e0603d1f421030fde1d02f',1,'Apk']]],
   ['clicked',['clicked',['../class_draw_area.html#adc07b2b2ba7a9b1fb2585daec9327083',1,'DrawArea']]],
+  ['clientid',['clientID',['../class_cloud.html#af2f5e2574e14af1eda4c2e5fdd4a2c82',1,'Cloud']]],
+  ['cloud',['Cloud',['../class_cloud.html',1,'']]],
   ['color',['color',['../class_icon.html#a3d2456bbe8dd3ff3b43b4637591b6ed5',1,'Icon']]],
   ['coloractivated',['colorActivated',['../class_effects_dialog.html#aeb482c464f0284047fe9cc704df85a37',1,'EffectsDialog']]],
   ['colordepth',['colorDepth',['../class_effects_dialog.html#ab7b429b3c0ab53da7960b2c236bb36aa',1,'EffectsDialog']]],
@@ -20,6 +22,7 @@ var searchData=
   ['confirmexit',['confirmExit',['../class_main_window.html#a56c5fe03f15bdaa34c990fc53bd6b976',1,'MainWindow']]],
   ['connectrepaintsignals',['connectRepaintSignals',['../class_main_window.html#ae88346efeab1e22c0113beaabf1e9ed7',1,'MainWindow']]],
   ['count',['count',['../class_profile.html#af34ae69391a1f834dba0520d31b0dfe9',1,'Profile']]],
+  ['createfolder',['createFolder',['../class_google_drive.html#ab66a11088cf92f1415c3bea8bfe4dc3d',1,'GoogleDrive::createFolder()'],['../class_one_drive.html#a67c93aaddd239e532868b2bfe253471d',1,'OneDrive::createFolder()']]],
   ['currentgroupindex',['currentGroupIndex',['../class_combo_list.html#a0c313891afef7be56533a32560a684aa',1,'ComboList']]],
   ['currentgrouptext',['currentGroupText',['../class_combo_list.html#aad5edfd9a0f86e4cf66ed65f89950848',1,'ComboList']]],
   ['currentitemdata',['currentItemData',['../class_combo_list.html#a7ca1e2e987fa2f823784c44fa55a64f7',1,'ComboList']]],

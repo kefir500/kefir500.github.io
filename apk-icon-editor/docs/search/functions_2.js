@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['cancel',['cancel',['../class_progress_dialog.html#acb8da6f43595b8d1e696d51d3aebe604',1,'ProgressDialog::cancel()'],['../class_dropbox.html#a0edb20014d3ca3186922662657daaf90',1,'Dropbox::cancel()']]],
-  ['cancelled',['cancelled',['../class_dropbox.html#a66c2d08024c76721e072f951f342103d',1,'Dropbox']]],
+  ['cancel',['cancel',['../class_cloud.html#af652b1976338e947c61f59badd50a130',1,'Cloud::cancel()'],['../class_progress_dialog.html#acb8da6f43595b8d1e696d51d3aebe604',1,'ProgressDialog::cancel()']]],
+  ['cancelled',['cancelled',['../class_cloud.html#acf76388bb0521feaf584cadd83047fd9',1,'Cloud']]],
   ['catchreply',['catchReply',['../class_updater.html#a96ccc8bc0c505151625632f527880db0',1,'Updater']]],
   ['check',['check',['../class_updater.html#a603683a04ff12fafc7e8f769fbf96fe0',1,'Updater']]],
   ['checkinput',['checkInput',['../class_input_dialog.html#a6ed69be0a522ae250999371b42abcb86',1,'InputDialog']]],
@@ -16,6 +16,7 @@ var searchData=
   ['confirmexit',['confirmExit',['../class_main_window.html#a56c5fe03f15bdaa34c990fc53bd6b976',1,'MainWindow']]],
   ['connectrepaintsignals',['connectRepaintSignals',['../class_main_window.html#ae88346efeab1e22c0113beaabf1e9ed7',1,'MainWindow']]],
   ['count',['count',['../class_profile.html#af34ae69391a1f834dba0520d31b0dfe9',1,'Profile']]],
+  ['createfolder',['createFolder',['../class_google_drive.html#ab66a11088cf92f1415c3bea8bfe4dc3d',1,'GoogleDrive::createFolder()'],['../class_one_drive.html#a67c93aaddd239e532868b2bfe253471d',1,'OneDrive::createFolder()']]],
   ['currentgroupindex',['currentGroupIndex',['../class_combo_list.html#a0c313891afef7be56533a32560a684aa',1,'ComboList']]],
   ['currentgrouptext',['currentGroupText',['../class_combo_list.html#aad5edfd9a0f86e4cf66ed65f89950848',1,'ComboList']]],
   ['currentitemdata',['currentItemData',['../class_combo_list.html#a7ca1e2e987fa2f823784c44fa55a64f7',1,'ComboList']]],

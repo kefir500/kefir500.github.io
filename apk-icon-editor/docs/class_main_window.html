@@ -224,14 +224,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a3729edb97bc825489535bf0d3d1edf98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b88ebaca8472d1370dc3f8935f53587"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a6b88ebaca8472d1370dc3f8935f53587">newVersion</a> (QString version)</td></tr>
 <tr class="separator:a6b88ebaca8472d1370dc3f8935f53587"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16d8242cfce67398e6d34ff2a7ac334b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a16d8242cfce67398e6d34ff2a7ac334b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a16d8242cfce67398e6d34ff2a7ac334b">authDropbox</a> ()</td></tr>
-<tr class="memdesc:a16d8242cfce67398e6d34ff2a7ac334b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show "Enter Dropbox code" message. <br/></td></tr>
-<tr class="separator:a16d8242cfce67398e6d34ff2a7ac334b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac97b1db1cd09ee1a7f9ed868f492120d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac97b1db1cd09ee1a7f9ed868f492120d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#ac97b1db1cd09ee1a7f9ed868f492120d">uploaded</a> (bool isSuccess=true)</td></tr>
-<tr class="memdesc:ac97b1db1cd09ee1a7f9ed868f492120d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show "Uploaded" message. <br/></td></tr>
-<tr class="separator:ac97b1db1cd09ee1a7f9ed868f492120d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a026d39b0e0cb3ee07329d49cf1a0c4fe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a026d39b0e0cb3ee07329d49cf1a0c4fe"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a026d39b0e0cb3ee07329d49cf1a0c4fe">authCloud</a> ()</td></tr>
+<tr class="memdesc:a026d39b0e0cb3ee07329d49cf1a0c4fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show "Enter \c cloud code" message. <br/></td></tr>
+<tr class="separator:a026d39b0e0cb3ee07329d49cf1a0c4fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a672affe16bce13e5038cf5793818e6ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a672affe16bce13e5038cf5793818e6ad">success</a> (QString title, QString text)</td></tr>
 <tr class="separator:a672affe16bce13e5038cf5793818e6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85267a88468451fbadd0b2fbabe10043"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a85267a88468451fbadd0b2fbabe10043">warning</a> (QString title, QString text)</td></tr>
@@ -277,6 +273,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a4b465d01af217dbebf699df62242dd72">initProfiles</a> ()</td></tr>
 <tr class="memdesc:a4b465d01af217dbebf699df62242dd72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize available profiles. <br/></td></tr>
 <tr class="separator:a4b465d01af217dbebf699df62242dd72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ddc24261082725aed310d9b2752c564"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ddc24261082725aed310d9b2752c564"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a8ddc24261082725aed310d9b2752c564">upload</a> (<a class="el" href="class_cloud.html">Cloud</a> *uploader, QString filename)</td></tr>
+<tr class="memdesc:a8ddc24261082725aed310d9b2752c564"><td class="mdescLeft">&#160;</td><td class="mdescRight">Upload file to cloud service. <br/></td></tr>
+<tr class="separator:a8ddc24261082725aed310d9b2752c564"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -292,6 +292,12 @@ QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><b>btnPack</b><
 <tr class="memitem:ae938e9971e5f5df489bf7df77df1b09b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae938e9971e5f5df489bf7df77df1b09b"></a>
 QCheckBox *&#160;</td><td class="memItemRight" valign="bottom"><b>checkDropbox</b></td></tr>
 <tr class="separator:ae938e9971e5f5df489bf7df77df1b09b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbd48cff8f01170f51f77b7a4419cd1e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adbd48cff8f01170f51f77b7a4419cd1e"></a>
+QCheckBox *&#160;</td><td class="memItemRight" valign="bottom"><b>checkGDrive</b></td></tr>
+<tr class="separator:adbd48cff8f01170f51f77b7a4419cd1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a7ca1f303f5c33bcec5716a6ae4cbe1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a7ca1f303f5c33bcec5716a6ae4cbe1"></a>
+QCheckBox *&#160;</td><td class="memItemRight" valign="bottom"><b>checkOneDrive</b></td></tr>
+<tr class="separator:a4a7ca1f303f5c33bcec5716a6ae4cbe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb2d259f190f69c17c7ed6ed3c507e6a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb2d259f190f69c17c7ed6ed3c507e6a"></a>
 <a class="el" href="class_effects_dialog.html">EffectsDialog</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>effects</b></td></tr>
 <tr class="separator:adb2d259f190f69c17c7ed6ed3c507e6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -436,6 +442,12 @@ QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>actAbout</b></td
 <tr class="memitem:a8ca0e898ae8f48495b9d9ccf98f1f865"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ca0e898ae8f48495b9d9ccf98f1f865"></a>
 <a class="el" href="class_dropbox.html">Dropbox</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>dropbox</b></td></tr>
 <tr class="separator:a8ca0e898ae8f48495b9d9ccf98f1f865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14b2cd0e9365a560ab7a3fcf6573cb6f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14b2cd0e9365a560ab7a3fcf6573cb6f"></a>
+<a class="el" href="class_google_drive.html">GoogleDrive</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>gdrive</b></td></tr>
+<tr class="separator:a14b2cd0e9365a560ab7a3fcf6573cb6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd0e68eb4c13d48da9e8a1ab09947868"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd0e68eb4c13d48da9e8a1ab09947868"></a>
+<a class="el" href="class_one_drive.html">OneDrive</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>onedrive</b></td></tr>
+<tr class="separator:acd0e68eb4c13d48da9e8a1ab09947868"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab54d9707eaa625506a1d188d633dc4d9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab54d9707eaa625506a1d188d633dc4d9"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>currentLang</b></td></tr>
 <tr class="separator:ab54d9707eaa625506a1d188d633dc4d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
