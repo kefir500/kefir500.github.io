@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('dialogs_8h_source.html','');});
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QDialogButtonBox&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QPushButton&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifdef QT5_2_0</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#if WINEXTRAS</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">    #include &lt;QtWinExtras/QtWinExtras&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor"></span></div>
@@ -156,8 +156,8 @@ $(document).ready(function(){initNavTree('dialogs_8h_source.html','');});
 <div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_progress_dialog.html#ab1fdf86b4c0c2189077d80667742c94f">   60</a></span>&#160;    QLabel *<a class="code" href="class_progress_dialog.html#ab1fdf86b4c0c2189077d80667742c94f">icon</a>;                   </div>
 <div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_progress_dialog.html#ac77fd60f589962c95ff50b3f2e623de9">   61</a></span>&#160;    QProgressBar *<a class="code" href="class_progress_dialog.html#ac77fd60f589962c95ff50b3f2e623de9">progress</a>;         </div>
 <div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_progress_dialog.html#ac2213580857859cfb97f7f7370f28a9c">   62</a></span>&#160;    QDialogButtonBox *<a class="code" href="class_progress_dialog.html#ac2213580857859cfb97f7f7370f28a9c">buttons</a>;      </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#ifdef QT5_2_0</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_progress_dialog.html#a9e17241042a462c122f5710434167bcf">   64</a></span>&#160;<span class="preprocessor"></span>    QWinTaskbarButton *<a class="code" href="class_progress_dialog.html#a9e17241042a462c122f5710434167bcf">taskbar</a>;     </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#if WINEXTRAS</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor"></span>    QWinTaskbarButton *taskbar;     </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">public</span>:</div>
@@ -181,7 +181,6 @@ $(document).ready(function(){initNavTree('dialogs_8h_source.html','');});
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#endif // DIALOGS_H</span></div>
 <div class="ttc" id="class_progress_dialog_html_a875156e38c35a3b9824b1e7e9dc5480b"><div class="ttname"><a href="class_progress_dialog.html#a875156e38c35a3b9824b1e7e9dc5480b">ProgressDialog::setAllowCancel</a></div><div class="ttdeci">void setAllowCancel(bool allow)</div><div class="ttdoc">If #allow is FALSE, forbid cancelling dialog by user. </div><div class="ttdef"><b>Definition:</b> dialogs.cpp:125</div></div>
-<div class="ttc" id="class_progress_dialog_html_a9e17241042a462c122f5710434167bcf"><div class="ttname"><a href="class_progress_dialog.html#a9e17241042a462c122f5710434167bcf">ProgressDialog::taskbar</a></div><div class="ttdeci">QWinTaskbarButton * taskbar</div><div class="ttdoc">Represents taskbar button. </div><div class="ttdef"><b>Definition:</b> dialogs.h:64</div></div>
 <div class="ttc" id="class_progress_dialog_html_ad7bc716cbd96270aa1668683d2d479b1"><div class="ttname"><a href="class_progress_dialog.html#ad7bc716cbd96270aa1668683d2d479b1">ProgressDialog::setIcon</a></div><div class="ttdeci">void setIcon(QPixmap pixmap)</div><div class="ttdoc">Set current progress pixmap. </div><div class="ttdef"><b>Definition:</b> dialogs.cpp:119</div></div>
 <div class="ttc" id="class_progress_dialog_html_ac77fd60f589962c95ff50b3f2e623de9"><div class="ttname"><a href="class_progress_dialog.html#ac77fd60f589962c95ff50b3f2e623de9">ProgressDialog::progress</a></div><div class="ttdeci">QProgressBar * progress</div><div class="ttdoc">Dialog progress bar. </div><div class="ttdef"><b>Definition:</b> dialogs.h:61</div></div>
 <div class="ttc" id="class_progress_dialog_html"><div class="ttname"><a href="class_progress_dialog.html">ProgressDialog</a></div><div class="ttdef"><b>Definition:</b> dialogs.h:54</div></div>

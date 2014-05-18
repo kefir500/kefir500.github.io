@@ -141,6 +141,9 @@ Signals</h2></td></tr>
 <tr class="memitem:a55e5c4ace9899c7f862fd8eb2db97263"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apk.html#a55e5c4ace9899c7f862fd8eb2db97263">error</a> (QString title, QString text) const </td></tr>
 <tr class="memdesc:a55e5c4ace9899c7f862fd8eb2db97263"><td class="mdescLeft">&#160;</td><td class="mdescRight">This signal is emitted to send error message.  <a href="#a55e5c4ace9899c7f862fd8eb2db97263">More...</a><br/></td></tr>
 <tr class="separator:a55e5c4ace9899c7f862fd8eb2db97263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af31988478bea79b414381e4973455e1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apk.html#af31988478bea79b414381e4973455e1e">warning</a> (QString title, QString text) const </td></tr>
+<tr class="memdesc:af31988478bea79b414381e4973455e1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This signal is emitted to send warning message.  <a href="#af31988478bea79b414381e4973455e1e">More...</a><br/></td></tr>
+<tr class="separator:af31988478bea79b414381e4973455e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9833eec35bfe5797055f0614ab13233"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apk.html#aa9833eec35bfe5797055f0614ab13233">unpacked</a> (QString <a class="el" href="class_apk.html#aff2035c89f2bb2f674f3044d142c54e5">filename</a>) const </td></tr>
 <tr class="memdesc:aa9833eec35bfe5797055f0614ab13233"><td class="mdescLeft">&#160;</td><td class="mdescRight">This signal is emitted when APK is successfully unpacked.  <a href="#aa9833eec35bfe5797055f0614ab13233">More...</a><br/></td></tr>
 <tr class="separator:aa9833eec35bfe5797055f0614ab13233"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -224,6 +227,10 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apk.html#ac1fbcda6ddc64e7e49185a8e13fd0d40">manifest</a></td></tr>
 <tr class="memdesc:ac1fbcda6ddc64e7e49185a8e13fd0d40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores AndroidManifest.xml. <br/></td></tr>
 <tr class="separator:ac1fbcda6ddc64e7e49185a8e13fd0d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac32fd7a330beee6807f4d77018b0205b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac32fd7a330beee6807f4d77018b0205b"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apk.html#ac32fd7a330beee6807f4d77018b0205b">warnText</a></td></tr>
+<tr class="memdesc:ac32fd7a330beee6807f4d77018b0205b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores warning text. <br/></td></tr>
+<tr class="separator:ac32fd7a330beee6807f4d77018b0205b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b4984003023acb53d0b906f684f31bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b4984003023acb53d0b906f684f31bf"></a>
 QList&lt; QSharedPointer&lt; <a class="el" href="class_icon.html">Icon</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apk.html#a6b4984003023acb53d0b906f684f31bf">icons</a></td></tr>
 <tr class="memdesc:a6b4984003023acb53d0b906f684f31bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores [shared pointers to] loaded APK icons. <br/></td></tr>
@@ -676,6 +683,49 @@ static const QString&#160;</td><td class="memItemRight" valign="bottom"><a class
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Filename (with full path) of just unpacked APK. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af31988478bea79b414381e4973455e1e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Apk::warning </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>title</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This signal is emitted to send warning message. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">title</td><td>Message brief title. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">text</td><td>Message detailed text. </td></tr>
   </table>
   </dd>
 </dl>

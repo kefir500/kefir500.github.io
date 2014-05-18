@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['taskbar',['taskbar',['../class_progress_dialog.html#a9e17241042a462c122f5710434167bcf',1,'ProgressDialog']]],
   ['tempdir_5fapk',['TEMPDIR_APK',['../class_apk.html#a6b00efaef66d774c5f8354c017a5fad9',1,'Apk']]],
   ['thumb',['thumb',['../class_profile.html#a633d4c64f95e9f26440277b1012e9263',1,'Profile']]],
   ['timer',['timer',['../class_cloud.html#a54664ff5301dcb23c44fe971da3c49e8',1,'Cloud']]],

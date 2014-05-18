@@ -6,6 +6,7 @@ var searchData=
   ['addgroup',['addGroup',['../class_combo_list.html#a9da6333a7918b1c2efeac6b66a648efc',1,'ComboList::addGroup(QString name)'],['../class_combo_list.html#a9b4da739b3a9c1d9b1aa24a31a2053c4',1,'ComboList::addGroup(QString name, QIcon icon)']]],
   ['additem',['addItem',['../class_combo_list.html#aa2945b111bf31d3fcc83f90e12004dc9',1,'ComboList']]],
   ['addtorecent',['addToRecent',['../class_main_window.html#ad224a802bcf8135282395ed4a484f154',1,'MainWindow']]],
+  ['apkexplore',['apkExplore',['../class_main_window.html#a02c0d1a181b834f3c7efe51e0264bd6f',1,'MainWindow']]],
   ['apkload',['apkLoad',['../class_main_window.html#a4ce2b283be3eac01c203967201781f5d',1,'MainWindow']]],
   ['apkpacked',['apkPacked',['../class_main_window.html#a74dde2698941871692a76f9a81f36f99',1,'MainWindow']]],
   ['apksave',['apkSave',['../class_main_window.html#a29e86e3ab640b1264689760a6fcb5c53',1,'MainWindow']]],

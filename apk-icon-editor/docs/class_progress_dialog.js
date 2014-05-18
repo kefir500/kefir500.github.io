@@ -10,6 +10,5 @@ var class_progress_dialog =
     [ "buttons", "class_progress_dialog.html#ac2213580857859cfb97f7f7370f28a9c", null ],
     [ "icon", "class_progress_dialog.html#ab1fdf86b4c0c2189077d80667742c94f", null ],
     [ "label", "class_progress_dialog.html#a451baba665f3a1d3dce4fe8cfd57d7b4", null ],
-    [ "progress", "class_progress_dialog.html#ac77fd60f589962c95ff50b3f2e623de9", null ],
-    [ "taskbar", "class_progress_dialog.html#a9e17241042a462c122f5710434167bcf", null ]
+    [ "progress", "class_progress_dialog.html#ac77fd60f589962c95ff50b3f2e623de9", null ]
 ];

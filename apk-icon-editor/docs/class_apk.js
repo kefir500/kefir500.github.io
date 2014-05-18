@@ -21,8 +21,10 @@ var class_apk =
     [ "unpack", "class_apk.html#a037e063c5bdade3422995cc59ffdb37f", null ],
     [ "unpacked", "class_apk.html#aa9833eec35bfe5797055f0614ab13233", null ],
     [ "unzip", "class_apk.html#abd9cc2e9be70ee922ddc91d7a0184d88", null ],
+    [ "warning", "class_apk.html#af31988478bea79b414381e4973455e1e", null ],
     [ "zip", "class_apk.html#a3013a6bee6193d1c4358540b85aac0b6", null ],
     [ "filename", "class_apk.html#aff2035c89f2bb2f674f3044d142c54e5", null ],
     [ "icons", "class_apk.html#a6b4984003023acb53d0b906f684f31bf", null ],
-    [ "manifest", "class_apk.html#ac1fbcda6ddc64e7e49185a8e13fd0d40", null ]
+    [ "manifest", "class_apk.html#ac1fbcda6ddc64e7e49185a8e13fd0d40", null ],
+    [ "warnText", "class_apk.html#ac32fd7a330beee6807f4d77018b0205b", null ]
 ];

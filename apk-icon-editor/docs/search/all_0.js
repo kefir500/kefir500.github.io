@@ -9,6 +9,7 @@ var searchData=
   ['angle',['angle',['../class_icon.html#a3347e221fecb40c3084b678edd77a801',1,'Icon']]],
   ['apk',['Apk',['../class_apk.html',1,'']]],
   ['apk_2eh',['apk.h',['../apk_8h.html',1,'']]],
+  ['apkexplore',['apkExplore',['../class_main_window.html#a02c0d1a181b834f3c7efe51e0264bd6f',1,'MainWindow']]],
   ['apkload',['apkLoad',['../class_main_window.html#a4ce2b283be3eac01c203967201781f5d',1,'MainWindow']]],
   ['apkpacked',['apkPacked',['../class_main_window.html#a74dde2698941871692a76f9a81f36f99',1,'MainWindow']]],
   ['apksave',['apkSave',['../class_main_window.html#a29e86e3ab640b1264689760a6fcb5c53',1,'MainWindow']]],

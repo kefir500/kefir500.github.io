@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['icon',['Icon',['../class_icon.html',1,'Icon'],['../class_cloud.html#a3c7fcf999f17b36cbb022a0fb3203496',1,'Cloud::icon()'],['../class_input_dialog.html#ada48d5a4904555057c6dd6e07c88a8a2',1,'InputDialog::icon()'],['../class_progress_dialog.html#ab1fdf86b4c0c2189077d80667742c94f',1,'ProgressDialog::icon()'],['../class_draw_area.html#a1c9b7ec7caf196848ec76718f6a86b30',1,'DrawArea::icon()'],['../class_icon.html#a2c06009b9034912dea464e9f3c3791f9',1,'Icon::Icon()'],['../class_icon.html#a5b72046eee2e0a4620b60380322a21e8',1,'Icon::Icon(QString filename)']]],
+  ['icon',['Icon',['../class_icon.html',1,'Icon'],['../class_icon.html#a2c06009b9034912dea464e9f3c3791f9',1,'Icon::Icon()'],['../class_icon.html#a5b72046eee2e0a4620b60380322a21e8',1,'Icon::Icon(QString filename)'],['../class_cloud.html#a3c7fcf999f17b36cbb022a0fb3203496',1,'Cloud::icon()'],['../class_input_dialog.html#ada48d5a4904555057c6dd6e07c88a8a2',1,'InputDialog::icon()'],['../class_progress_dialog.html#ab1fdf86b4c0c2189077d80667742c94f',1,'ProgressDialog::icon()'],['../class_draw_area.html#a1c9b7ec7caf196848ec76718f6a86b30',1,'DrawArea::icon()']]],
   ['icon_2eh',['icon.h',['../icon_8h.html',1,'']]],
   ['iconopen',['iconOpen',['../class_main_window.html#a41136e954b8db8f92063905fb17e5eb6',1,'MainWindow']]],
   ['iconresize',['iconResize',['../class_main_window.html#a1415338e9247eb3c78975cfa0f363f69',1,'MainWindow']]],
