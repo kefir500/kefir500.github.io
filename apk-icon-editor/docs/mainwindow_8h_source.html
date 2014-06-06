@@ -113,224 +113,232 @@ $(document).ready(function(){initNavTree('mainwindow_8h_source.html','');});
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MAINWINDOW_H</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QMainWindow&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QPushButton&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QCheckBox&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;QProgressDialog&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;QSignalMapper&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QActionGroup&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QTranslator&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;QSettings&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;QCloseEvent&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="apk_8h.html">apk.h</a>&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="combolist_8h.html">combolist.h</a>&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="drawarea_8h.html">drawarea.h</a>&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="effects_8h.html">effects.h</a>&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="dialogs_8h.html">dialogs.h</a>&quot;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="updater_8h.html">updater.h</a>&quot;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;cloud.h&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_main_window.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_main_window.html">MainWindow</a> : <span class="keyword">public</span> QMainWindow {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_draw_area.html">DrawArea</a> *drawArea;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_combo_list.html">ComboList</a> *devices;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    QPushButton *btnPack;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    QCheckBox *checkDropbox;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    QCheckBox *checkGDrive;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    QCheckBox *checkOneDrive;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_effects_dialog.html">EffectsDialog</a> *effects;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="class_progress_dialog.html">ProgressDialog</a> *loadingDialog;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="class_progress_dialog.html">ProgressDialog</a> *uploadDialog;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    QSignalMapper *mapLang;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    QSignalMapper *mapRecent;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    QTranslator *translator;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    QTranslator *translatorQt;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    QSettings *settings;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// Menus:</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    QMenu *menuFile;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    QMenu *menuIcon;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    QMenu *menuSett;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    QMenu *menuHelp;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QSplitter&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QTableWidget&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;QCheckBox&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;QPushButton&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QProgressDialog&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QSignalMapper&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;QActionGroup&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;QTranslator&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;QSettings&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;QCloseEvent&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="apk_8h.html">apk.h</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="combolist_8h.html">combolist.h</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="drawarea_8h.html">drawarea.h</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="effects_8h.html">effects.h</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="dialogs_8h.html">dialogs.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="updater_8h.html">updater.h</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;cloud.h&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_main_window.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_main_window.html">MainWindow</a> : <span class="keyword">public</span> QMainWindow {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    QSplitter *splitter;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_draw_area.html">DrawArea</a> *drawArea;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    QTabWidget *tabs;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="class_combo_list.html">ComboList</a> *devices;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    QTableWidget *tabProps;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    QListWidget *images;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    QCheckBox *checkDropbox;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    QCheckBox *checkGDrive;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    QCheckBox *checkOneDrive;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    QPushButton *btnPack;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="class_effects_dialog.html">EffectsDialog</a> *effects;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="class_progress_dialog.html">ProgressDialog</a> *loadingDialog;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_progress_dialog.html">ProgressDialog</a> *uploadDialog;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    QSignalMapper *mapLang;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    QSignalMapper *mapRecent;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    QTranslator *translator;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    QTranslator *translatorQt;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    QSettings *settings;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// Sub-menus, sub-actions:</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    QMenu *menuRecent;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    QMenu *menuLang;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    QMenu *menuPack;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    QMenu *menuRatio;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    QActionGroup *groupRatio;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    QAction *actRatio0;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    QAction *actRatio1;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    QAction *actRatio3;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    QAction *actRatio5;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    QAction *actRatio7;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    QAction *actRatio9;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    QAction *actPackSign;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    QAction *actPackOptimize;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// Actions:</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    QAction *actApkOpen;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    QAction *actApkExplore;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    QAction *actApkSave;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    QAction *actExit;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    QAction *actRecentClear;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    QAction *actNoRecent;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    QAction *actIconOpen;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    QAction *actIconSave;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    QAction *actIconScale;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    QAction *actIconResize;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    QAction *actIconRevert;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    QAction *actIconBack;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    QAction *actIconEffect;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    QAction *actAssoc;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    QAction *actReset;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    QAction *actAutoUpdate;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    QAction *actWebsite;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    QAction *actReport;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    QAction *actUpdate;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    QAction *actAboutQt;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    QAction *actAbout;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="class_apk.html">Apk</a> *apk;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="class_updater.html">Updater</a> *updater;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="class_dropbox.html">Dropbox</a> *dropbox;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="class_google_drive.html">GoogleDrive</a> *gdrive;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="class_one_drive.html">OneDrive</a> *onedrive;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    QString currentApk;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    QString currentLang;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    QString currentPath;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    QStringList recent;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a76d46858f93ead5f5303ec3a1c4b5428">setActiveApk</a>(QString filename);    </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#ad224a802bcf8135282395ed4a484f154">addToRecent</a>(QString filename);     </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a1bcbd172eb69785821cd46ebc1b4fee0">refreshRecent</a>();                   </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a3955ca5db289680247c46f97bd51f634">restoreSettings</a>();                 </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_window.html#a56c5fe03f15bdaa34c990fc53bd6b976">confirmExit</a>();                     </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a7a29e46bdac63885cbab125c89e1206e">invalidDpi</a>();                      </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#ae88346efeab1e22c0113beaabf1e9ed7">connectRepaintSignals</a>();           </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a59f29f4d5c7709ca6ea78215f4395d11">initLanguages</a>();                   </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a4b465d01af217dbebf699df62242dd72">initProfiles</a>();                    </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a8ddc24261082725aed310d9b2752c564">upload</a>(<a class="code" href="class_cloud.html">Cloud</a> *uploader, QString filename);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// Menus:</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    QMenu *menuFile;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    QMenu *menuIcon;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    QMenu *menuSett;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    QMenu *menuHelp;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// Sub-menus, sub-actions:</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    QMenu *menuRecent;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    QMenu *menuLang;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    QMenu *menuPack;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    QMenu *menuRatio;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    QActionGroup *groupRatio;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    QAction *actRatio0;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    QAction *actRatio1;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    QAction *actRatio3;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    QAction *actRatio5;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    QAction *actRatio7;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    QAction *actRatio9;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    QAction *actPackSign;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    QAction *actPackOptimize;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// Actions:</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    QAction *actApkOpen;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    QAction *actApkExplore;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    QAction *actApkSave;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    QAction *actExit;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    QAction *actRecentClear;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    QAction *actNoRecent;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    QAction *actIconOpen;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    QAction *actIconSave;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    QAction *actIconScale;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    QAction *actIconResize;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    QAction *actIconRevert;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    QAction *actIconBack;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    QAction *actIconEffect;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    QAction *actAssoc;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    QAction *actReset;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    QAction *actAutoUpdate;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    QAction *actWebsite;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    QAction *actReport;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    QAction *actUpdate;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    QAction *actAboutQt;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    QAction *actAbout;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="class_apk.html">Apk</a> *apk;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="class_updater.html">Updater</a> *updater;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="class_dropbox.html">Dropbox</a> *dropbox;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="class_google_drive.html">GoogleDrive</a> *gdrive;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="class_one_drive.html">OneDrive</a> *onedrive;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    QString currentApk;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    QString currentLang;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    QString currentPath;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    QStringList recent;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a76d46858f93ead5f5303ec3a1c4b5428">setActiveApk</a>(QString filename);    </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#ad224a802bcf8135282395ed4a484f154">addToRecent</a>(QString filename);     </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a1bcbd172eb69785821cd46ebc1b4fee0">refreshRecent</a>();                   </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a3955ca5db289680247c46f97bd51f634">restoreSettings</a>();                 </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_window.html#a56c5fe03f15bdaa34c990fc53bd6b976">confirmExit</a>();                     </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a7a29e46bdac63885cbab125c89e1206e">invalidDpi</a>();                      </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#ae88346efeab1e22c0113beaabf1e9ed7">connectRepaintSignals</a>();           </div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> dragEnterEvent(QDragEnterEvent *event);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> dragMoveEvent(QDragMoveEvent *event);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">void</span> dragLeaveEvent(QDragLeaveEvent *event);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">void</span> dropEvent(QDropEvent *event);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">void</span> closeEvent(QCloseEvent *event);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a4ce2b283be3eac01c203967201781f5d">apkLoad</a>(QString filename = NULL);  </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a29e86e3ab640b1264689760a6fcb5c53">apkSave</a>();                         </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a02c0d1a181b834f3c7efe51e0264bd6f">apkExplore</a>();                      </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a74dde2698941871692a76f9a81f36f99">apkPacked</a>(QString filename, <span class="keywordtype">bool</span> isSuccess = <span class="keyword">true</span>, QString text = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a59f29f4d5c7709ca6ea78215f4395d11">initLanguages</a>();                   </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a4b465d01af217dbebf699df62242dd72">initProfiles</a>();                    </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a8ddc24261082725aed310d9b2752c564">upload</a>(<a class="code" href="class_cloud.html">Cloud</a> *uploader, QString filename);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">void</span> dragEnterEvent(QDragEnterEvent *event);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">void</span> dragMoveEvent(QDragMoveEvent *event);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">void</span> dragLeaveEvent(QDragLeaveEvent *event);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">void</span> dropEvent(QDropEvent *event);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">void</span> closeEvent(QCloseEvent *event);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a4ce2b283be3eac01c203967201781f5d">apkLoad</a>(QString filename = NULL);  </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a29e86e3ab640b1264689760a6fcb5c53">apkSave</a>();                         </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a02c0d1a181b834f3c7efe51e0264bd6f">apkExplore</a>();                      </div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a26d61e09aceb75b5dbac10ab20ccc7e4">apkUnpacked</a>(QString filename);             </div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#aa3eb66550eca41e390d3b9e0b3b4a4d6">resetSettings</a>();                           </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_window.html#a41136e954b8db8f92063905fb17e5eb6">iconOpen</a>(QString filename = NULL);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a74dde2698941871692a76f9a81f36f99">apkPacked</a>(QString filename, <span class="keywordtype">bool</span> isSuccess = <span class="keyword">true</span>, QString text = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a26d61e09aceb75b5dbac10ab20ccc7e4">apkUnpacked</a>(QString filename);             </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#aa3eb66550eca41e390d3b9e0b3b4a4d6">resetSettings</a>();                           </div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_window.html#a31681492ac6b2a51ded7f5ba47f7f173">iconSave</a>(QString filename = NULL);</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a2a5ed53b56c5981452e99d7749c973c0">iconScale</a>();</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_window.html#a1415338e9247eb3c78975cfa0f363f69">iconResize</a>(<span class="keywordtype">int</span> side = 0);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_window.html#a33396c344fecb74135ca5bc0c8328488">iconRevert</a>();</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#ad7543899d37d0a9a5615701209ba020c">associate</a>() <span class="keyword">const</span>;         </div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a51ed1d1d215eb6bf0e3468bd1e71577f">browseSite</a>() <span class="keyword">const</span>;        </div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#ac98d540edaf2849cd711f91867d64e03">browseBugs</a>() <span class="keyword">const</span>;        </div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a7be6a5d98970ac1a6296c6f9aee1e9bb">about</a>();                   </div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#aa5c014f59730bd5240d194f2683f84d1">aboutQt</a>() <span class="keyword">const</span>;           </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_window.html#a41136e954b8db8f92063905fb17e5eb6">iconOpen</a>(QString filename = NULL);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_window.html#a31681492ac6b2a51ded7f5ba47f7f173">iconSave</a>(QString filename = NULL);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a2a5ed53b56c5981452e99d7749c973c0">iconScale</a>();</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_window.html#a1415338e9247eb3c78975cfa0f363f69">iconResize</a>(<span class="keywordtype">int</span> side = 0);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_window.html#a33396c344fecb74135ca5bc0c8328488">iconRevert</a>();</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="comment">//------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#aeb0c14a45d89db212d3c8298665b0999">setLanguage</a>(QString lang); </div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a5e43db7353e2a0e4bc0b65c6a02c9d34">setCurrentIcon</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);    </div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#ac924ca9651b4ee354ae2de12bf1b40cc">setPreviewColor</a>();         </div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#ac0a9ce347a0583d1c66892a24a3511df">showEffectsDialog</a>();       </div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#aa52b8a4d7cd3234ca61128efd9e3bef9">hideEmptyDpi</a>();            </div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a3729edb97bc825489535bf0d3d1edf98">clearRecent</a>();             </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#ad7543899d37d0a9a5615701209ba020c">associate</a>() <span class="keyword">const</span>;         </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a51ed1d1d215eb6bf0e3468bd1e71577f">browseSite</a>() <span class="keyword">const</span>;        </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#ac98d540edaf2849cd711f91867d64e03">browseBugs</a>() <span class="keyword">const</span>;        </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a7be6a5d98970ac1a6296c6f9aee1e9bb">about</a>();                   </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a54a437abf214955c885778922777200d">aboutAuthors</a>();            </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#aa5c014f59730bd5240d194f2683f84d1">aboutQt</a>() <span class="keyword">const</span>;           </div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_window.html#a6b88ebaca8472d1370dc3f8935f53587">newVersion</a>(QString version);</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a026d39b0e0cb3ee07329d49cf1a0c4fe">authCloud</a>();</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#aeb0c14a45d89db212d3c8298665b0999">setLanguage</a>(QString lang); </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a5e43db7353e2a0e4bc0b65c6a02c9d34">setCurrentIcon</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);    </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#ac924ca9651b4ee354ae2de12bf1b40cc">setPreviewColor</a>();         </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#ac0a9ce347a0583d1c66892a24a3511df">showEffectsDialog</a>();       </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#aa52b8a4d7cd3234ca61128efd9e3bef9">hideEmptyDpi</a>();            </div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a3729edb97bc825489535bf0d3d1edf98">clearRecent</a>();             </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="comment">//------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a672affe16bce13e5038cf5793818e6ad">success</a>(QString title, QString text);</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a85267a88468451fbadd0b2fbabe10043">warning</a>(QString title, QString text);</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a611d33e479dd4e14727665e87b955452">error</a>(QString title, QString text);</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <a class="code" href="class_main_window.html">MainWindow</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[], QWidget *parent = 0);</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    ~<a class="code" href="class_main_window.html">MainWindow</a>();</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;};</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="preprocessor">#endif // MAINWINDOW_H</span></div>
-<div class="ttc" id="class_main_window_html_a8ddc24261082725aed310d9b2752c564"><div class="ttname"><a href="class_main_window.html#a8ddc24261082725aed310d9b2752c564">MainWindow::upload</a></div><div class="ttdeci">void upload(Cloud *uploader, QString filename)</div><div class="ttdoc">Upload file to cloud service. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:566</div></div>
-<div class="ttc" id="class_main_window_html_a1bcbd172eb69785821cd46ebc1b4fee0"><div class="ttname"><a href="class_main_window.html#a1bcbd172eb69785821cd46ebc1b4fee0">MainWindow::refreshRecent</a></div><div class="ttdeci">void refreshRecent()</div><div class="ttdoc">Refresh recent list. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:481</div></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_window.html#a6b88ebaca8472d1370dc3f8935f53587">newVersion</a>(QString version);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a026d39b0e0cb3ee07329d49cf1a0c4fe">authCloud</a>();</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a672affe16bce13e5038cf5793818e6ad">success</a>(QString title, QString text);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a85267a88468451fbadd0b2fbabe10043">warning</a>(QString title, QString text);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a611d33e479dd4e14727665e87b955452">error</a>(QString title, QString text);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <a class="code" href="class_main_window.html">MainWindow</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[], QWidget *parent = 0);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    ~<a class="code" href="class_main_window.html">MainWindow</a>();</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;};</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="preprocessor">#endif // MAINWINDOW_H</span></div>
+<div class="ttc" id="class_main_window_html_a8ddc24261082725aed310d9b2752c564"><div class="ttname"><a href="class_main_window.html#a8ddc24261082725aed310d9b2752c564">MainWindow::upload</a></div><div class="ttdeci">void upload(Cloud *uploader, QString filename)</div><div class="ttdoc">Upload file to cloud service. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:598</div></div>
+<div class="ttc" id="class_main_window_html_a1bcbd172eb69785821cd46ebc1b4fee0"><div class="ttname"><a href="class_main_window.html#a1bcbd172eb69785821cd46ebc1b4fee0">MainWindow::refreshRecent</a></div><div class="ttdeci">void refreshRecent()</div><div class="ttdoc">Refresh recent list. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:513</div></div>
 <div class="ttc" id="effects_8h_html"><div class="ttname"><a href="effects_8h.html">effects.h</a></div><div class="ttdoc">This file contains EffectsDialog declaration. </div></div>
-<div class="ttc" id="class_main_window_html_a76d46858f93ead5f5303ec3a1c4b5428"><div class="ttname"><a href="class_main_window.html#a76d46858f93ead5f5303ec3a1c4b5428">MainWindow::setActiveApk</a></div><div class="ttdeci">void setActiveApk(QString filename)</div><div class="ttdoc">Mark filename as currently active. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:558</div></div>
+<div class="ttc" id="class_main_window_html_a76d46858f93ead5f5303ec3a1c4b5428"><div class="ttname"><a href="class_main_window.html#a76d46858f93ead5f5303ec3a1c4b5428">MainWindow::setActiveApk</a></div><div class="ttdeci">void setActiveApk(QString filename)</div><div class="ttdoc">Mark filename as currently active. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:590</div></div>
 <div class="ttc" id="class_progress_dialog_html"><div class="ttname"><a href="class_progress_dialog.html">ProgressDialog</a></div><div class="ttdef"><b>Definition:</b> dialogs.h:54</div></div>
-<div class="ttc" id="class_main_window_html_a29e86e3ab640b1264689760a6fcb5c53"><div class="ttname"><a href="class_main_window.html#a29e86e3ab640b1264689760a6fcb5c53">MainWindow::apkSave</a></div><div class="ttdeci">void apkSave()</div><div class="ttdoc">Save APK (calls &quot;Save&quot; dialog). </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:810</div></div>
+<div class="ttc" id="class_main_window_html_a29e86e3ab640b1264689760a6fcb5c53"><div class="ttname"><a href="class_main_window.html#a29e86e3ab640b1264689760a6fcb5c53">MainWindow::apkSave</a></div><div class="ttdeci">void apkSave()</div><div class="ttdoc">Save APK (calls &quot;Save&quot; dialog). </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:864</div></div>
 <div class="ttc" id="dialogs_8h_html"><div class="ttname"><a href="dialogs_8h.html">dialogs.h</a></div><div class="ttdoc">This file describes additional dialogs - InputDialog and ProgressDialog. </div></div>
-<div class="ttc" id="class_main_window_html_a026d39b0e0cb3ee07329d49cf1a0c4fe"><div class="ttname"><a href="class_main_window.html#a026d39b0e0cb3ee07329d49cf1a0c4fe">MainWindow::authCloud</a></div><div class="ttdeci">void authCloud()</div><div class="ttdoc">Show &quot;Enter \c cloud code&quot; message. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:915</div></div>
+<div class="ttc" id="class_main_window_html_a026d39b0e0cb3ee07329d49cf1a0c4fe"><div class="ttname"><a href="class_main_window.html#a026d39b0e0cb3ee07329d49cf1a0c4fe">MainWindow::authCloud</a></div><div class="ttdeci">void authCloud()</div><div class="ttdoc">Show &quot;Enter \c cloud code&quot; message. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:997</div></div>
 <div class="ttc" id="class_dropbox_html"><div class="ttname"><a href="class_dropbox.html">Dropbox</a></div><div class="ttdef"><b>Definition:</b> cloud.h:100</div></div>
-<div class="ttc" id="class_main_window_html_ac98d540edaf2849cd711f91867d64e03"><div class="ttname"><a href="class_main_window.html#ac98d540edaf2849cd711f91867d64e03">MainWindow::browseBugs</a></div><div class="ttdeci">void browseBugs() const </div><div class="ttdoc">Open bugs webpage in the default browser. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:845</div></div>
-<div class="ttc" id="class_main_window_html_a6b88ebaca8472d1370dc3f8935f53587"><div class="ttname"><a href="class_main_window.html#a6b88ebaca8472d1370dc3f8935f53587">MainWindow::newVersion</a></div><div class="ttdeci">bool newVersion(QString version)</div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:896</div></div>
-<div class="ttc" id="class_main_window_html_a02c0d1a181b834f3c7efe51e0264bd6f"><div class="ttname"><a href="class_main_window.html#a02c0d1a181b834f3c7efe51e0264bd6f">MainWindow::apkExplore</a></div><div class="ttdeci">void apkExplore()</div><div class="ttdoc">Open the folder with APK contents. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:824</div></div>
+<div class="ttc" id="class_main_window_html_ac98d540edaf2849cd711f91867d64e03"><div class="ttname"><a href="class_main_window.html#ac98d540edaf2849cd711f91867d64e03">MainWindow::browseBugs</a></div><div class="ttdeci">void browseBugs() const </div><div class="ttdoc">Open bugs webpage in the default browser. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:899</div></div>
+<div class="ttc" id="class_main_window_html_a6b88ebaca8472d1370dc3f8935f53587"><div class="ttname"><a href="class_main_window.html#a6b88ebaca8472d1370dc3f8935f53587">MainWindow::newVersion</a></div><div class="ttdeci">bool newVersion(QString version)</div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:978</div></div>
+<div class="ttc" id="class_main_window_html_a02c0d1a181b834f3c7efe51e0264bd6f"><div class="ttname"><a href="class_main_window.html#a02c0d1a181b834f3c7efe51e0264bd6f">MainWindow::apkExplore</a></div><div class="ttdeci">void apkExplore()</div><div class="ttdoc">Open the folder with APK contents. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:878</div></div>
 <div class="ttc" id="class_updater_html"><div class="ttname"><a href="class_updater.html">Updater</a></div><div class="ttdoc">Application update checker. </div><div class="ttdef"><b>Definition:</b> updater.h:14</div></div>
 <div class="ttc" id="class_one_drive_html"><div class="ttname"><a href="class_one_drive.html">OneDrive</a></div><div class="ttdef"><b>Definition:</b> cloud.h:127</div></div>
 <div class="ttc" id="class_google_drive_html"><div class="ttname"><a href="class_google_drive.html">GoogleDrive</a></div><div class="ttdef"><b>Definition:</b> cloud.h:112</div></div>
-<div class="ttc" id="class_main_window_html_a74dde2698941871692a76f9a81f36f99"><div class="ttname"><a href="class_main_window.html#a74dde2698941871692a76f9a81f36f99">MainWindow::apkPacked</a></div><div class="ttdeci">void apkPacked(QString filename, bool isSuccess=true, QString text=false)</div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:575</div></div>
-<div class="ttc" id="class_main_window_html_aeb0c14a45d89db212d3c8298665b0999"><div class="ttname"><a href="class_main_window.html#aeb0c14a45d89db212d3c8298665b0999">MainWindow::setLanguage</a></div><div class="ttdeci">void setLanguage(QString lang)</div><div class="ttdoc">Set GUI language. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:396</div></div>
-<div class="ttc" id="class_main_window_html_ad224a802bcf8135282395ed4a484f154"><div class="ttname"><a href="class_main_window.html#ad224a802bcf8135282395ed4a484f154">MainWindow::addToRecent</a></div><div class="ttdeci">void addToRecent(QString filename)</div><div class="ttdoc">Add filename to recent list. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:468</div></div>
-<div class="ttc" id="class_main_window_html_a26d61e09aceb75b5dbac10ab20ccc7e4"><div class="ttname"><a href="class_main_window.html#a26d61e09aceb75b5dbac10ab20ccc7e4">MainWindow::apkUnpacked</a></div><div class="ttdeci">void apkUnpacked(QString filename)</div><div class="ttdoc">Handle APK unpacked from the filename. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:600</div></div>
-<div class="ttc" id="class_main_window_html_a56c5fe03f15bdaa34c990fc53bd6b976"><div class="ttname"><a href="class_main_window.html#a56c5fe03f15bdaa34c990fc53bd6b976">MainWindow::confirmExit</a></div><div class="ttdeci">bool confirmExit()</div><div class="ttdoc">Ask user to confim exit. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:949</div></div>
-<div class="ttc" id="class_main_window_html_ae88346efeab1e22c0113beaabf1e9ed7"><div class="ttname"><a href="class_main_window.html#ae88346efeab1e22c0113beaabf1e9ed7">MainWindow::connectRepaintSignals</a></div><div class="ttdeci">void connectRepaintSignals()</div><div class="ttdoc">Create signal-slot connections to repaint windows. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:519</div></div>
+<div class="ttc" id="class_main_window_html_a74dde2698941871692a76f9a81f36f99"><div class="ttname"><a href="class_main_window.html#a74dde2698941871692a76f9a81f36f99">MainWindow::apkPacked</a></div><div class="ttdeci">void apkPacked(QString filename, bool isSuccess=true, QString text=false)</div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:607</div></div>
+<div class="ttc" id="class_main_window_html_aeb0c14a45d89db212d3c8298665b0999"><div class="ttname"><a href="class_main_window.html#aeb0c14a45d89db212d3c8298665b0999">MainWindow::setLanguage</a></div><div class="ttdeci">void setLanguage(QString lang)</div><div class="ttdoc">Set GUI language. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:419</div></div>
+<div class="ttc" id="class_main_window_html_ad224a802bcf8135282395ed4a484f154"><div class="ttname"><a href="class_main_window.html#ad224a802bcf8135282395ed4a484f154">MainWindow::addToRecent</a></div><div class="ttdeci">void addToRecent(QString filename)</div><div class="ttdoc">Add filename to recent list. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:500</div></div>
+<div class="ttc" id="class_main_window_html_a26d61e09aceb75b5dbac10ab20ccc7e4"><div class="ttname"><a href="class_main_window.html#a26d61e09aceb75b5dbac10ab20ccc7e4">MainWindow::apkUnpacked</a></div><div class="ttdeci">void apkUnpacked(QString filename)</div><div class="ttdoc">Handle APK unpacked from the filename. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:632</div></div>
+<div class="ttc" id="class_main_window_html_a56c5fe03f15bdaa34c990fc53bd6b976"><div class="ttname"><a href="class_main_window.html#a56c5fe03f15bdaa34c990fc53bd6b976">MainWindow::confirmExit</a></div><div class="ttdeci">bool confirmExit()</div><div class="ttdoc">Ask user to confim exit. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:1031</div></div>
+<div class="ttc" id="class_main_window_html_ae88346efeab1e22c0113beaabf1e9ed7"><div class="ttname"><a href="class_main_window.html#ae88346efeab1e22c0113beaabf1e9ed7">MainWindow::connectRepaintSignals</a></div><div class="ttdeci">void connectRepaintSignals()</div><div class="ttdoc">Create signal-slot connections to repaint windows. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:551</div></div>
 <div class="ttc" id="class_effects_dialog_html"><div class="ttname"><a href="class_effects_dialog.html">EffectsDialog</a></div><div class="ttdoc">Dialog for customizing icon graphic effects. </div><div class="ttdef"><b>Definition:</b> effects.h:17</div></div>
-<div class="ttc" id="class_main_window_html_ac0a9ce347a0583d1c66892a24a3511df"><div class="ttname"><a href="class_main_window.html#ac0a9ce347a0583d1c66892a24a3511df">MainWindow::showEffectsDialog</a></div><div class="ttdeci">void showEffectsDialog()</div><div class="ttdoc">Show &quot;Effects&quot; dialog. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:741</div></div>
-<div class="ttc" id="class_main_window_html_a33396c344fecb74135ca5bc0c8328488"><div class="ttname"><a href="class_main_window.html#a33396c344fecb74135ca5bc0c8328488">MainWindow::iconRevert</a></div><div class="ttdeci">bool iconRevert()</div><div class="ttdoc">Revert the original APK icon. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:718</div></div>
-<div class="ttc" id="class_main_window_html_a41136e954b8db8f92063905fb17e5eb6"><div class="ttname"><a href="class_main_window.html#a41136e954b8db8f92063905fb17e5eb6">MainWindow::iconOpen</a></div><div class="ttdeci">bool iconOpen(QString filename=NULL)</div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:624</div></div>
-<div class="ttc" id="class_main_window_html_a4ce2b283be3eac01c203967201781f5d"><div class="ttname"><a href="class_main_window.html#a4ce2b283be3eac01c203967201781f5d">MainWindow::apkLoad</a></div><div class="ttdeci">void apkLoad(QString filename=NULL)</div><div class="ttdoc">Open APK from the filename. If filename is NULL, show &quot;Open&quot; dialog. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:781</div></div>
+<div class="ttc" id="class_main_window_html_ac0a9ce347a0583d1c66892a24a3511df"><div class="ttname"><a href="class_main_window.html#ac0a9ce347a0583d1c66892a24a3511df">MainWindow::showEffectsDialog</a></div><div class="ttdeci">void showEffectsDialog()</div><div class="ttdoc">Show &quot;Effects&quot; dialog. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:795</div></div>
+<div class="ttc" id="class_main_window_html_a33396c344fecb74135ca5bc0c8328488"><div class="ttname"><a href="class_main_window.html#a33396c344fecb74135ca5bc0c8328488">MainWindow::iconRevert</a></div><div class="ttdeci">bool iconRevert()</div><div class="ttdoc">Revert the original APK icon. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:772</div></div>
+<div class="ttc" id="class_main_window_html_a41136e954b8db8f92063905fb17e5eb6"><div class="ttname"><a href="class_main_window.html#a41136e954b8db8f92063905fb17e5eb6">MainWindow::iconOpen</a></div><div class="ttdeci">bool iconOpen(QString filename=NULL)</div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:678</div></div>
+<div class="ttc" id="class_main_window_html_a4ce2b283be3eac01c203967201781f5d"><div class="ttname"><a href="class_main_window.html#a4ce2b283be3eac01c203967201781f5d">MainWindow::apkLoad</a></div><div class="ttdeci">void apkLoad(QString filename=NULL)</div><div class="ttdoc">Open APK from the filename. If filename is NULL, show &quot;Open&quot; dialog. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:835</div></div>
 <div class="ttc" id="class_draw_area_html"><div class="ttname"><a href="class_draw_area.html">DrawArea</a></div><div class="ttdoc">This widget previews icon. </div><div class="ttdef"><b>Definition:</b> drawarea.h:14</div></div>
 <div class="ttc" id="class_cloud_html"><div class="ttname"><a href="class_cloud.html">Cloud</a></div><div class="ttdoc">Cloud storage uploader. </div><div class="ttdef"><b>Definition:</b> cloud.h:14</div></div>
-<div class="ttc" id="class_main_window_html_a672affe16bce13e5038cf5793818e6ad"><div class="ttname"><a href="class_main_window.html#a672affe16bce13e5038cf5793818e6ad">MainWindow::success</a></div><div class="ttdeci">void success(QString title, QString text)</div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:931</div></div>
-<div class="ttc" id="class_main_window_html_a5e43db7353e2a0e4bc0b65c6a02c9d34"><div class="ttname"><a href="class_main_window.html#a5e43db7353e2a0e4bc0b65c6a02c9d34">MainWindow::setCurrentIcon</a></div><div class="ttdeci">void setCurrentIcon(int id)</div><div class="ttdoc">Set icon to draw in drawArea widget. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:531</div></div>
-<div class="ttc" id="class_main_window_html_a611d33e479dd4e14727665e87b955452"><div class="ttname"><a href="class_main_window.html#a611d33e479dd4e14727665e87b955452">MainWindow::error</a></div><div class="ttdeci">void error(QString title, QString text)</div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:943</div></div>
-<div class="ttc" id="class_main_window_html_a51ed1d1d215eb6bf0e3468bd1e71577f"><div class="ttname"><a href="class_main_window.html#a51ed1d1d215eb6bf0e3468bd1e71577f">MainWindow::browseSite</a></div><div class="ttdeci">void browseSite() const </div><div class="ttdoc">Open website URL in the default browser. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:840</div></div>
-<div class="ttc" id="class_main_window_html_a2a5ed53b56c5981452e99d7749c973c0"><div class="ttname"><a href="class_main_window.html#a2a5ed53b56c5981452e99d7749c973c0">MainWindow::iconScale</a></div><div class="ttdeci">void iconScale()</div><div class="ttdoc">Deprecated. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:693</div></div>
-<div class="ttc" id="class_main_window_html_a31681492ac6b2a51ded7f5ba47f7f173"><div class="ttname"><a href="class_main_window.html#a31681492ac6b2a51ded7f5ba47f7f173">MainWindow::iconSave</a></div><div class="ttdeci">bool iconSave(QString filename=NULL)</div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:673</div></div>
+<div class="ttc" id="class_main_window_html_a672affe16bce13e5038cf5793818e6ad"><div class="ttname"><a href="class_main_window.html#a672affe16bce13e5038cf5793818e6ad">MainWindow::success</a></div><div class="ttdeci">void success(QString title, QString text)</div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:1013</div></div>
+<div class="ttc" id="class_main_window_html_a5e43db7353e2a0e4bc0b65c6a02c9d34"><div class="ttname"><a href="class_main_window.html#a5e43db7353e2a0e4bc0b65c6a02c9d34">MainWindow::setCurrentIcon</a></div><div class="ttdeci">void setCurrentIcon(int id)</div><div class="ttdoc">Set icon to draw in drawArea widget. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:563</div></div>
+<div class="ttc" id="class_main_window_html_a611d33e479dd4e14727665e87b955452"><div class="ttname"><a href="class_main_window.html#a611d33e479dd4e14727665e87b955452">MainWindow::error</a></div><div class="ttdeci">void error(QString title, QString text)</div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:1025</div></div>
+<div class="ttc" id="class_main_window_html_a51ed1d1d215eb6bf0e3468bd1e71577f"><div class="ttname"><a href="class_main_window.html#a51ed1d1d215eb6bf0e3468bd1e71577f">MainWindow::browseSite</a></div><div class="ttdeci">void browseSite() const </div><div class="ttdoc">Open website URL in the default browser. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:894</div></div>
+<div class="ttc" id="class_main_window_html_a54a437abf214955c885778922777200d"><div class="ttname"><a href="class_main_window.html#a54a437abf214955c885778922777200d">MainWindow::aboutAuthors</a></div><div class="ttdeci">void aboutAuthors()</div><div class="ttdoc">Show the list of authors dialog. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:940</div></div>
+<div class="ttc" id="class_main_window_html_a2a5ed53b56c5981452e99d7749c973c0"><div class="ttname"><a href="class_main_window.html#a2a5ed53b56c5981452e99d7749c973c0">MainWindow::iconScale</a></div><div class="ttdeci">void iconScale()</div><div class="ttdoc">Deprecated. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:747</div></div>
+<div class="ttc" id="class_main_window_html_a31681492ac6b2a51ded7f5ba47f7f173"><div class="ttname"><a href="class_main_window.html#a31681492ac6b2a51ded7f5ba47f7f173">MainWindow::iconSave</a></div><div class="ttdeci">bool iconSave(QString filename=NULL)</div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:727</div></div>
 <div class="ttc" id="drawarea_8h_html"><div class="ttname"><a href="drawarea_8h.html">drawarea.h</a></div><div class="ttdoc">This file contains DrawArea class declaration. </div></div>
-<div class="ttc" id="class_main_window_html_a4b465d01af217dbebf699df62242dd72"><div class="ttname"><a href="class_main_window.html#a4b465d01af217dbebf699df62242dd72">MainWindow::initProfiles</a></div><div class="ttdeci">void initProfiles()</div><div class="ttdoc">Initialize available profiles. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:294</div></div>
-<div class="ttc" id="class_main_window_html_ac924ca9651b4ee354ae2de12bf1b40cc"><div class="ttname"><a href="class_main_window.html#ac924ca9651b4ee354ae2de12bf1b40cc">MainWindow::setPreviewColor</a></div><div class="ttdeci">void setPreviewColor()</div><div class="ttdoc">Show dialog to select background preview color. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:729</div></div>
+<div class="ttc" id="class_main_window_html_a4b465d01af217dbebf699df62242dd72"><div class="ttname"><a href="class_main_window.html#a4b465d01af217dbebf699df62242dd72">MainWindow::initProfiles</a></div><div class="ttdeci">void initProfiles()</div><div class="ttdoc">Initialize available profiles. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:315</div></div>
+<div class="ttc" id="class_main_window_html_ac924ca9651b4ee354ae2de12bf1b40cc"><div class="ttname"><a href="class_main_window.html#ac924ca9651b4ee354ae2de12bf1b40cc">MainWindow::setPreviewColor</a></div><div class="ttdeci">void setPreviewColor()</div><div class="ttdoc">Show dialog to select background preview color. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:783</div></div>
 <div class="ttc" id="class_apk_html"><div class="ttname"><a href="class_apk.html">Apk</a></div><div class="ttdoc">APK manager class. </div><div class="ttdef"><b>Definition:</b> apk.h:17</div></div>
-<div class="ttc" id="class_main_window_html_a85267a88468451fbadd0b2fbabe10043"><div class="ttname"><a href="class_main_window.html#a85267a88468451fbadd0b2fbabe10043">MainWindow::warning</a></div><div class="ttdeci">void warning(QString title, QString text)</div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:937</div></div>
-<div class="ttc" id="class_main_window_html_a3729edb97bc825489535bf0d3d1edf98"><div class="ttname"><a href="class_main_window.html#a3729edb97bc825489535bf0d3d1edf98">MainWindow::clearRecent</a></div><div class="ttdeci">void clearRecent()</div><div class="ttdoc">Clear list of recently opened APKs. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:499</div></div>
-<div class="ttc" id="class_main_window_html_a7a29e46bdac63885cbab125c89e1206e"><div class="ttname"><a href="class_main_window.html#a7a29e46bdac63885cbab125c89e1206e">MainWindow::invalidDpi</a></div><div class="ttdeci">void invalidDpi()</div><div class="ttdoc">Show &quot;Invalid DPI&quot; message. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:890</div></div>
+<div class="ttc" id="class_main_window_html_a85267a88468451fbadd0b2fbabe10043"><div class="ttname"><a href="class_main_window.html#a85267a88468451fbadd0b2fbabe10043">MainWindow::warning</a></div><div class="ttdeci">void warning(QString title, QString text)</div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:1019</div></div>
+<div class="ttc" id="class_main_window_html_a3729edb97bc825489535bf0d3d1edf98"><div class="ttname"><a href="class_main_window.html#a3729edb97bc825489535bf0d3d1edf98">MainWindow::clearRecent</a></div><div class="ttdeci">void clearRecent()</div><div class="ttdoc">Clear list of recently opened APKs. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:531</div></div>
+<div class="ttc" id="class_main_window_html_a7a29e46bdac63885cbab125c89e1206e"><div class="ttname"><a href="class_main_window.html#a7a29e46bdac63885cbab125c89e1206e">MainWindow::invalidDpi</a></div><div class="ttdeci">void invalidDpi()</div><div class="ttdoc">Show &quot;Invalid DPI&quot; message. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:972</div></div>
 <div class="ttc" id="apk_8h_html"><div class="ttname"><a href="apk_8h.html">apk.h</a></div><div class="ttdoc">This file contains Apk class declaration. </div></div>
-<div class="ttc" id="class_main_window_html_ad7543899d37d0a9a5615701209ba020c"><div class="ttname"><a href="class_main_window.html#ad7543899d37d0a9a5615701209ba020c">MainWindow::associate</a></div><div class="ttdeci">void associate() const </div><div class="ttdoc">Associate .apk extension with &quot;APK Icon Editor&quot;. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:829</div></div>
-<div class="ttc" id="class_main_window_html_a3955ca5db289680247c46f97bd51f634"><div class="ttname"><a href="class_main_window.html#a3955ca5db289680247c46f97bd51f634">MainWindow::restoreSettings</a></div><div class="ttdeci">void restoreSettings()</div><div class="ttdoc">Restore settings from INI. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:307</div></div>
+<div class="ttc" id="class_main_window_html_ad7543899d37d0a9a5615701209ba020c"><div class="ttname"><a href="class_main_window.html#ad7543899d37d0a9a5615701209ba020c">MainWindow::associate</a></div><div class="ttdeci">void associate() const </div><div class="ttdoc">Associate .apk extension with &quot;APK Icon Editor&quot;. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:883</div></div>
+<div class="ttc" id="class_main_window_html_a3955ca5db289680247c46f97bd51f634"><div class="ttname"><a href="class_main_window.html#a3955ca5db289680247c46f97bd51f634">MainWindow::restoreSettings</a></div><div class="ttdeci">void restoreSettings()</div><div class="ttdoc">Restore settings from INI. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:328</div></div>
 <div class="ttc" id="class_combo_list_html"><div class="ttname"><a href="class_combo_list.html">ComboList</a></div><div class="ttdoc">This widget combines combo box and list box widgets. </div><div class="ttdef"><b>Definition:</b> combolist.h:20</div></div>
-<div class="ttc" id="class_main_window_html"><div class="ttname"><a href="class_main_window.html">MainWindow</a></div><div class="ttdef"><b>Definition:</b> mainwindow.h:24</div></div>
-<div class="ttc" id="class_main_window_html_aa5c014f59730bd5240d194f2683f84d1"><div class="ttname"><a href="class_main_window.html#aa5c014f59730bd5240d194f2683f84d1">MainWindow::aboutQt</a></div><div class="ttdeci">void aboutQt() const </div><div class="ttdoc">Show &quot;About Qt&quot; dialog. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:885</div></div>
-<div class="ttc" id="class_main_window_html_aa52b8a4d7cd3234ca61128efd9e3bef9"><div class="ttname"><a href="class_main_window.html#aa52b8a4d7cd3234ca61128efd9e3bef9">MainWindow::hideEmptyDpi</a></div><div class="ttdeci">void hideEmptyDpi()</div><div class="ttdoc">Hide unused (empty) icons from profiles widget. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:507</div></div>
-<div class="ttc" id="class_main_window_html_a59f29f4d5c7709ca6ea78215f4395d11"><div class="ttname"><a href="class_main_window.html#a59f29f4d5c7709ca6ea78215f4395d11">MainWindow::initLanguages</a></div><div class="ttdeci">void initLanguages()</div><div class="ttdoc">Initialize available languages. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:264</div></div>
+<div class="ttc" id="class_main_window_html"><div class="ttname"><a href="class_main_window.html">MainWindow</a></div><div class="ttdef"><b>Definition:</b> mainwindow.h:26</div></div>
+<div class="ttc" id="class_main_window_html_aa5c014f59730bd5240d194f2683f84d1"><div class="ttname"><a href="class_main_window.html#aa5c014f59730bd5240d194f2683f84d1">MainWindow::aboutQt</a></div><div class="ttdeci">void aboutQt() const </div><div class="ttdoc">Show &quot;About Qt&quot; dialog. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:967</div></div>
+<div class="ttc" id="class_main_window_html_aa52b8a4d7cd3234ca61128efd9e3bef9"><div class="ttname"><a href="class_main_window.html#aa52b8a4d7cd3234ca61128efd9e3bef9">MainWindow::hideEmptyDpi</a></div><div class="ttdeci">void hideEmptyDpi()</div><div class="ttdoc">Hide unused (empty) icons from profiles widget. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:539</div></div>
+<div class="ttc" id="class_main_window_html_a59f29f4d5c7709ca6ea78215f4395d11"><div class="ttname"><a href="class_main_window.html#a59f29f4d5c7709ca6ea78215f4395d11">MainWindow::initLanguages</a></div><div class="ttdeci">void initLanguages()</div><div class="ttdoc">Initialize available languages. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:285</div></div>
 <div class="ttc" id="updater_8h_html"><div class="ttname"><a href="updater_8h.html">updater.h</a></div><div class="ttdoc">This file contains Updater class declaration. </div></div>
-<div class="ttc" id="class_main_window_html_a1415338e9247eb3c78975cfa0f363f69"><div class="ttname"><a href="class_main_window.html#a1415338e9247eb3c78975cfa0f363f69">MainWindow::iconResize</a></div><div class="ttdeci">bool iconResize(int side=0)</div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:700</div></div>
+<div class="ttc" id="class_main_window_html_a1415338e9247eb3c78975cfa0f363f69"><div class="ttname"><a href="class_main_window.html#a1415338e9247eb3c78975cfa0f363f69">MainWindow::iconResize</a></div><div class="ttdeci">bool iconResize(int side=0)</div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:754</div></div>
 <div class="ttc" id="combolist_8h_html"><div class="ttname"><a href="combolist_8h.html">combolist.h</a></div><div class="ttdoc">This file contains ComboList declaration. </div></div>
-<div class="ttc" id="class_main_window_html_a7be6a5d98970ac1a6296c6f9aee1e9bb"><div class="ttname"><a href="class_main_window.html#a7be6a5d98970ac1a6296c6f9aee1e9bb">MainWindow::about</a></div><div class="ttdeci">void about()</div><div class="ttdoc">Show &quot;About APK Icon Editor&quot; dialog. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:850</div></div>
-<div class="ttc" id="class_main_window_html_aa3eb66550eca41e390d3b9e0b3b4a4d6"><div class="ttname"><a href="class_main_window.html#aa3eb66550eca41e390d3b9e0b3b4a4d6">MainWindow::resetSettings</a></div><div class="ttdeci">void resetSettings()</div><div class="ttdoc">Reset settings to default. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:386</div></div>
+<div class="ttc" id="class_main_window_html_a7be6a5d98970ac1a6296c6f9aee1e9bb"><div class="ttname"><a href="class_main_window.html#a7be6a5d98970ac1a6296c6f9aee1e9bb">MainWindow::about</a></div><div class="ttdeci">void about()</div><div class="ttdoc">Show &quot;About APK Icon Editor&quot; dialog. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:904</div></div>
+<div class="ttc" id="class_main_window_html_aa3eb66550eca41e390d3b9e0b3b4a4d6"><div class="ttname"><a href="class_main_window.html#aa3eb66550eca41e390d3b9e0b3b4a4d6">MainWindow::resetSettings</a></div><div class="ttdeci">void resetSettings()</div><div class="ttdoc">Reset settings to default. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:409</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -1,6 +1,7 @@
 var searchData=
 [
   ['getangle',['getAngle',['../class_icon.html#a44d5ed79c0c4a0ece57d457b3e433cb5',1,'Icon']]],
+  ['getapplicationlabel',['getApplicationLabel',['../class_apk.html#a3d2f533ef49473ef0ad4db470615d324',1,'Apk']]],
   ['getblur',['getBlur',['../class_icon.html#aac77ec0b2e96cc26f80859a152ccd7a6',1,'Icon']]],
   ['getblurenabled',['getBlurEnabled',['../class_icon.html#aa10a008fa49a2ca465cc1971bb3e304f',1,'Icon']]],
   ['getcolor',['getColor',['../class_icon.html#a27a55e83f540515b81ebdaac97dbba35',1,'Icon']]],
@@ -12,10 +13,15 @@ var searchData=
   ['getflipy',['getFlipY',['../class_icon.html#aae6975d7b1cdfdb2781b567db86a34bc',1,'Icon']]],
   ['getfolderid',['getFolderID',['../class_google_drive.html#ad033ee2f499c02da858b71a9d33df7fd',1,'GoogleDrive::getFolderID()'],['../class_one_drive.html#ad728fcbbbda953928df4d2ab9df4ea15',1,'OneDrive::getFolderID()']]],
   ['geticon',['getIcon',['../class_apk.html#ac2fddd006f70075d19602b3e6e0aea65',1,'Apk::getIcon()'],['../class_cloud.html#a64aca4a54293aa8902a46d5964d11f4c',1,'Cloud::getIcon()'],['../class_draw_area.html#a4656672ca0755e8e5d92cb0cbacbb31c',1,'DrawArea::getIcon()']]],
+  ['getminimumsdk',['getMinimumSdk',['../class_apk.html#a7e6efa9b398a1288dd277a15984c5fcc',1,'Apk']]],
+  ['getpackagename',['getPackageName',['../class_apk.html#a6120176d20d8361bbecd49536e90bc54',1,'Apk']]],
   ['getpixmap',['getPixmap',['../class_icon.html#ad88a936694e31ec605390677b1dd2fbb',1,'Icon']]],
   ['getstring',['getString',['../class_input_dialog.html#addb72bb58b069da317a13f53c5c5b382',1,'InputDialog']]],
+  ['gettargetsdk',['getTargetSdk',['../class_apk.html#abaa9a0870cf9f36e31ce8126cacf002a',1,'Apk']]],
   ['gettitle',['getTitle',['../class_cloud.html#adcb418b41f22258270189726da83413f',1,'Cloud']]],
   ['gettoken',['getToken',['../class_cloud.html#afc14627087c06961835ebb16d2c8ac41',1,'Cloud']]],
+  ['getversioncode',['getVersionCode',['../class_apk.html#a2d3141f504735318d4516a402f0ffcec',1,'Apk']]],
+  ['getversionname',['getVersionName',['../class_apk.html#a7edd5f4fbe055dde6833e1451ee6ef03',1,'Apk']]],
   ['getzipsuccess',['getZipSuccess',['../class_apk.html#a7125e93e7a8a897638220fd3c6c0b26d',1,'Apk']]],
   ['groupchanged',['groupChanged',['../class_combo_list.html#a33f6d1046377b47a1754f3692656b7f7',1,'ComboList']]]
 ];
