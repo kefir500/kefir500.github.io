@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta itemprop="name" content="APK Icon Editor">
-		<meta itemprop="description" content="Edit and replace APK icons, easily and quickly. Written in C++ / Qt. Open source.">
+		<meta itemprop="description" content="Edit and replace APK resources, easily and quickly. Written in C++ / Qt. Open source.">
 		<meta itemprop="image" content="http://kefir500.github.io/apk-icon-editor/img/logo.png">
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/footer.css" rel="stylesheet">
@@ -46,21 +46,28 @@
 				</div>
 			</div>
 
-			<div class="jumbotron" id="home">
+			<div class="jumbotron" style="margin-bottom: 0" id="home">
 				<div id="header" class="container">
 					<h1>APK Icon Editor</h1>
-					<p>Edit and replace APK icons, easily and quickly.<br>Free. Open source. Written in C++ / Qt.</p>
+					<p>Edit and replace APK resources, easily and quickly.<br>Free. Open source. Written in C++ / Qt.</p>
 					<p>
 						<a href="download/" class="btn btn-success btn-lg" role="button">Download</a>
 						<a href="#description" class="btn btn-primary btn-lg" role="button">Read more &raquo;</a>
 					</p>
 				</div>
-				<div class="container gears"></div>
+				<div class="container" id="gears"></div>
+			</div>
+
+			<div class="alert alert-success" role="alert" style="margin-bottom: 8px">
+				<div id="tick">
+					<b>APK Icon Editor</b> now supports editing of the application name, version and binary resources.
+					<br>These features turn it into the almost full APK resource editor.
+				</div>
 			</div>
 
 			<div class="container" id="content">
 				<a class="anchor" id="none"></a>
-				<div class="row">
+				<div class="row" style="padding-top: 24px">
 					<div id="div-download" class="col-md-4">
 						<h2>Download</h2>
 						<p>Download the latest version of <nobr><b>APK Icon Editor</b></nobr><!-- or the <a href="download/">previous</a> ones-->. Binaries for Windows are available.</p>
@@ -84,7 +91,7 @@
 					</div>
 				</div>
 
-				<div class="row" style="padding: 32px 0">
+				<div class="row" style="padding: 16px 0">
 					<div class="col-md-5">
 						<div style="background: url(img/label-description.png) no-repeat; padding-left:96px;">
 							<a class="anchor" id="description"></a><h2>Description</h2>
@@ -95,6 +102,7 @@
 							<a class="anchor" id="features"></a><h2>Features</h2>
 							<ul class="no-padding">
 								<li>Edit, replace and extract APK icons;</li>
+								<li>Edit application name, version and resources;</li>
 								<li>Sign and optimize APKs;</li>
 								<li>Supported image formats: <nobr>PNG, ICO, GIF, JPG, BMP;</nobr></li>
 								<li>Size pre-sets for <i>Android Standard</i> and all <nobr><i>Amazon Kindle Fire</i></nobr> models;</li>
@@ -114,7 +122,7 @@
 						<hr>
 						<div style="background: url(img/label-requirements.png) no-repeat; min-height:96px; padding-left:96px;">
 							<a class="anchor" id="requirements"></a><h2>Requirements</h2>
-							<a href="http://java.com/download/" target="_blank">Java Runtime Environment (JRE)</a><br><i>(Optional, for signing APKs)</i>
+							<a href="http://java.com/download/" target="_blank">Java Runtime Environment (JRE) 32-bit</a> for signing APKs and using <i>apktool</i> (optionally).
 						</div>
 						<hr>
 						<div style="background: url(img/label-license.png) no-repeat; min-height:96px; padding-left:96px;">

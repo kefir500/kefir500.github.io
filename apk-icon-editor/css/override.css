@@ -45,10 +45,17 @@ h1, h2{
 	padding-left: 220px;
 }
 
-.gears {
+#gears {
 	width: 423px;
 	height: 72px;
 	background: url(../img/gears-header.png) no-repeat bottom;
+}
+
+#tick {
+	background: url(../img/tick.png) no-repeat left center;
+	padding-left: 34px;
+	width: 520px;
+	margin: auto;
 }
 
 #content {
@@ -96,6 +103,13 @@ h1, h2{
 
 .btn-warning, .btn-warning:hover {
 	color: black;
+}
+
+.alert-success {
+	color: #bd8;
+	border: none;
+	background-color: #262626;
+	font-size: 0.8em;
 }
 
 .glyphicon {
