@@ -46,6 +46,7 @@ h1, h2{
 }
 
 #gears {
+	margin: 0 auto;
 	width: 423px;
 	height: 72px;
 	background: url(../img/gears-header-xmas.png) no-repeat bottom;
