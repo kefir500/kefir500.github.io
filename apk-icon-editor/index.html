@@ -5,11 +5,13 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta itemprop="name" content="APK Icon Editor">
-		<meta itemprop="description" content="Edit and replace APK resources, easily and quickly. Written in C++ / Qt. Open source.">
+		<meta itemprop="description" content="Edit and replace APK resources, easily and quickly. Free. Open source.">
 		<meta itemprop="image" content="http://kefir500.github.io/apk-icon-editor/img/logo.png">
+		<meta property="og:title" content="APK Icon Editor">
+		<meta property="og:description" content="Edit and replace APK resources, easily and quickly. Free. Open source.">
+		<meta property="og:image" content="http://kefir500.github.io/apk-icon-editor/img/logo.png">
 		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/footer.css" rel="stylesheet">
-		<link href="css/override.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 		<link href="/css/fonts.css" rel="stylesheet">
 		<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -17,158 +19,157 @@
 		<![endif]-->
 	</head>
 	<body data-spy="scroll" data-target="#menu" data-offset="80">
-		<div id="wrap">
-			<div class="navbar navbar-inverse navbar-fixed-top" id="menu" role="navigation">
+
+		<div class="navbar navbar-inverse navbar-fixed-top" id="menu" role="navigation">
+			<div class="container">
+				<div class="nav navbar-header">
+					<a class="navbar-brand" href="http://kefir500.github.io/apk-icon-editor/">APK Icon Editor</a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="hidden"><a href="#none">None</a></li>
+						<li><a href="download/" id="menu-download">Download</a></li>
+						<li><a href="#description">Description</a></li>
+						<li><a href="#features">Features</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<li><a href="#license">License</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right hidden-sm">
+						<li>
+							<!-- Social Buttons -->
+							<script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script>
+							<div class="yashare-auto-init" data-yashareL10n="en" data-yashareType="small" data-yashareQuickServices="facebook,twitter,gplus" data-yashareTheme="counter" data-yashareLink="http://kefir500.github.io/apk-icon-editor" params.title="APK Icon Editor" data-yashareDescription="APK Icon Editor. Edit and replace APK resources, easily and quickly. Free. Open source." data-yashareImage="http://kefir500.github.io/apk-icon-editor/img/logo.png"></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="jumbotron">
+			<div id="jumbotron-inset">
 				<div class="container">
-					<div class="nav navbar-header">
-						<a class="navbar-brand" href="http://kefir500.github.io/apk-icon-editor/">APK Icon Editor</a>
+					<div class="row" id="hero">
+						<div class="col-md-8">
+							<h1>APK Icon Editor</h1>
+							<p>Edit and replace APK resources, easily and quickly. <nobr>Free. Open source.</nobr> Written in <nobr>C++ / Qt.</nobr></p>
+							<p>
+								<a href="download/" class="btn btn-success btn-lg" role="button">Download</a>
+								<a href="#description" class="btn btn-primary btn-lg" role="button">Read more &raquo;</a>
+							</p>
+						</div>
 					</div>
-					<div class="navbar-collapse collapse">
-						<ul class="nav navbar-nav">
-							<li style="display:none;"><a href="#none">None</a></li>
-							<li><a href="download/" id="download">Download</a></li>
-							<li><a href="#description">Description</a></li>
-							<li><a href="#features">Features</a></li>
-							<li><a href="#contact">Contact</a></li>
-							<li><a href="#license">License</a></li>
+				</div>
+				<div class="container-fluid hidden-xs">
+					<div class="row" id="status">
+						<b>APK Icon Editor</b> now supports editing of the application name, version and binary resources.<br>
+						These features turn it into the almost full APK resource editor.
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container" id="content">
+			<a class="anchor" id="none"></a>
+
+			<div class="row" style="padding-top: 10px">
+				<div id="div-download" class="col-md-4">
+					<h2>Download</h2>
+					<p>Download the latest version of <nobr><b>APK Icon Editor</b></nobr>. Binaries for Windows are available.</p>
+					<p>
+						<a href="download/" class="btn btn-success" role="button">Download</a>
+					</p>
+				</div>
+				<div id="div-source" class="col-md-4">
+					<h2>Source</h2>
+					<p>Get <nobr><b>APK Icon Editor</b></nobr> source code: explore, reuse and improve. Licensed under <a href="http://www.gnu.org/licenses/gpl-3.0.html">GNU GPL v3</a>.</p>
+					<p>
+						<a href="https://github.com/kefir500/apk-icon-editor/archive/master.zip" class="btn btn-primary" role="button">Get source</a>
+						<a href="https://github.com/kefir500/apk-icon-editor/" target="_blank" class="btn btn-default" role="button">GitHub</a>
+						<a href="docs/" target="_blank" class="btn btn-default" role="button">Doxygen</a>
+					</p>
+				</div>
+				<div id="div-translate" class="col-md-4">
+					<h2>Translate</h2>
+					<p>Help us translate <nobr><b>APK Icon Editor</b></nobr> into your language. Join our project on Transifex.</p>
+					<p><a href="https://www.transifex.com/projects/p/apk-icon-editor/" target="_blank" class="btn btn-warning" role="button">Translate &raquo;</a></p>
+				</div>
+			</div>
+
+			<div class="row no-padding text-center">
+				<a class="anchor" id="description"></a>
+				<!--script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<ins class="adsbygoogle"
+				style="display:inline-block;width:728px;height:90px"
+				data-ad-client="ca-pub-1799419862660242"
+				data-ad-slot="1671652014"></ins>
+				<script>
+					(adsbygoogle = window.adsbygoogle || []).push({});
+				</script-->
+			</div>
+
+			<div class="row" style="padding: 16px 0">
+				<div class="col-md-5">
+					<div class="info-block" style="background-image: url(img/label-description.png);">
+						<h2>Description</h2>
+						<b>APK Icon Editor</b> is the <i>free</i> tool designed to easily edit and replace APK (Android Package) icons. Written in C++ and Qt framework. Open source.
+					</div>
+					<hr>
+					<div class="info-block" style="background-image: url(img/label-features.png);">
+						<a class="anchor" id="features"></a><h2>Features</h2>
+						<ul>
+							<li>Edit, replace and extract APK icons;</li>
+							<li>Edit application name, version and resources;</li>
+							<li>Sign and optimize APKs;</li>
+							<li>Supported image formats: <nobr>PNG, ICO, GIF, JPG, BMP;</nobr></li>
+							<li>Size pre-sets for <i>Android Standard</i> and all <nobr><i>Amazon Kindle Fire</i></nobr> models;</li>
+							<li>Cloud storage upload: <i>Dropbox</i>, <i>Google Drive</i>, <i>Microsoft OneDrive</i>;</li>
+							<li>Multilingual <a href="https://www.transifex.com/projects/p/apk-icon-editor/" target="_blank">extensible</a> interface.</li>
 						</ul>
-						<ul class="nav navbar-nav navbar-right hidden-sm">
-							<li style="padding-top:15px; padding-right:8px;">
-								<!-- Facebook Like -->
-								<div class="fb-like" data-href="http://kefir500.github.io/apk-icon-editor" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-							</li>
-							<li>
-								<!-- Google +1 -->
-								<div class="g-plusone" data-href="http://kefir500.github.io/apk-icon-editor/"></div>
-							</li>
+					</div>
+					<hr>
+					<div class="info-block" id="shake" style="background-image: url(img/label-contact.png)">
+						<a class="anchor" id="contact"></a><h2>Contact</h2>
+						Have any suggestions? Found a bug?<br>Let us know so we can fix it!<br>
+						<ul>
+							<li><a href="mailto:kefir500@gmail.com?subject=APK%20Icon%20Editor%20[Issue]">Report via e-mail</a></li>
+							<li><a href="https://github.com/kefir500/apk-icon-editor/issues/new/" target="_blank">Report at GitHub</a></li>
 						</ul>
 					</div>
-				</div>
-			</div>
-
-			<div class="jumbotron" style="margin-bottom: 0" id="home">
-				<div class="container">
-					<div class="row" id="header">
-						<h1>APK Icon Editor</h1>
-						<p>Edit and replace APK resources, easily and quickly.<br>Free. Open source. Written in C++ / Qt.</p>
-						<p>
-							<a href="download/" class="btn btn-success btn-lg" role="button">Download</a>
-							<a href="#description" class="btn btn-primary btn-lg" role="button">Read more &raquo;</a>
-						</p>
+					<hr>
+					<div class="info-block" style="background-image: url(img/label-requirements.png);">
+						<a class="anchor" id="requirements"></a><h2>Requirements</h2>
+						<a href="http://java.com/download/" target="_blank">Java Runtime Environment (JRE) 32-bit</a> for signing APKs and using <i>apktool</i> (optionally).
 					</div>
-					<div class="row" id="gears"></div>
-				</div>
-			</div>
-
-			<div class="alert alert-success" role="alert" style="margin-bottom: 8px">
-				<div id="tick">
-					<b>APK Icon Editor</b> now supports editing of the application name, version and binary resources.
-					<br>These features turn it into the almost full APK resource editor.
-				</div>
-			</div>
-
-			<div class="container" id="content">
-				<a class="anchor" id="none"></a>
-
-				<div class="row" style="padding-top: 24px">
-					<div id="div-download" class="col-md-4">
-						<h2>Download</h2>
-						<p>Download the latest version of <nobr><b>APK Icon Editor</b></nobr><!-- or the <a href="download/">previous</a> ones-->. Binaries for Windows are available.</p>
-						<p>
-							<a href="download/" class="btn btn-success" role="button">Download</a>
-						</p>
+					<hr>
+					<div class="info-block" style="background-image: url(img/label-license.png);">
+						<a class="anchor" id="license"></a><h2>License</h2>
+						<a href="http://www.gnu.org/licenses/gpl-3.0.html" target="_blank">GNU General Public License v3.0</a>
 					</div>
-					<div id="div-source" class="col-md-4">
-						<h2>Source</h2>
-						<p>Get <nobr><b>APK Icon Editor</b></nobr> source code: explore, reuse and improve. Licensed under <a href="http://www.gnu.org/licenses/gpl-3.0.html">GNU GPL v3</a>.</p>
-						<p>
-							<a href="https://github.com/kefir500/apk-icon-editor/archive/master.zip" class="btn btn-primary" role="button">Get source</a>
-							<a href="https://github.com/kefir500/apk-icon-editor/" target="_blank" class="btn btn-default" role="button">GitHub</a>
-							<a href="docs/" target="_blank" class="btn btn-default" role="button">Doxygen</a>
-						</p>
-					</div>
-					<div id="div-translate" class="col-md-4">
-						<h2>Translate</h2>
-						<p>Help us translate <nobr><b>APK Icon Editor</b></nobr> into your language. Join our project on Transifex.</p>
-						<p><a href="https://www.transifex.com/projects/p/apk-icon-editor/" target="_blank" class="btn btn-warning" role="button">Translate &raquo;</a></p>
+					<div class="row text-center">
+						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<ins class="adsbygoogle"
+						style="display:inline-block;width:300px;height:600px"
+						data-ad-client="ca-pub-1799419862660242"
+						data-ad-slot="6880580814"></ins>
+						<script>
+							(adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
 					</div>
 				</div>
-
-				<!--div class="row" style="text-align: center; padding: 0">
-					<a class="anchor" id="description"></a>
-					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-					<ins class="adsbygoogle"
-					style="display:inline-block;width:728px;height:90px"
-					data-ad-client="ca-pub-1799419862660242"
-					data-ad-slot="1671652014"></ins>
-					<script>
-						(adsbygoogle = window.adsbygoogle || []).push({});
-					</script>
-				</div-->
-
-				<div class="row" style="padding: 16px 0">
-					<div class="col-md-5">
-						<div style="background: url(img/label-description.png) no-repeat; padding-left:96px;">
-							<h2>Description</h2>
-							<b>APK Icon Editor</b> is the <i>free</i> tool designed to easily edit and replace APK (Android Package) icons. Written in C++ and Qt framework. Open source.
-						</div>
-						<hr>
-						<div style="background: url(img/label-features.png) no-repeat; padding-left:96px;">
-							<a class="anchor" id="features"></a><h2>Features</h2>
-							<ul class="no-padding">
-								<li>Edit, replace and extract APK icons;</li>
-								<li>Edit application name, version and resources;</li>
-								<li>Sign and optimize APKs;</li>
-								<li>Supported image formats: <nobr>PNG, ICO, GIF, JPG, BMP;</nobr></li>
-								<li>Size pre-sets for <i>Android Standard</i> and all <nobr><i>Amazon Kindle Fire</i></nobr> models;</li>
-								<li>Cloud storage upload: <i>Dropbox</i>, <i>Google Drive</i>, <i>Microsoft OneDrive</i>;</li>
-								<li>Multilingual <a href="https://www.transifex.com/projects/p/apk-icon-editor/" target="_blank">extensible</a> interface.</li>
-							</ul>
-						</div>
-						<hr>
-						<div id="shake" style="background: url(img/label-contact.png) no-repeat; min-height:96px; padding-left:96px;">
-							<a class="anchor" id="contact"></a><h2>Contact</h2>
-							Have any suggestions? Found a bug?<br>Let us know so we can fix it!<br>
-							<ul class="no-padding">
-								<li><a href="mailto:kefir500@gmail.com?subject=APK%20Icon%20Editor%20[Issue]">Report via e-mail</a></li>
-								<li><a href="https://github.com/kefir500/apk-icon-editor/issues/new/" target="_blank">Report at GitHub</a></li>
-							</ul>
-						</div>
-						<hr>
-						<div style="background: url(img/label-requirements.png) no-repeat; min-height:96px; padding-left:96px;">
-							<a class="anchor" id="requirements"></a><h2>Requirements</h2>
-							<a href="http://java.com/download/" target="_blank">Java Runtime Environment (JRE) 32-bit</a> for signing APKs and using <i>apktool</i> (optionally).
-						</div>
-						<hr>
-						<div style="background: url(img/label-license.png) no-repeat; min-height:96px; padding-left:96px;">
-							<a class="anchor" id="license"></a><h2>License</h2>
-							<a href="http://www.gnu.org/licenses/gpl-3.0.html" target="_blank">GNU General Public License v3.0</a>
-						</div>
-						<div class="row" style="text-align: center">
-							<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-							<ins class="adsbygoogle"
-							style="display:inline-block;width:300px;height:600px"
-							data-ad-client="ca-pub-1799419862660242"
-							data-ad-slot="6880580814"></ins>
-							<script>
-								(adsbygoogle = window.adsbygoogle || []).push({});
-							</script>
-						</div>
-					</div>
-					<div class="col-md-7">
-						<img src="img/screen01.jpg">
-						<img src="img/screen02.jpg">
-						<img src="img/screen03.jpg">
-						<img src="img/screen04.jpg">
-						<img src="img/screen05.jpg">
-					</div>
+				<div class="col-md-7">
+					<img src="img/screen01.jpg">
+					<img src="img/screen02.jpg">
+					<img src="img/screen03.jpg">
+					<img src="img/screen04.jpg">
+					<img src="img/screen05.jpg">
 				</div>
 			</div>
 		</div>
 
 		<div id="footer">
 			<div class="container">
-				<p>&copy; Qwerty Minds 2014
+				<p>
+					&copy; Qwerty Minds 2014&ndash;2015
 					&ensp;|&ensp;<a href="https://github.com/kefir500/apk-icon-editor/" target="_blank">GitHub</a>
 					&ensp;|&ensp;<a href="https://github.com/kefir500/apk-icon-editor/blob/master/AUTHORS.md">Authors</a>
 					&ensp;|&ensp;<a href="http://www.gnu.org/licenses/gpl-3.0.html" target="_blank">License</a>
@@ -182,10 +183,17 @@
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/anchors.js"></script>
 		
-		<!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23742388 = new Ya.Metrika({id:23742388, clickmap:true, trackLinks:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/23742388" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+		<!-- Google Analytics -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-59660668-1', 'auto');
+			ga('send', 'pageview');
+		</script>
 		
-		<!-- Google +1 --><script type="text/javascript">(function() { var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true; po.src = 'https://apis.google.com/js/platform.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s); })();</script>
-		
-		<!-- Facebook Like --> <div id="fb-root"></div><script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.0"; fjs.parentNode.insertBefore(js, fjs); } (document, 'script', 'facebook-jssdk'));</script>
+		<!-- Yandex.Metrika -->
+		<script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23742388 = new Ya.Metrika({id:23742388, clickmap:true, trackLinks:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/23742388" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 	</body>
 </html>

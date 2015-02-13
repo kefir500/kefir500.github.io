@@ -1,0 +1,149 @@
+body {
+	background-color: #333;
+	padding-top: 51px; /* Navigation Bar */
+	color: #eee;
+}
+
+a, #menu-download {
+	color: #bd8;
+}
+
+a:active, a:focus {
+	color: #dfa;
+}
+
+a:hover, #menu-download:hover {
+	color: #dfa;
+}
+
+img {
+	padding-bottom: 24px;
+}
+
+hr {
+	border-top: 1px solid #666;
+}
+
+ul {
+	padding-left: 17px;
+}
+
+h1, h2{
+	white-space: nowrap;
+	font-family: opensans, sans-serif;
+	margin-top: 8px;
+}
+
+.navbar-right li {
+	padding-top: 13px;
+}
+
+/* Website Elements */
+
+.anchor {
+	display: block;
+	position: relative;
+	top: -60px;
+	visibility: hidden;
+}
+
+.no-padding {
+	padding: 0 !important;
+}
+
+#menu {
+	-webkit-box-shadow: 0px 0px 20px 0px black;
+	-moz-box-shadow:    0px 0px 20px 0px black;
+	box-shadow:         0px 0px 20px 0px black;
+}
+
+#hero {
+	background: url(../img/logo.png) no-repeat left center;
+	padding-left: 200px;
+}
+
+#status {
+	font-size: 0.6em;
+	line-height: 16px;
+	text-align: right;
+	padding: 14px;
+	margin: 0;
+}
+
+#content {
+	background: url(../img/gears-footer.png) no-repeat bottom left;
+}
+
+#div-download {
+	border-left: 3px solid #6c6;
+}
+
+#div-source {
+	border-left: 3px solid #6af;
+}
+
+#div-translate {
+	border-left: 3px solid #f0ad4e;
+}
+
+.info-block {
+	padding-left: 96px;
+	min-height: 96px;
+	background-repeat: no-repeat;
+}
+
+#footer {
+	color: #999;
+	height: 50px;
+	padding: 16px;
+	background-color: #222;
+}
+
+#btn-download {
+	background-image: url(../img/icon-arrow.png);
+	background-repeat: no-repeat;
+	background-position: right 14px center;
+	padding-right: 38px;
+}
+
+.version-new {
+	background: url(../img/version-new.png) no-repeat bottom right;
+	min-height: 52px;
+}
+
+.version-old {
+	background: url(../img/version-old.png) no-repeat bottom right;
+	min-height: 52px;
+}
+
+/* Bootstrap override */
+
+.row {
+	padding: 32px;
+}
+
+.jumbotron {
+	color: #333;
+	padding: 0;
+	background: #efd url(../img/cover.png);
+	background: url(../img/cover.png), -moz-linear-gradient(left, #fff 0%, #ce8 100%);
+	background: url(../img/cover.png), -webkit-gradient(linear, left top, right top, color-stop(0%, #fff), color-stop(100%, #ce8));
+	background: url(../img/cover.png), -webkit-linear-gradient(left, #fff 0%, #ce8 100%);
+	background: url(../img/cover.png), -o-linear-gradient(left, #fff 0%, #ce8 100%);
+	background: url(../img/cover.png), -ms-linear-gradient(left, #fff 0%, #ce8 100%);
+	background: url(../img/cover.png), linear-gradient(to right, #fff 0%, #ce8 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ccee88', GradientType=1);
+}
+
+#jumbotron-inset {
+	padding-top: 48px;
+	background: url(../img/logo-angle.png) bottom right no-repeat;
+}
+
+.btn-default {
+	background-color: #ddd;
+}
+
+.btn-warning, .btn-warning:hover {
+	color: black;
+}

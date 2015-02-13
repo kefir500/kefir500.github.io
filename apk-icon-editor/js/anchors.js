@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 	if (window.location.hash == '#contact') {
-		$('#shake').effect('shake');
+		$('#shake').delay(500).effect('shake', 750);
 	}
 
 	$('a[href*=#]').click(function() {

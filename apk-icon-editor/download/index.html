@@ -5,198 +5,207 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta itemprop="name" content="APK Icon Editor">
-		<meta itemprop="description" content="Edit and replace APK resources, easily and quickly. Written in C++ / Qt. Open source.">
+		<meta itemprop="description" content="Edit and replace APK resources, easily and quickly. Free. Open source.">
 		<meta itemprop="image" content="http://kefir500.github.io/apk-icon-editor/img/logo.png">
+		<meta property="og:title" content="APK Icon Editor">
+		<meta property="og:description" content="Edit and replace APK resources, easily and quickly. Free. Open source.">
+		<meta property="og:image" content="http://kefir500.github.io/apk-icon-editor/img/logo.png">
 		<link href="../css/bootstrap.min.css" rel="stylesheet">
-		<link href="../css/footer.css" rel="stylesheet">
-		<link href="../css/override.css" rel="stylesheet">
+		<link href="../css/style.css" rel="stylesheet">
 		<link href="/css/fonts.css" rel="stylesheet">
 		<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 		<![endif]-->
 	</head>
-	<body data-spy="scroll" data-target="#menu" data-offset="80">
-		<div id="wrap">
-			<div class="navbar navbar-inverse navbar-fixed-top" id="menu" role="navigation">
+	<body>
+
+		<div class="navbar navbar-inverse navbar-fixed-top" id="menu" role="navigation">
+			<div class="container">
+				<div class="nav navbar-header">
+					<a class="navbar-brand" href="http://kefir500.github.io/apk-icon-editor/">APK Icon Editor</a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="." id="menu-download">Download</a></li>
+						<li><a href="../#description">Description</a></li>
+						<li><a href="../#features">Features</a></li>
+						<li><a href="../#contact">Contact</a></li>
+						<li><a href="../#license">License</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<!-- Social Buttons -->
+							<script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script>
+							<div class="yashare-auto-init" data-yashareL10n="en" data-yashareType="small" data-yashareQuickServices="facebook,twitter,gplus" data-yashareTheme="counter" data-yashareLink="http://kefir500.github.io/apk-icon-editor" params.title="APK Icon Editor" data-yashareDescription="APK Icon Editor. Edit and replace APK resources, easily and quickly. Free. Open source." data-yashareImage="http://kefir500.github.io/apk-icon-editor/img/logo.png"></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="jumbotron">
+			<div id="jumbotron-inset">
 				<div class="container">
-					<div class="nav navbar-header">
-						<a class="navbar-brand" href="http://kefir500.github.io/apk-icon-editor/">APK Icon Editor</a>
+					<div class="row" id="hero">
+						<div class="col-md-8">
+							<h1>Download</h1>
+							<p>APK Icon Editor for Windows.<br>Latest EXE installer. Completely free.</p>
+							<p>
+<!-- !!! UPDATE VERSION NUMBER HERE !!! -->
+								<a id="btn-download" href="https://github.com/kefir500/apk-icon-editor/releases/download/v1.1.2/apk-icon-editor-setup.exe" class="btn btn-success btn-lg" role="button">Download</a>
+							</p>
+						</div>
 					</div>
-					<div class="navbar-collapse collapse">
-						<ul class="nav navbar-nav">
-							<li class="active"><a href="." id="download">Download</a></li>
-							<li><a href="../#description">Description</a></li>
-							<li><a href="../#features">Features</a></li>
-							<li><a href="../#contact">Contact</a></li>
-							<li><a href="../#license">License</a></li>
-						</ul>
-						<ul class="nav navbar-nav navbar-right">
-							<li style="padding-top:15px; padding-right:8px;">
-								<!-- Facebook Like -->
-								<div class="fb-like" data-href="http://kefir500.github.io/apk-icon-editor" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-							</li>
-							<li>
-								<!-- Google +1 -->
-								<div class="g-plusone" data-href="http://kefir500.github.io/apk-icon-editor/"></div>
-							</li>
-						</ul>
+				</div>
+				<div class="container-fluid hidden-xs">
+					<div class="row" id="status">
+						Coming soon:<br><b>APK Icon Editor</b> for <b>Mac OS X</b>.
 					</div>
 				</div>
 			</div>
+		</div>
 
-			<div class="jumbotron" id="home">
-				<div id="header" class="container">
+		<div class="container" id="content">
+			<div class="row" style="padding-top: 10px">
+				<div id="div-download" class="col-md-5">
 					<h1>Download</h1>
-					<p>Get APK Icon Editor for Windows.<br>Latest EXE installer. Completely free.</p>
+					<p>
+						Get the latest <nobr><b>APK Icon Editor</b></nobr> binary <nobr>or <a href="https://github.com/kefir500/apk-icon-editor/releases">browse the older ones</a>.</nobr><br>
+						If you want to update the already installed version,<br>simply overwrite your previous installation.
+					</p>
 					<p>
 <!-- !!! UPDATE VERSION NUMBER HERE !!! -->
-						<a href="https://github.com/kefir500/apk-icon-editor/releases/download/v1.1.2/apk-icon-editor-setup.exe" class="btn btn-success btn-lg" role="button">Download <span style="background-image:url(../img/icon-arrow.png); display:inline-block; width:17px; height:17px; vertical-align:-3px;"></span></a>
+						<a href="https://github.com/kefir500/apk-icon-editor/releases/download/v1.1.2/apk-icon-editor-setup.exe" class="btn btn-success" role="button" data-toggle="tooltip-bottom" title="Recommended">EXE</a>
+						<a href="https://github.com/kefir500/apk-icon-editor/releases/download/v1.1.2/apk-icon-editor.zip" class="btn btn-primary" role="button">ZIP</a>
+						<a href="https://github.com/kefir500/apk-icon-editor/releases/download/v1.1.2/apk-icon-editor.7z" class="btn btn-primary" role="button">7Z</a>
 					</p>
+					<!-- Social Buttons -->
+					<script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script>
+					<div class="yashare-auto-init" data-yashareL10n="en" data-yashareType="small" data-yashareQuickServices="facebook,twitter,gplus" data-yashareTheme="counter" data-yashareLink="http://kefir500.github.io/apk-icon-editor" data-yashareDescription="APK Icon Editor. Edit and replace APK resources, easily and quickly." data-yashareImage="http://kefir500.github.io/apk-icon-editor/img/logo.png"></div>
 				</div>
-				<div class="container" id="gears"></div>
-			</div>
-
-			<div class="container">
-				<div class="row">
-					<div id="div-download" class="col-md-5">
-						<h1>Download</h1>
-						<p>
-							Get latest <nobr><b>APK Icon Editor</b></nobr> binary or <a href="https://github.com/kefir500/apk-icon-editor/releases">browse older ones</a>.<br>
-							If you want to update already installed version,<br>simply overwrite your previous installation.
-						</p>
-						<p>
+				<div id="div-translate" class="col-md-7">
+					<h1>What's New</h1>
+					<hr>
 <!-- !!! UPDATE VERSION NUMBER HERE !!! -->
-							<a href="https://github.com/kefir500/apk-icon-editor/releases/download/v1.1.2/apk-icon-editor-setup.exe" class="btn btn-success" role="button" data-toggle="tooltip-bottom" title="Recommended">EXE</a>
-							<a href="https://github.com/kefir500/apk-icon-editor/releases/download/v1.1.2/apk-icon-editor.zip" class="btn btn-primary" role="button">ZIP</a>
-							<a href="https://github.com/kefir500/apk-icon-editor/releases/download/v1.1.2/apk-icon-editor.7z" class="btn btn-primary" role="button">7Z</a>
-						</p>
-						<!-- Google +1 -->
-						<div class="g-plusone" data-href="http://kefir500.github.io/apk-icon-editor/" data-size="tall" data-annotation="inline" data-width="300"></div>
+					<div class="version-new">
+						<h2>Version 1.1.2</h2> <!--DEC 13 2014-->
+						<ul>
+							<li>Downgraded <i>Apktool</i> to <i>RC2</i>.</li>
+						</ul>
 					</div>
-					<div id="div-translate" class="col-md-6">
-						<h1>What's New</h1>
-						<hr>
-<!-- !!! UPDATE VERSION NUMBER HERE !!! -->
-						<div class="version-new">
-							<h2>Version 1.1.2</h2> <!--DEC 13 2014-->
-							<ul>
-								<li>Downgraded <i>apktool</i> to <i>RC2</i>.</li>
-							</ul>
-						</div>
-						<hr>
-						<div class="version-old">
-							<h2>Version 1.1.1</h2> <!--DEC 08 2014-->
-							<ul>
-								<li>Fixed Unicode paths bug.</li>
-								<li>Fixed <i>Rounded Corners</i> bug.</li>
-							</ul>
-						</div>
-						<hr>
-						<div class="version-old">
-							<h2>Version 1.1.0</h2> <!--DEC 04 2014-->
-							<ul>
-								<li>Added <i>Rounded Corners</i> effect.</li>
-								<li>Upgraded <i>apktool</i> to <i>RC3</i>.</li>
-								<li>Improved logging system.</li>
-							</ul>
-						</div>
-						<hr>
-						<div class="version-old">
-							<h2>Version 1.0.0</h2> <!--OCT 05 2014-->
-							<ul>
-								<li>Added <i>apktool</i> support.</li>
-								<li>Added application name and version editor.</li>
-								<li>Added <i>XXXHDPI</i> icon support.</li>
-								<li>Added <i>German</i> translation.</li>
-								<li>Added logging system.</li>
-								<li>Upgraded license to <i>GNU GPL v3.0</i>.</li>
-								<li>Improved GUI.</li>
-							</ul>
-						</div>
-						<hr>
-						<div class="version-old">
-							<h2>Version 0.6</h2> <!--JUN 06 2014-->
-							<ul>
-								<li>Added <i>Details</i> tab.</li>
-								<li>Added <i>French</i> translation.</li>
-								<li>Improved GUI.</li>
-							</ul>
-						</div>
-						<hr>
-						<div class="version-old">
-							<h2>Version 0.5.1</h2> <!--MAY 18 2014-->
-							<ul>
-								<li>Added <i>Explore APK Contents</i> function.</li>
-								<li>Improved handling invalid APK files.</li>
-								<li>Minor improvements and bug fixes.</li>
-							</ul>
-						</div>
-						<hr>
-						<div class="version-old">
-							<h2>Version 0.5</h2> <!--APR 14 2014-->
-							<ul>
-								<li>Added <i>Google Drive</i> support.</li>
-								<li>Added <i>Microsoft OneDrive</i> support.</li>
-								<li>Added <i>Chinese (China)</i> translation.</li>
-								<li>Minor GUI improvements.</li>
-								<li>Minor bug fixes.</li>
-							</ul>
-						</div>
-						<hr>
-						<div class="version-old">
-							<h2>Version 0.4.2</h2> <!--MAR 02 2014-->
-							<ul>
-								<li>Fixed forced upload on warnings.</li>
-							</ul>
-						</div>
-						<hr>
-						<div class="version-old">
-							<h2>Version 0.4.1</h2> <!--FEB 25 2014-->
-							<ul>
-								<li>Added <i>Dropbox</i> support.</li>
-								<li>Minor GUI improvements.</li>
-							</ul>
-						</div>
-						<hr>
-						<div class="version-old">
-							<h2>Version 0.3.1</h2> <!--FEB 9 2014-->
-							<ul>
-								<li>Added <i>Rotate</i> effect.</li>
-								<li>Improved <i>Colorize</i> effect.</li>
-								<li>Fixed <i>Blur</i> transparency.</li>
-								<li>Minor GUI improvements.</li>
-								<li>Minor bug fixes.</li>
-							</ul>
-						</div>
-						<hr>
-						<div class="version-old">
-							<h2>Version 0.3</h2>
-							<ul>
-								<li>Added <i>Colorize</i> effect.</li>
-								<li>Added <i>Blur</i> effect.</li>
-								<li>Changed updates URL.</li>
-								<li>Minor bug fixes.</li>
-							</ul>
-						</div>
-						<hr>
-						<div class="version-old">
-							<h2>Version 0.2.1</h2>
-							<ul>
-								<li>Added APK packing options.</li>
-								<li>Added <i>Reset Settings</i> function.</li>
-								<li>Improved error/warning handlers.</li>
-								<li>Fixed recent list bug.</li>
-								<li>Minor bug fixes.</li>
-							</ul>
-						</div>
-						<hr>
-						<div class="version-old">
-							<h2>Version 0.2</h2>
-							<ul>
-								<li>First public beta.</li>
-							</ul>
-						</div>
+					<hr>
+					<div class="version-old">
+						<h2>Version 1.1.1</h2> <!--DEC 08 2014-->
+						<ul>
+							<li>Fixed Unicode paths bug.</li>
+							<li>Fixed <i>Rounded Corners</i> bug.</li>
+						</ul>
+					</div>
+					<hr>
+					<div class="version-old">
+						<h2>Version 1.1.0</h2> <!--DEC 04 2014-->
+						<ul>
+							<li>Added <i>Rounded Corners</i> effect.</li>
+							<li>Upgraded <i>Apktool</i> to <i>RC3</i>.</li>
+							<li>Improved logging system.</li>
+						</ul>
+					</div>
+					<hr>
+					<div class="version-old">
+						<h2>Version 1.0.0</h2> <!--OCT 05 2014-->
+						<ul>
+							<li>Added <i>Apktool</i> support.</li>
+							<li>Added application name and version editor.</li>
+							<li>Added <i>XXXHDPI</i> icon support.</li>
+							<li>Added <i>German</i> translation.</li>
+							<li>Added logging system.</li>
+							<li>Upgraded license to <i>GNU GPL v3.0</i>.</li>
+							<li>Improved GUI.</li>
+						</ul>
+					</div>
+					<hr>
+					<div class="version-old">
+						<h2>Version 0.6</h2> <!--JUN 06 2014-->
+						<ul>
+							<li>Added <i>Details</i> tab.</li>
+							<li>Added <i>French</i> translation.</li>
+							<li>Improved GUI.</li>
+						</ul>
+					</div>
+					<hr>
+					<div class="version-old">
+						<h2>Version 0.5.1</h2> <!--MAY 18 2014-->
+						<ul>
+							<li>Added <i>Explore APK Contents</i> function.</li>
+							<li>Improved handling invalid APK files.</li>
+							<li>Minor improvements and bug fixes.</li>
+						</ul>
+					</div>
+					<hr>
+					<div class="version-old">
+						<h2>Version 0.5</h2> <!--APR 14 2014-->
+						<ul>
+							<li>Added <i>Google Drive</i> support.</li>
+							<li>Added <i>Microsoft OneDrive</i> support.</li>
+							<li>Added <i>Chinese (China)</i> translation.</li>
+							<li>Minor GUI improvements.</li>
+							<li>Minor bug fixes.</li>
+						</ul>
+					</div>
+					<hr>
+					<div class="version-old">
+						<h2>Version 0.4.2</h2> <!--MAR 02 2014-->
+						<ul>
+							<li>Fixed forced upload on warnings.</li>
+						</ul>
+					</div>
+					<hr>
+					<div class="version-old">
+						<h2>Version 0.4.1</h2> <!--FEB 25 2014-->
+						<ul>
+							<li>Added <i>Dropbox</i> support.</li>
+							<li>Minor GUI improvements.</li>
+						</ul>
+					</div>
+					<hr>
+					<div class="version-old">
+						<h2>Version 0.3.1</h2> <!--FEB 9 2014-->
+						<ul>
+							<li>Added <i>Rotate</i> effect.</li>
+							<li>Improved <i>Colorize</i> effect.</li>
+							<li>Fixed <i>Blur</i> transparency.</li>
+							<li>Minor GUI improvements.</li>
+							<li>Minor bug fixes.</li>
+						</ul>
+					</div>
+					<hr>
+					<div class="version-old">
+						<h2>Version 0.3</h2>
+						<ul>
+							<li>Added <i>Colorize</i> effect.</li>
+							<li>Added <i>Blur</i> effect.</li>
+							<li>Changed updates URL.</li>
+							<li>Minor bug fixes.</li>
+						</ul>
+					</div>
+					<hr>
+					<div class="version-old">
+						<h2>Version 0.2.1</h2>
+						<ul>
+							<li>Added APK packing options.</li>
+							<li>Added <i>Reset Settings</i> function.</li>
+							<li>Improved error/warning handlers.</li>
+							<li>Fixed recent list bug.</li>
+							<li>Minor bug fixes.</li>
+						</ul>
+					</div>
+					<hr>
+					<div class="version-old">
+						<h2>Version 0.2</h2>
+						<ul>
+							<li>First public beta.</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -205,7 +214,7 @@
 		<div id="footer">
 			<div class="container">
 				<p>
-					&copy; Qwerty Minds 2014
+					&copy; Qwerty Minds 2014&ndash;2015
 					&ensp;|&ensp;<a href="https://github.com/kefir500/apk-icon-editor/" target="_blank">GitHub</a>
 					&ensp;|&ensp;<a href="https://github.com/kefir500/apk-icon-editor/blob/master/AUTHORS.md">Authors</a>
 					&ensp;|&ensp;<a href="http://www.gnu.org/licenses/gpl-3.0.html" target="_blank">License</a>
@@ -219,11 +228,18 @@
 		<script type="text/javascript">
 			$('[data-toggle="tooltip-bottom"]').tooltip({'placement': 'bottom'});
 		</script>
-		
-		<!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23742388 = new Ya.Metrika({id:23742388, clickmap:true, trackLinks:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/23742388" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-		
-		<!-- Google +1 --><script type="text/javascript">(function() { var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true; po.src = 'https://apis.google.com/js/platform.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s); })();</script>
-		
-		<!-- Facebook Like --> <div id="fb-root"></div><script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.0"; fjs.parentNode.insertBefore(js, fjs); } (document, 'script', 'facebook-jssdk'));</script>
+
+		<!-- Google Analytics -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-59660668-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+
+		<!-- Yandex.Metrika -->
+		<script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23742388 = new Ya.Metrika({id:23742388, clickmap:true, trackLinks:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/23742388" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 	</body>
 </html>
