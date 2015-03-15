@@ -1,6 +1,9 @@
 body {
-	background-color: #333;
+	min-width: 528px;
+	width: auto !important;
+	width: 528px;
 	padding-top: 51px; /* Navigation Bar */
+	background-color: #333;
 	color: #eee;
 }
 
@@ -58,8 +61,8 @@ h1, h2{
 }
 
 #hero {
-	background: url(../img/logo.png) no-repeat left center;
-	padding-left: 200px;
+	background: url(../img/logo.png) no-repeat 8px center;
+	padding-left: 208px;
 }
 
 #status {
@@ -71,7 +74,8 @@ h1, h2{
 }
 
 #content {
-	background: url(../img/gears-footer.png) no-repeat bottom left;
+	background: url(../img/gears-footer.png) no-repeat 6px bottom;
+	padding-bottom: 16px;
 }
 
 #div-download {
