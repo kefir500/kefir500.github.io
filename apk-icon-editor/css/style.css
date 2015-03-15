@@ -144,6 +144,10 @@ h1, h2{
 	background: url(../img/logo-angle.png) bottom right no-repeat;
 }
 
+.btn-lg {
+	margin: 1px 0;
+}
+
 .btn-default {
 	background-color: #ddd;
 }
