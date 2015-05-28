@@ -1,7 +1,4 @@
 body {
-	min-width: 528px;
-	width: auto !important;
-	width: 528px;
 	padding-top: 51px; /* Navigation Bar */
 	background-color: #333;
 	color: #eee;
@@ -31,9 +28,10 @@ ul {
 	padding-left: 17px;
 }
 
-h1, h2{
+h1, h2, h3, h4 {
 	white-space: nowrap;
 	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
 	margin-top: 8px;
 }
 
@@ -54,15 +52,31 @@ h1, h2{
 	padding: 0 !important;
 }
 
+.text-slim {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
 #menu {
 	-webkit-box-shadow: 0px 0px 20px 0px black;
 	-moz-box-shadow:    0px 0px 20px 0px black;
 	box-shadow:         0px 0px 20px 0px black;
 }
 
-#hero {
-	background: url(../img/logo.png) no-repeat 8px center;
-	padding-left: 208px;
+@media (min-width: 768px) {
+	#hero {
+		background: url(../img/logo.png) no-repeat 8px center;
+		padding-left: 216px;
+	}
+}
+
+@media (max-width: 767px) {
+	#hero {
+		background: none;
+		padding-left: 0;
+		font-size: 0.8em;
+		text-align: center;
+	}
 }
 
 #status {
@@ -90,17 +104,35 @@ h1, h2{
 	border-left: 3px solid #f0ad4e;
 }
 
-.info-block {
-	padding-left: 96px;
-	min-height: 96px;
-	background-repeat: no-repeat;
+@media (min-width: 768px) {
+	.block-description {
+		padding-left: 96px;
+		min-height: 96px;
+		background-repeat: no-repeat;
+	}
+}
+
+@media (max-width: 767px) {
+	.block-description {
+		padding-top: 96px;
+		background-repeat: no-repeat;
+		background-position: center top;
+	}
+
+	.block-description h2 {
+		text-align: center;
+	}
 }
 
 #footer {
 	color: #999;
-	height: 50px;
+	height: 100%;
 	padding: 16px;
 	background-color: #222;
+}
+
+#footer p {
+	margin: 0;
 }
 
 #btn-download {
@@ -110,14 +142,14 @@ h1, h2{
 	padding-right: 38px;
 }
 
-.version-new {
-	background: url(../img/version-new.png) no-repeat bottom right;
-	min-height: 52px;
-}
+@media (min-width: 480px) {
+	.version-new {
+		background: url(../img/version-new.png) no-repeat bottom right;
+	}
 
-.version-old {
-	background: url(../img/version-old.png) no-repeat bottom right;
-	min-height: 52px;
+	.version-old {
+		background: url(../img/version-old.png) no-repeat bottom right;
+	}
 }
 
 /* Bootstrap override */
@@ -126,26 +158,22 @@ h1, h2{
 	padding: 32px;
 }
 
+.btn {
+	margin-top: 4px;
+}
+
 .jumbotron {
 	color: #333;
 	padding: 0;
-	background: #efd url(../img/cover.png);
-	background: url(../img/cover.png), -moz-linear-gradient(left, #fff 0%, #ce8 100%);
-	background: url(../img/cover.png), -webkit-gradient(linear, left top, right top, color-stop(0%, #fff), color-stop(100%, #ce8));
-	background: url(../img/cover.png), -webkit-linear-gradient(left, #fff 0%, #ce8 100%);
-	background: url(../img/cover.png), -o-linear-gradient(left, #fff 0%, #ce8 100%);
-	background: url(../img/cover.png), -ms-linear-gradient(left, #fff 0%, #ce8 100%);
-	background: url(../img/cover.png), linear-gradient(to right, #fff 0%, #ce8 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ccee88', GradientType=1);
-}
-
-#jumbotron-inset {
 	padding-top: 48px;
-	background: url(../img/logo-angle.png) bottom right no-repeat;
-}
-
-.btn-lg {
-	margin: 1px 0;
+	background: #efd url(../img/cover.png), url(../img/logo-angle.png) no-repeat right bottom;
+	background: url(../img/cover.png), url(../img/logo-angle.png) no-repeat right bottom, -moz-linear-gradient(left, #fff 0%, #ce8 100%);
+	background: url(../img/cover.png), url(../img/logo-angle.png) no-repeat right bottom, -webkit-gradient(linear, left top, right top, color-stop(0%, #fff), color-stop(100%, #ce8));
+	background: url(../img/cover.png), url(../img/logo-angle.png) no-repeat right bottom, -webkit-linear-gradient(top, #fff 0%, #ce8 100%);
+	background: url(../img/cover.png), url(../img/logo-angle.png) no-repeat right bottom, -o-linear-gradient(left, #fff 0%, #ce8 100%);
+	background: url(../img/cover.png), url(../img/logo-angle.png) no-repeat right bottom, -ms-linear-gradient(left, #fff 0%, #ce8 100%);
+	background: url(../img/cover.png), url(../img/logo-angle.png) no-repeat right bottom, linear-gradient(to bottom, #fff 0%, #ce8 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ccee88', GradientType=1);
 }
 
 .btn-default {
