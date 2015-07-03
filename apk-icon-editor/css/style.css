@@ -39,6 +39,11 @@ h1, h2, h3, h4 {
 	padding-top: 13px;
 }
 
+a:hover img {
+	-webkit-filter: brightness(110%);
+	filter: brightness(110%);
+}
+
 /* Website Elements */
 
 .anchor {
