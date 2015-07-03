@@ -135,6 +135,12 @@ h1, h2, h3, h4 {
 	margin: 0;
 }
 
+@media (max-width: 400px) {
+	#footer {
+		text-align: center;
+	}
+}
+
 #btn-download {
 	background-image: url(../img/icon-arrow.png);
 	background-repeat: no-repeat;
