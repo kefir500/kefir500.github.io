@@ -77,7 +77,7 @@ img.button.social { margin: 10px 8px }
 }
 
 @media (max-width: 767px) {
-    .text-center-xs {
-        text-align: center;
-    }
+	.text-center-xs {
+		text-align: center;
+	}
 }
