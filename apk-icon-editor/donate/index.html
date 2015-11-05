@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>APK Icon Editor - Donate</title>
+    <meta name="description" content="Edit and replace APK resources, easily and quickly. Free. Open source.">
+    <meta name="author" content="Alexander Gorishnyak">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/apk-icon-editor/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
+    <link rel="shortcut icon" href="/apk-icon-editor/img/favicons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="/apk-icon-editor/img/favicons/favicon-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apk-icon-editor/img/favicons/apple-touch-icon-180x180.png">
+    <meta itemprop="name" content="APK Icon Editor">
+    <meta itemprop="applicationCategory" content="Editor">
+    <meta itemprop="description" content="Edit and replace APK resources, easily and quickly. Free. Open source.">
+    <meta itemprop="image" content="http://kefir500.github.io/apk-icon-editor/img/logo/logo-share.png">
+    <meta itemprop="operatingSystem" content="Windows XP (or later), OS X 10.7 (or later), Linux">
+    <meta property="og:title" content="APK Icon Editor">
+    <meta property="og:description" content="Edit and replace APK resources, easily and quickly. Free. Open source.">
+    <meta property="og:image" content="http://kefir500.github.io/apk-icon-editor/img/logo/logo-share.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@apkedit">
+    <meta name="twitter:title" content="APK Icon Editor">
+    <meta name="twitter:description" content="APK Icon Editor is a free and open source tool designed to easily edit and replace APK (Android applications) icons, application name, version and other resources. Written in C++/Qt.">
+    <meta name="twitter:image" content="http://kefir500.github.io/apk-icon-editor/img/logo/logo-share-twitter.png">
+    <meta name="twitter:url" content="http://kefir500.github.io/apk-icon-editor">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="modal fade" id="modal-bitcoin" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                <h4 class="modal-title">Donate Bitcoins</h4>
+            </div>
+            <div class="modal-body text-center">
+                <p><img src="/apk-icon-editor/img/donate/qr-bitcoin.png"></p>
+                <p>BitCoin address:</p>
+                <p><code>1M299bkCjSQL1TDbTzD38a7YyN96NvSo2k</code></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-yandex" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                <h4 class="modal-title">Donate via Yandex.Money</h4>
+            </div>
+            <div class="modal-body text-center">
+                <iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/donate.xml?account=410011762016796&quickpay=donate&payment-type-choice=off&default-sum=40&targets=APK+Icon+Editor&target-visibility=on&project-name=APK+Icon+Editor&project-site=http%3A%2F%2Fkefir500.github.io%2Fapk-icon-editor&button-text=03&comment=on&hint=%D0%A3%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5+%D0%92%D0%B0%D1%88%D0%B5+%D0%B8%D0%BC%D1%8F%2C+%D1%87%D1%82%D0%BE%D0%B1%D1%8B+%D0%BC%D1%8B+%D0%BC%D0%BE%D0%B3%D0%BB%D0%B8+%D0%92%D0%B0%D1%81+%D0%BF%D0%BE%D0%B1%D0%BB%D0%B0%D0%B3%D0%BE%D0%B4%D0%B0%D1%80%D0%B8%D1%82%D1%8C.&successURL=http%3A%2F%2Fkefir500.github.io%2Fapk-icon-editor%2Fdonate%2F%23thanks" width="498" height="201"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="header">
+    <div id="logo-angle"></div>
+
+    <div class="navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="btn-logo navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                    <img src="/apk-icon-editor/img/logo/logo-navbar.png" alt="APK Icon Editor">
+                </button>
+                <a class="btn-logo navbar-brand hidden-xs" href="http://kefir500.github.io/apk-icon-editor"><img src="/apk-icon-editor/img/logo/logo-navbar.png" alt="APK Icon Editor"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://kefir500.github.io/apk-icon-editor" class="visible-xs">Home</a></li>
+                    <li><a href="/apk-icon-editor/download/">Download</a></li>
+                    <li><a href="https://github.com/kefir500/apk-icon-editor">Source</a></li>
+                    <li><a href="https://www.transifex.com/qminds/apk-icon-editor/">Translate</a></li>
+                    <li><a href="/apk-icon-editor/donate/">Donate</a></li>
+                    <li><a href="/apk-icon-editor/#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col-xs-12" id="header-body">
+            <div class="visible-lg" id="header-screenshot"></div>
+            <h1>APK Icon Editor</h1>
+            <h2>Edit and replace APK resources, easily and quickly. <br class="hidden-xs">Free. Open&nbsp;source. <nobr>Cross-platform</nobr>.</h2>
+            <img src="/apk-icon-editor/img/os/small-windows.png" title="Microsoft Windows" alt="Microsoft Windows">
+            <img src="/apk-icon-editor/img/os/small-osx.png" title="Apple OS X" alt="Apple OS X">
+            <img src="/apk-icon-editor/img/os/small-linux.png" title="GNU/Linux" alt="GNU/Linux">
+            <img src="/apk-icon-editor/img/os/small-github.png" title="Source Code" alt="Source Code">
+        </div>
+    </div>
+    <a id="btn-donate" href="/apk-icon-editor/donate/">DONATE</a>
+</div>
+
+<div class="container-fluid" id="main">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4" id="panel-thanks">
+                <h3>Thank you!</h3>
+                <p>
+                    Thank you for your donation! If you did not specify your name,
+                    <a href="mailto:kefir500@gmail.com">contact&nbsp;us</a>
+                    so we can add you to the Donators&nbsp;list.
+                </p>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="panel panel-donate" id="panel-paypal">
+                    <div class="panel-heading">
+                        <h3>PayPal</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="K3GTVTKD8LZ3Q">
+                            <input type="image" class="btn-donate-method" src="/apk-icon-editor/img/donate/btn-paypal.png" border="0" name="submit" alt="Donate via PayPal" title="PayPal">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="panel panel-donate" id="panel-flattr">
+                    <div class="panel-heading">
+                        <h3>Flattr</h3>
+                    </div>
+                    <div class="panel-body">
+                        <script id="fbf1e9q">(function(i){var f,s=document.getElementById(i);f=document.createElement('iframe');f.src='//api.flattr.com/button/view/?uid=kefir500&button=compact&url=http%3A%2F%2Fkefir500.github.io%2Fapk-icon-editor';f.title='Flattr';f.height=20;f.width=120;f.style.borderWidth=0;s.parentNode.insertBefore(f,s);})('fbf1e9q');</script>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="panel panel-donate" id="panel-yandex">
+                    <div class="panel-heading">
+                        <h3>Yandex.Money</h3>
+                    </div>
+                    <div class="panel-body">
+                        <a href="#" class="btn-donate-method" data-toggle="modal" data-target="#modal-yandex"><img src="/apk-icon-editor/img/donate/btn-yandex.png" alt="Donate via Yandex.Money" title="Yandex.Money"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="panel panel-donate" id="panel-bitcoin">
+                    <div class="panel-heading">
+                        <h3>Bitcoin</h3>
+                    </div>
+                    <div class="panel-body">
+                        <a href="#" class="btn-donate-method" data-toggle="modal" data-target="#modal-bitcoin"><img src="/apk-icon-editor/img/donate/btn-bitcoin.png" alt="Donate Bitcoins" title="Bitcoin"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3>Donators</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p>Big thanks for supporting <nobr>APK Icon Editor</nobr>:
+                        <ul>
+                            <li><a href="http://www.cyclos.org">Cyclos</a> <span class="text-muted">50&euro;</span></li>
+                            <li><a href="http://www.wakdev.com">WakDev</a> <span class="text-muted">40&euro;</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-8">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3>Support</h3>
+                    </div>
+                    <div class="panel-body">
+                        This software is <b>totally free</b>, and you are not forced to make any donations.
+                        However, your support helps to keep APK Icon Editor alive, improve its quality and increase the frequency of updates.
+                        Your donations are highly appreciated, so this would be a great way to express your gratitude.
+                        Make sure to specify your name when donating so we can thank you by adding to the Donators list.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="footer">
+            <div class="col-xs-12 col-sm-8">
+                <a href="https://github.com/kefir500/apk-icon-editor/" target="_blank">GitHub</a>&ensp;&ensp;
+                <a href="/apk-icon-editor/donate/">Donate</a>&ensp;&ensp;
+                <a href="mailto:kefir500@gmail.com">Contact</a>&ensp;&ensp;
+                <a href="http://www.gnu.org/licenses/gpl-3.0.html" target="_blank">License</a>&ensp;&ensp;
+                <hr id="hr-footer">
+                &copy; Alexander Gorishnyak and <a href="https://github.com/kefir500/apk-icon-editor/blob/master/AUTHORS.md">Authors</a> 2014&ndash;2015<br>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/apk-icon-editor/js/script.js"></script>
+
+</body>
+</html>
