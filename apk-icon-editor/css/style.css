@@ -62,11 +62,11 @@ code {
 .navbar li a:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
-.navbar li a:active {
+.navbar li a:focus:active {
   background-color: rgba(0, 0, 0, 0.075);
 }
 .navbar li a:focus {
-  background: none;
+  background-color: rgba(0, 0, 0, 0.025);
 }
 .navbar .navbar-collapse {
   border-top: 1px solid #d2dfbb;
