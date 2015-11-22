@@ -83,57 +83,6 @@ code {
     margin-bottom: 0;
   }
 }
-#qnavbar {
-  background-color: rgba(0, 0, 0, 0.05);
-  font-family: "Open Sans", sans-serif;
-  font-size: 0.95em;
-  line-height: 50px;
-  text-transform: uppercase;
-}
-#qnavbar .btn-logo {
-  float: left;
-  -webkit-transition: opacity 0.25s ease;
-  -moz-transition: opacity 0.25s ease;
-  -o-transition: opacity 0.25s ease;
-  transition: opacity 0.25s ease;
-}
-#qnavbar .btn-logo:hover {
-  opacity: 0.55;
-}
-#qnavbar ul#menu {
-  text-align: right;
-  list-style-type: none;
-  margin: 0;
-}
-#qnavbar ul#menu li {
-  display: inline;
-}
-#qnavbar ul#menu li a {
-  color: #666;
-  margin: 0;
-  text-decoration: none;
-}
-#qnavbar ul#menu li a:hover {
-  background-color: rgba(0, 0, 0, 0.05);
-}
-@media (min-width: 768px) {
-  #qnavbar ul#menu li a {
-    height: 100%;
-  }
-}
-@media (max-width: 767px) {
-  #qnavbar ul#menu {
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    width: 100%;
-    background-color: rgba(237, 255, 223, 0.925);
-    text-align: center;
-  }
-  #qnavbar ul#menu li a {
-    display: block;
-  }
-}
 #header {
   position: relative;
   border-bottom: 1px solid #ddd;
