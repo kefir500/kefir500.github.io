@@ -287,28 +287,6 @@ code {
 .version-old .panel-body {
   background: url('../img/logo/version-old.png') right bottom no-repeat;
 }
-#panel-thanks {
-  display: none;
-  margin-bottom: 40px;
-  padding: 24px 0;
-  text-align: center;
-  background: url('../img/logo/logo-thanks.png') center center no-repeat;
-}
-#panel-thanks.visible {
-  display: block;
-  animation-name: fade;
-  animation-duration: 1.4s;
-}
-@-webkit-keyframes fade {
-  from {
-    opacity: 0;
-    -webkit-transform: scale(0, 0);
-    -moz-transform: scale(0, 0);
-    -ms-transform: scale(0, 0);
-    -o-transform: scale(0, 0);
-    transform: scale(0, 0);
-  }
-}
 .panel-donate .panel-body {
   height: 92px;
   padding-top: 24px;
@@ -330,6 +308,35 @@ code {
   outline: 0;
   -webkit-filter: brightness(105%);
   filter: brightness(105%);
+}
+#modal-paypal form {
+  padding-top: 6px;
+}
+#modal-paypal form select {
+  margin: 8px auto;
+  max-width: 170px;
+}
+#panel-thanks {
+  display: none;
+  margin-bottom: 40px;
+  padding: 24px 0;
+  text-align: center;
+  background: url('../img/logo/logo-thanks.png') center center no-repeat;
+}
+#panel-thanks.visible {
+  display: block;
+  animation-name: fade;
+  animation-duration: 1.4s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0, 0);
+    -moz-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    -o-transform: scale(0, 0);
+    transform: scale(0, 0);
+  }
 }
 .container-fluid {
   padding: 0;
