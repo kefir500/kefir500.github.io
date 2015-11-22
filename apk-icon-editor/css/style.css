@@ -20,7 +20,8 @@ code {
   background-color: #f6f6f6;
   border: 1px solid #e6e6e6;
   border-radius: 0;
-  padding: 0 4px;
+  padding: 0 2px;
+  margin: 0 2px;
 }
 :target {
   animation-name: anchor;
@@ -394,6 +395,11 @@ code {
 }
 .panel .btn {
   width: 100%;
+}
+.well {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  padding: 8px;
 }
 .text-muted {
   color: #bbb;
