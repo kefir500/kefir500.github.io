@@ -208,7 +208,8 @@ code {
   padding-top: 48px;
 }
 #footer {
-  padding: 40px 0 10px 0;
+  padding-top: 40px;
+  padding-bottom: 10px;
 }
 #footer #hr-footer {
   margin: 6px 0;
