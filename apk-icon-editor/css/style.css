@@ -24,10 +24,10 @@ code {
   margin: 0 2px;
 }
 :target {
-  animation-name: anchor;
+  animation-name: slide;
   animation-duration: 1.2s;
 }
-@keyframes anchor {
+@keyframes slide {
   from {
     -webkit-transform: translateX(-100px);
     -moz-transform: translateX(-100px);
@@ -259,11 +259,20 @@ code {
   border-top: 1px solid #e6e6e6;
   padding: 14px;
 }
+.panel-os#panel-os-windows {
+  z-index: 2;
+}
 .panel-os#panel-os-windows .panel-heading {
   background-image: url('../img/os/large-windows.png');
 }
+.panel-os#panel-os-osx {
+  z-index: 1;
+}
 .panel-os#panel-os-osx .panel-heading {
   background-image: url('../img/os/large-osx.png');
+}
+.panel-os#panel-os-linux {
+  z-index: 0;
 }
 .panel-os#panel-os-linux .panel-heading {
   background-image: url('../img/os/large-linux.png');
