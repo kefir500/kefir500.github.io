@@ -1,2 +1,3 @@
 User-agent: *
 Disallow: .gitignore
+Disallow: /apk-icon-editor/docs/
