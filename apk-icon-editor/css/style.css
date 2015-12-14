@@ -277,19 +277,8 @@ code {
 .panel-os#panel-os-linux .panel-heading {
   background-image: url('../img/os/large-linux.png');
 }
-.panel-social .fb-share-button {
-  margin-top: 2px;
+.panel-social .fb-like {
   margin-bottom: 7px;
-  margin-right: 2px;
-}
-.panel-social .twitter-share-button {
-  margin-bottom: 12px;
-  margin-right: 2px;
-}
-@media (max-width: 767px) {
-  .panel-social {
-    text-align: center;
-  }
 }
 .version-new .panel-body {
   background: url('../img/logo/version-new.png') right bottom no-repeat;
