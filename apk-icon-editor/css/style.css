@@ -117,7 +117,7 @@ code {
 @media (max-width: 767px) {
   #header #header-body {
     margin-top: 0;
-    padding: 208px 0 20px 0;
+    padding: 208px 0 20px 0 !important;
     text-align: center;
     background-position: center top 28px;
   }
@@ -159,7 +159,7 @@ code {
   bottom: 0;
 }
 #header #btn-donate {
-  z-index: 3;
+  z-index: 4;
   position: absolute;
   display: block;
   width: 68px;
@@ -424,4 +424,32 @@ code {
 .modal code {
   font-size: 15px;
   display: block;
+}
+.xmas #header-body {
+  background: url('../img/logo/logo-header-xmas.png') left center no-repeat !important;
+  padding-left: 210px !important;
+}
+@media (max-width: 767px) {
+  .xmas #header-body {
+    background-position: center top !important;
+  }
+}
+@media (min-width: 768px) {
+  .xmas #btn-donate {
+    border-radius: 0 !important;
+    background: url('../img/donate/btn-donate-xmas.png') !important;
+    height: 144px !important;
+    line-height: 220px !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -o-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+  .xmas #btn-donate:hover {
+    -webkit-filter: brightness(120%) !important;
+    filter: brightness(120%) !important;
+  }
+}
+.xmas .snowfall-flakes {
+  z-index: 3 !important;
 }
