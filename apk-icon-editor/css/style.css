@@ -312,7 +312,7 @@ code {
   padding-top: 6px;
 }
 #modal-paypal form select {
-  margin: 8px auto;
+  margin: 2px auto 8px auto;
   max-width: 170px;
 }
 #panel-thanks {
