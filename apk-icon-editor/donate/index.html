@@ -249,14 +249,12 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript" src="/js/bootstrap.min.js"></script>
 <script type="text/javascript">
-	$(function() {
-		var hash = window.location.hash.substring(1);
-		switch (hash) {
-			case 'paypal': $('#modal-paypal').modal(); break;
-			case 'bitcoin': $('#modal-bitcoin').modal(); break;
-			case 'thanks': $('#panel-thanks').addClass('visible'); break;
-		}
-	});
+	var hash = window.location.hash.substring(1);
+	switch (hash) {
+		case 'paypal': $('#modal-paypal').modal(); break;
+		case 'bitcoin': $('#modal-bitcoin').modal(); break;
+		case 'thanks': $('#panel-thanks').addClass('visible'); break;
+	}
 </script>
 
 <!-- Yandex.Metrika -->
