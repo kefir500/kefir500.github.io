@@ -15,6 +15,11 @@ h6 {
 img[itemprop="screenshot"] {
   margin-bottom: 20px;
 }
+select {
+  margin-top: 6px;
+  margin-bottom: 8px;
+  max-width: 170px;
+}
 code {
   color: #444;
   background-color: #f6f6f6;
@@ -310,10 +315,6 @@ code {
 }
 #modal-paypal form {
   padding-top: 6px;
-}
-#modal-paypal form select {
-  margin: 2px auto 8px auto;
-  max-width: 170px;
 }
 #panel-thanks {
   display: none;
