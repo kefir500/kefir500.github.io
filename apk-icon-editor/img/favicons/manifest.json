@@ -1,0 +1,16 @@
+{
+	"name": "APK Icon Editor",
+	"icons": [
+		{
+			"src": "/apk-icon-editor/img/favicons/android-chrome-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/apk-icon-editor/img/favicons/android-chrome-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"display": "standalone"
+}
