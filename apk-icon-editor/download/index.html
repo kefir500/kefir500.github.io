@@ -41,6 +41,42 @@
 </head>
 <body>
 
+<div class="modal fade" id="modal-download" tabindex="-1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+				<h4 class="modal-title">Downloading&hellip;</h4>
+			</div>
+			<div class="modal-body">
+				<p>
+					Thank you for downloading "APK Icon Editor"!
+				</p>
+				<p>
+					APK Icon Editor is a <strong>totally free</strong> non-profit software.<br>
+					However, you may support the development by making an optional donation which will help us
+					to improve APK&nbsp;Icon&nbsp;Editor. Also check out the other
+					<a href="/apk-icon-editor/donate/">donation&nbsp;options</a>.
+					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="hosted_button_id" value="2C2KT7FVPTWZW">
+						<input type="hidden" name="on0" value="Donation Amount">
+						<select class="form-control" id="paypal-amount" name="os0">
+							<option value="$1 USD">$1 USD</option>
+							<option value="$2 USD">$2 USD</option>
+							<option value="$5 USD" selected>$5 USD</option>
+							<option value="$10 USD">$10 USD</option>
+							<option value="$25 USD">$25 USD</option>
+						</select>
+						<input type="hidden" name="currency_code" value="USD">
+						<input type="image" src="/apk-icon-editor/img/donate/btn-paypal.png" class="btn-donate-method" name="submit" alt="Donate via PayPal">
+					</form>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
 <header id="header">
 	<div id="logo-angle"></div>
 
@@ -105,8 +141,8 @@
 							<p>EXE Installer is recommended. If you prefer a portable package, download ZIP archive.</p>
 						</div>
 						<div class="panel-footer">
-							<a href="https://github.com/kefir500/apk-icon-editor/releases/download/v1.6.0/APK.Icon.Editor.v1.6.0.exe" class="btn btn-blue"><span class="hidden-sm">Download Installer (EXE)</span><span class="visible-sm">Download EXE</span></a>
-							<a href="https://github.com/kefir500/apk-icon-editor/releases/download/v1.6.0/APK.Icon.Editor.v1.6.0.zip" class="btn btn-green"><span class="hidden-sm">Download Portable (ZIP)</span><span class="visible-sm">Download ZIP</span></a>
+							<a href="https://github.com/kefir500/apk-icon-editor/releases/download/v1.6.0/APK.Icon.Editor.v1.6.0.exe" class="btn btn-blue btn-download"><span class="hidden-sm">Download Installer (EXE)</span><span class="visible-sm">Download EXE</span></a>
+							<a href="https://github.com/kefir500/apk-icon-editor/releases/download/v1.6.0/APK.Icon.Editor.v1.6.0.zip" class="btn btn-green btn-download"><span class="hidden-sm">Download Portable (ZIP)</span><span class="visible-sm">Download ZIP</span></a>
 						</div>
 					</div>
 				</div>
@@ -128,8 +164,8 @@
 							<p>Download DMG package for a simple drag-n-drop installation. Get an APP in order to do it manually.</p>
 						</div>
 						<div class="panel-footer">
-							<a href="https://github.com/kefir500/apk-icon-editor/releases/download/v1.6.0/APK.Icon.Editor.v1.6.0.dmg" class="btn btn-blue">Download DMG</a>
-							<a href="https://github.com/kefir500/apk-icon-editor/releases/download/v1.6.0/APK.Icon.Editor.v1.6.0.app.zip" class="btn btn-green">Download APP</a>
+							<a href="https://github.com/kefir500/apk-icon-editor/releases/download/v1.6.0/APK.Icon.Editor.v1.6.0.dmg" class="btn btn-blue btn-download">Download DMG</a>
+							<a href="https://github.com/kefir500/apk-icon-editor/releases/download/v1.6.0/APK.Icon.Editor.v1.6.0.app.zip" class="btn btn-green btn-download">Download APP</a>
 						</div>
 					</div>
 				</div>
@@ -143,7 +179,7 @@
 							<p>Currently there are no executable binaries for Linux, however you can compile source yourself (Qt 5).</p>
 						</div>
 						<div class="panel-footer">
-							<a href="https://github.com/kefir500/apk-icon-editor/archive/v1.6.0.tar.gz" class="btn btn-blue">Download Source</a>
+							<a href="https://github.com/kefir500/apk-icon-editor/archive/v1.6.0.tar.gz" class="btn btn-blue btn-download">Download Source</a>
 							<a href="https://github.com/kefir500/apk-icon-editor" class="btn btn-green">GitHub Page</a>
 						</div>
 					</div>
@@ -409,6 +445,12 @@
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$('.btn-download').click(function () {
+		$('#modal-download').modal();
+		return true;
+	});
+</script>
 
 <!-- Yandex.Metrika -->
 <script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23742388 = new Ya.Metrika({id:23742388, webvisor:true, clickmap:true, trackLinks:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/23742388" style="position:absolute; left:-9999px;" alt="" /></div></noscript>

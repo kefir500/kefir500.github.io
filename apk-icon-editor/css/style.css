@@ -291,6 +291,10 @@ code {
 .version-old .panel-body {
   background: url('../img/logo/version-old.png') right bottom no-repeat;
 }
+#modal-download .modal-body {
+  padding-left: 100px;
+  background: url('../img/logo/logo-modal.png') 18px 18px no-repeat;
+}
 .panel-donate .panel-body {
   height: 92px;
   padding-top: 24px;
