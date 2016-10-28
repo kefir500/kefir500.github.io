@@ -18,7 +18,7 @@ img[itemprop="screenshot"] {
 select {
   margin-top: 6px;
   margin-bottom: 8px;
-  max-width: 170px;
+  max-width: 220px;
 }
 code {
   color: #444;
@@ -316,6 +316,13 @@ code {
 #modal-paypal form {
   padding-top: 6px;
 }
+#modal-paypal select {
+  margin-left: auto;
+  margin-right: auto;
+}
+#modal-yandex iframe {
+  width: 410px;
+}
 #panel-thanks {
   display: none;
   margin-bottom: 40px;
@@ -418,6 +425,12 @@ code {
   -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
   -o-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+.modal .modal-content .modal-header {
+  background: #e6f3c8;
+}
+.modal .modal-content .modal-header h4 {
+  font-weight: 400;
 }
 .modal .close {
   line-height: inherit;
