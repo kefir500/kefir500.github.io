@@ -107,6 +107,12 @@ code {
   margin-bottom: 40px;
   background: url('../img/logo/logo-header.png') left center no-repeat;
 }
+@media (min-resolution: 144dpi) {
+  #header #header-body {
+    background-image: url('../img/logo/logo-header@2x.png');
+    background-size: 160px 160px;
+  }
+}
 #header #header-body h1 {
   font-size: 3.5em;
   margin: 0;
