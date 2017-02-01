@@ -329,6 +329,11 @@ code {
   margin-left: auto;
   margin-right: auto;
 }
+#modal-paypal-download h4 {
+  color: #1c9bd6;
+  font-weight: 700;
+  margin: 16px 0 8px 0;
+}
 #modal-yandex iframe {
   width: 410px;
 }
