@@ -28,16 +28,22 @@ code {
   margin: 0 2px;
 }
 :target {
-  animation-name: slide;
-  animation-duration: 1.2s;
+  -webkit-animation-name: slide;
+          animation-name: slide;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+}
+@-webkit-keyframes slide {
+  from {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
 }
 @keyframes slide {
   from {
     -webkit-transform: translateX(-100px);
-    -moz-transform: translateX(-100px);
-    -ms-transform: translateX(-100px);
-    -o-transform: translateX(-100px);
-    transform: translateX(-100px);
+            transform: translateX(-100px);
     opacity: 0;
   }
 }
@@ -50,10 +56,8 @@ code {
   border-radius: 0;
 }
 .navbar .btn-logo {
-  -webkit-transition: opacity 0.25s ease;
-  -moz-transition: opacity 0.25s ease;
-  -o-transition: opacity 0.25s ease;
-  transition: opacity 0.25s ease;
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
 }
 .navbar .btn-logo:hover {
   opacity: 0.55;
@@ -92,12 +96,7 @@ code {
   position: relative;
   border-bottom: 1px solid #ddd;
   background: #e0ecbd;
-  background: #f3ffdd;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f3ffdd), to(#d2e5ad));
   background: -webkit-linear-gradient(top, #f3ffdd, #d2e5ad);
-  background: -moz-linear-gradient(top, #f3ffdd, #d2e5ad);
-  background: -ms-linear-gradient(top, #f3ffdd, #d2e5ad);
-  background: -o-linear-gradient(top, #f3ffdd, #d2e5ad);
   background: linear-gradient(to bottom, #f3ffdd, #d2e5ad);
 }
 #header #header-body {
@@ -152,8 +151,15 @@ code {
   right: -16px;
 }
 #header #header-screenshot.animate-rise {
-  animation-name: rise;
-  animation-duration: 1.2s;
+  -webkit-animation-name: rise;
+          animation-name: rise;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+}
+@-webkit-keyframes rise {
+  from {
+    top: 400px;
+  }
 }
 @keyframes rise {
   from {
@@ -184,22 +190,14 @@ code {
   font-weight: 600;
   text-align: center;
   line-height: 68px;
-  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 #header #btn-donate:hover {
   bottom: -31px;
   text-decoration: none;
-  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 #header #btn-donate:focus {
   text-decoration: none;
@@ -320,7 +318,7 @@ code {
 .btn-donate-method:focus {
   outline: 0;
   -webkit-filter: brightness(105%);
-  filter: brightness(105%);
+          filter: brightness(105%);
 }
 #modal-paypal form {
   padding-top: 6px;
@@ -346,17 +344,23 @@ code {
 }
 #panel-thanks.visible {
   display: block;
-  animation-name: fade;
-  animation-duration: 1.4s;
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+          animation-duration: 1.4s;
 }
 @-webkit-keyframes fade {
   from {
     opacity: 0;
     -webkit-transform: scale(0, 0);
-    -moz-transform: scale(0, 0);
-    -ms-transform: scale(0, 0);
-    -o-transform: scale(0, 0);
-    transform: scale(0, 0);
+            transform: scale(0, 0);
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
   }
 }
 .container-fluid {
@@ -371,14 +375,9 @@ code {
   padding: 10px 32px !important;
   margin-top: 2px;
   margin-bottom: 2px;
-  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  -webkit-transition: background-color 0.25s ease;
-  -moz-transition: background-color 0.25s ease;
-  -o-transition: background-color 0.25s ease;
-  transition: background-color 0.25s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  -webkit-transition: background-color 0.25s;
+  transition: background-color 0.25s;
 }
 .btn.btn-green {
   color: white;
@@ -404,10 +403,7 @@ code {
 .panel {
   border: none;
   border-radius: 0;
-  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 .panel .panel-heading {
   background-position: right 12px center;
@@ -435,10 +431,7 @@ code {
 }
 .modal .modal-content {
   border-radius: 0;
-  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
-  -o-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 .modal .modal-content .modal-header {
   background: #e6f3c8;
@@ -468,13 +461,10 @@ code {
     background: url('../img/donate/btn-donate-xmas.png') !important;
     height: 144px !important;
     line-height: 220px !important;
-    -webkit-box-shadow: none !important;
-    -moz-box-shadow: none !important;
-    -o-box-shadow: none !important;
     box-shadow: none !important;
   }
   .xmas #btn-donate:hover {
     -webkit-filter: brightness(120%) !important;
-    filter: brightness(120%) !important;
+            filter: brightness(120%) !important;
   }
 }
