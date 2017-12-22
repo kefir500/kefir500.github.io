@@ -39,7 +39,7 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 </head>
-<body>
+<body class="xmas">
 
 <div class="modal fade" id="modal-download" tabindex="-1">
 	<div class="modal-dialog">
@@ -473,16 +473,21 @@
 			<a href="http://www.gnu.org/licenses/gpl-3.0.html" target="_blank">License</a>&ensp;&ensp;
 			<hr id="hr-footer">
 			&copy; Alexander Gorishnyak and <a href="https://github.com/kefir500/apk-icon-editor/blob/master/AUTHORS.md">Authors</a> <span class="text-nowrap">2014&ndash;2017</span>
+			<br>Special thanks: <a href="https://github.com/loktar00/JQuery-Snowfall" class="text-nowrap">Jason Brown</a> and <a href="http://freepsdfiles.net/graphics/christmas-hat-psd-file" class="text-nowrap">Free PSD Files</a>
 		</div>
 	</div>
 </footer>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/apk-icon-editor/js/snowfall.jquery.min.js"></script>
 <script type="text/javascript">
-	$('.btn-download').click(function () {
-		$('#modal-download').modal();
-		return true;
+	$(function () {
+		$('.btn-download').click(function () {
+			$('#modal-download').modal();
+			return true;
+		});
+		$('#header').snowfall({flakeCount: 100, flakeIndex: 3, maxSpeed: 3, maxSize: 5, round: true});
 	});
 </script>
 
