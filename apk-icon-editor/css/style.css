@@ -28,22 +28,12 @@ code {
   margin: 0 2px;
 }
 :target {
-  -webkit-animation-name: slide;
-          animation-name: slide;
-  -webkit-animation-duration: 1.2s;
-          animation-duration: 1.2s;
-}
-@-webkit-keyframes slide {
-  from {
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
-    opacity: 0;
-  }
+  animation-name: slide;
+  animation-duration: 1.2s;
 }
 @keyframes slide {
   from {
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
+    transform: translateX(-100px);
     opacity: 0;
   }
 }
@@ -56,7 +46,6 @@ code {
   border-radius: 0;
 }
 .navbar .btn-logo {
-  -webkit-transition: opacity 0.25s;
   transition: opacity 0.25s;
 }
 .navbar .btn-logo:hover {
@@ -96,7 +85,6 @@ code {
   position: relative;
   border-bottom: 1px solid #ddd;
   background: #e0ecbd;
-  background: -webkit-linear-gradient(top, #f3ffdd, #d2e5ad);
   background: linear-gradient(to bottom, #f3ffdd, #d2e5ad);
 }
 #header #header-body {
@@ -151,15 +139,8 @@ code {
   right: -16px;
 }
 #header #header-screenshot.animate-rise {
-  -webkit-animation-name: rise;
-          animation-name: rise;
-  -webkit-animation-duration: 1.2s;
-          animation-duration: 1.2s;
-}
-@-webkit-keyframes rise {
-  from {
-    top: 400px;
-  }
+  animation-name: rise;
+  animation-duration: 1.2s;
 }
 @keyframes rise {
   from {
@@ -191,7 +172,6 @@ code {
   text-align: center;
   line-height: 68px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 #header #btn-donate:hover {
@@ -311,7 +291,6 @@ code {
   margin-top: 2px;
   margin-bottom: 2px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  -webkit-transition: background-color 0.25s;
   transition: background-color 0.25s;
 }
 .btn.btn-green {
@@ -399,7 +378,6 @@ code {
     box-shadow: none !important;
   }
   .xmas #btn-donate:hover {
-    -webkit-filter: brightness(120%) !important;
-            filter: brightness(120%) !important;
+    filter: brightness(120%) !important;
   }
 }
