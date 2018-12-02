@@ -215,6 +215,15 @@ code {
 #panel-translate .panel-heading {
   background-image: url('../img/panels/translate.png');
 }
+#panel-requirements h5 {
+  margin-left: 8px;
+}
+#panel-requirements p {
+  margin-left: 24px;
+}
+#panel-requirements hr {
+  margin: 14px;
+}
 .panel-os {
   position: relative;
 }
