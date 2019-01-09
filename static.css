@@ -1,0 +1,17 @@
+.projects {
+  margin-top: 40px;
+}
+
+.projects img {
+  max-width: 128px;
+  margin: 20px 0;
+}
+
+.projects h3 {
+  color: black;
+  font-weight: 300;
+}
+
+.projects a img:hover {
+  filter: brightness(110%);
+}
