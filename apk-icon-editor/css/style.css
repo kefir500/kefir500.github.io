@@ -133,6 +133,7 @@ code {
 #header #header-screenshot {
   position: absolute;
   background-image: url('../img/screenshots/header.png');
+  background-repeat: no-repeat;
   width: 432px;
   height: 306px;
   top: -16px;
@@ -146,6 +147,9 @@ code {
   from {
     top: 400px;
   }
+}
+#header #header-footer {
+  margin-bottom: 48px;
 }
 #header #logo-angle {
   position: absolute;
