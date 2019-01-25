@@ -278,9 +278,6 @@ code {
 .panel-os#panel-os-linux .panel-heading {
   background-image: url('../img/os/large-linux.png');
 }
-.panel-social .fb-like {
-  margin-bottom: 7px;
-}
 .version-new .panel-body {
   background: url('../img/logo/version-new.png') right bottom no-repeat;
 }
