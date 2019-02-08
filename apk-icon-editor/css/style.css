@@ -106,10 +106,11 @@ code {
 #header #header-body h2 {
   font-size: 1.22em;
   font-weight: 400;
+  line-height: 22px;
   margin: 8px 0 14px 0;
 }
 #header #header-body img {
-  margin-right: 6px;
+  margin-right: 8px;
 }
 @media (max-width: 767px) {
   #header #header-body {
@@ -147,9 +148,6 @@ code {
   from {
     top: 400px;
   }
-}
-#header #header-footer {
-  margin-bottom: 48px;
 }
 #header #logo-angle {
   position: absolute;
