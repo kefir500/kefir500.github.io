@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://qwertycube.com/apk-editor-studio/blog/</id>
+    <title>APK Editor Studio</title>
+    <updated>2019-02-10T07:56:52.341Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <author>
+        <name>Alexander Gorishnyak</name>
+    </author>
+    <link rel="alternate" href="https://qwertycube.com/apk-editor-studio/blog/feed.xml"/>
+    <link rel="self" href="https://qwertycube.com/apk-editor-studio/blog/feed.xml"/>
+    <icon>https://qwertycube.com/apk-editor-studio/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[APK Editor Studio vs APK Icon Editor]]></title>
+        <id>https://qwertycube.com/apk-editor-studio/blog/apk-editor-studio-vs-apk-icon-editor/</id>
+        <link href="https://qwertycube.com/apk-editor-studio/blog/apk-editor-studio-vs-apk-icon-editor/">
+        </link>
+        <updated>2019-02-10T06:10:00.000Z</updated>
+        <summary type="html"><![CDATA[Why was the new APK editor created and should users move to it? Difference between APK Editor Studio and APK Icon Editor.]]></summary>
+        <content type="html"><![CDATA[Read the full article here: <a href="https://qwertycube.com/apk-editor-studio/blog/apk-editor-studio-vs-apk-icon-editor/">APK Editor Studio vs APK Icon Editor</a>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[APK Editor Studio v1.0.0 Released]]></title>
+        <id>https://qwertycube.com/apk-editor-studio/blog/apk-editor-studio-v1.0.0-released/</id>
+        <link href="https://qwertycube.com/apk-editor-studio/blog/apk-editor-studio-v1.0.0-released/">
+        </link>
+        <updated>2019-02-10T06:08:00.000Z</updated>
+        <summary type="html"><![CDATA[The first version of the new APK editor for PC & Mac went public.]]></summary>
+        <content type="html"><![CDATA[Read the full article here: <a href="https://qwertycube.com/apk-editor-studio/blog/apk-editor-studio-v1.0.0-released/">APK Editor Studio v1.0.0 Released</a>]]></content>
+    </entry>
+</feed>
