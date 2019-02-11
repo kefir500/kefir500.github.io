@@ -5084,6 +5084,10 @@ h3 {
   }
 }
 
+#blog-post .post aside .ads {
+  margin-bottom: 20px;
+}
+
 #blog-post .post aside .social {
   margin-bottom: 20px;
 }
