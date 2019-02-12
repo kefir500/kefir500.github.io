@@ -1,2 +1,5 @@
 User-agent: *
-Disallow: .gitignore
+Disallow:
+
+Sitemap: https://qwertycube.com/sitemap.xml
+Sitemap: https://qwertycube.com/apk-editor-studio/blog/sitemap.xml
