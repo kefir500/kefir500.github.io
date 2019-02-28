@@ -5192,6 +5192,10 @@ h3 {
     position: sticky;
     top: 24px;
   }
+
+  #blog-post .post aside .related li {
+    font-size: 15px;
+  }
 }
 
 #blog-post .post aside .ads {
