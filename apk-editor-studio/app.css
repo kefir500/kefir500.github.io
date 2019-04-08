@@ -5176,6 +5176,10 @@ h3 {
   padding-left: 36px;
 }
 
+#blog-post .post__content .fa-external-link-alt {
+  opacity: 0.45;
+}
+
 #blog-post .post aside {
   padding-top: 14px;
   padding-bottom: 8px;
