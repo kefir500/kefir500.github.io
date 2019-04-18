@@ -3,17 +3,17 @@
 	{
 		"windows":
 		{
-			"version": "2.1.0"
+			"version": "2.2.0"
 		},
 
 		"linux":
 		{
-			"version": "2.1.0"
+			"version": "2.2.0"
 		},
 
 		"osx":
 		{
-			"version": "2.1.0"
+			"version": "2.2.0"
 		}
 	}
 }
