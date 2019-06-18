@@ -4740,81 +4740,28 @@ h5 {
 
 #contact .page__content {
   position: relative;
-  padding: 100px 0;
-}
-
-#contact input,
-#contact textarea,
-#contact button {
-  width: 100%;
-  margin: 10px 0;
-  background: white;
-  padding: 10px 12px;
-  border: none;
-}
-
-#contact button {
-  background: #1f9de0;
-  color: white;
-  cursor: pointer;
-  -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
-          box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
-}
-
-#contact button:hover {
-  background: #35a7e3;
-}
-
-#contact button:active {
-  background: #1c8dca;
-}
-
-#contact button:focus {
-  outline: 1px solid #70c0eb;
-}
-
-#contact button:active:focus {
-  outline: none;
+  padding: 60px 0;
 }
 
 #contact h2 {
+  display: inline-block;
   color: white;
+  font-size: 1.6em;
   font-weight: 200;
 }
 
-#contact p {
+#contact .splitter {
+  margin: 0 12px 0 16px;
+}
+
+#contact a {
   color: white;
-  opacity: 0.65;
-  font-size: 0.9em;
-  margin-top: 8px;
-  text-align: right;
+  font-size: 1.6em;
+  padding: 7px;
 }
 
-#contact p a {
-  color: white !important;
-  text-decoration: underline;
-}
-
-@media (max-width: 740px) {
-  #contact p {
-    text-align: left;
-  }
-}
-
-#contact .overlay-enter,
-#contact .overlay-leave-to {
-  opacity: 0;
-}
-
-#contact .overlay-leave,
-#contact .overlay-enter-to {
-  opacity: 1;
-}
-
-#contact .overlay-enter-active,
-#contact .overlay-leave-active {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+#contact a:hover {
+  opacity: 0.85;
 }
 
 .overlay {
