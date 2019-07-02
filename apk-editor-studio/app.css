@@ -4982,18 +4982,14 @@ h3 {
           filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.1));
 }
 
-#blog header .social {
-  padding: 0 4px;
-}
-
 #blog footer {
   background: linear-gradient(45deg, #77b143 50%, transparent 50%), linear-gradient(to bottom, #77b143 10%, #70a63f 100%);
 }
 
 #blog .social {
   display: inline-block;
-  font-size: 26px;
-  line-height: 26px;
+  font-size: 28px;
+  line-height: 28px;
   padding: 0 2px;
 }
 
@@ -5003,6 +4999,10 @@ h3 {
 
 #blog .social--twitter i {
   color: #1da1f2;
+}
+
+#blog .social--telegram i {
+  color: #0088cc;
 }
 
 #blog .social--rss i {
