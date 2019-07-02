@@ -5146,12 +5146,20 @@ h3 {
   background: #5e8c35;
 }
 
+#blog-post nav {
+  margin-bottom: 70px;
+}
+
+#blog-post nav + * {
+  margin-top: 70px;
+}
+
 #blog-post header {
   background: -webkit-gradient(linear, left top, left bottom, from(#84bd51), to(#77b143));
   background: linear-gradient(#84bd51, #77b143);
   color: white;
   position: relative;
-  padding: 70px 0;
+  padding-bottom: 70px;
 }
 
 @media (max-width: 767.98px) {
