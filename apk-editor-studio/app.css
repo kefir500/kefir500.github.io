@@ -5147,11 +5147,11 @@ h3 {
 }
 
 #blog-post nav {
-  margin-bottom: 70px;
+  margin-bottom: 35px;
 }
 
-#blog-post nav + * {
-  margin-top: 70px;
+#blog-post nav ~ .container {
+  padding-top: 35px;
 }
 
 #blog-post header {
