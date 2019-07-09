@@ -5028,6 +5028,12 @@ h3 {
           transform: scale(1.2);
 }
 
+@media (max-width: 575.98px) {
+  #blog header .social {
+    font-size: 22px;
+  }
+}
+
 #blog-posts {
   background: #fafafa;
 }
@@ -5146,8 +5152,10 @@ h3 {
   background: #5e8c35;
 }
 
-#blog-post nav {
-  margin-bottom: 35px;
+@media (min-width: 576px) {
+  #blog-post nav {
+    margin-bottom: 35px;
+  }
 }
 
 #blog-post nav ~ .container {
@@ -5160,12 +5168,6 @@ h3 {
   color: white;
   position: relative;
   padding-bottom: 70px;
-}
-
-@media (max-width: 767.98px) {
-  #blog-post header {
-    padding: 50px 0;
-  }
 }
 
 #blog-post header a,
@@ -5217,6 +5219,12 @@ h3 {
 @media (max-width: 767.98px) {
   #blog-post .post__title {
     line-height: 40px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #blog-post .post__title {
+    padding-top: 40px;
   }
 }
 
