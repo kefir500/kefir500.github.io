@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://qwertycube.com/apk-editor-studio/blog/</id>
     <title>APK Editor Studio</title>
-    <updated>2019-04-17T08:25:43.436Z</updated>
+    <updated>2019-07-11T06:23:54.448Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Alexander Gorishnyak</name>
@@ -10,6 +10,15 @@
     <link rel="alternate" href="https://qwertycube.com/apk-editor-studio/blog/feed.xml"/>
     <link rel="self" href="https://qwertycube.com/apk-editor-studio/blog/feed.xml"/>
     <icon>https://qwertycube.com/apk-editor-studio/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[APK Editor Studio v1.2.0 Released]]></title>
+        <id>https://qwertycube.com/apk-editor-studio/blog/apk-editor-studio-v1.2.0-released/</id>
+        <link href="https://qwertycube.com/apk-editor-studio/blog/apk-editor-studio-v1.2.0-released/">
+        </link>
+        <updated>2019-07-11T06:23:00.000Z</updated>
+        <summary type="html"><![CDATA[WebP format, activity icons and ability to remove resources in APK Editor Studio v1.2.0]]></summary>
+        <content type="html"><![CDATA[Read the full article here: <a href="https://qwertycube.com/apk-editor-studio/blog/apk-editor-studio-v1.2.0-released/">APK Editor Studio v1.2.0 Released</a>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[APK Editor Studio v1.1.0 Released]]></title>
         <id>https://qwertycube.com/apk-editor-studio/blog/apk-editor-studio-v1.1.0-released/</id>
