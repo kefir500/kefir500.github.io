@@ -4383,8 +4383,12 @@ h3 {
 
 @media (min-width: 768px) {
   #header {
-    padding: 130px 0;
+    padding: 100px 0;
   }
+}
+
+#header .container {
+  margin: 32px auto;
 }
 
 #header .checkmarks {
