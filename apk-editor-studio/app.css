@@ -4845,15 +4845,15 @@ h3 {
   background: #c34113;
 }
 
-.os .btn--tar {
+.os .btn--elf {
   background: #83b142;
 }
 
-.os .btn--tar:hover {
+.os .btn--elf:hover {
   background: #759e3b;
 }
 
-.os .btn--tar:active {
+.os .btn--elf:active {
   background: #688c34;
 }
 
