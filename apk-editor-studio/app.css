@@ -4141,6 +4141,10 @@ a.pswp__share--download:hover {
   background: none;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 a,
 a:hover {
   color: #688c34;
@@ -4292,6 +4296,18 @@ h3 {
 
 .btn--secondary:active {
   background: #6d9337;
+}
+
+.btn--attract {
+  background: #f07d7d;
+}
+
+.btn--attract:hover {
+  background: #ed6666;
+}
+
+.btn--attract:active {
+  background: #eb4f4f;
 }
 
 .btn--block {
@@ -4467,6 +4483,59 @@ h3 {
 
 #footer a {
   text-decoration: underline;
+}
+
+.modal {
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(images/header.png) no-repeat center;
+  -webkit-transform: scale(0.8) perspective(800px) rotateX(35deg);
+          transform: scale(0.8) perspective(800px) rotateX(35deg);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.modal * {
+  color: #444;
+}
+
+.modal .btn * {
+  color: white;
+}
+
+.modal .btn .fas {
+  margin-right: 2px;
+}
+
+.modal__btn-close {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  opacity: 0.65;
+  font-size: 1.4em;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.modal__btn-close:hover {
+  opacity: 0.9;
+}
+
+.modal--visible {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scale(1) perspective(800px) rotateX(0);
+          transform: scale(1) perspective(800px) rotateX(0);
 }
 
 .logo {

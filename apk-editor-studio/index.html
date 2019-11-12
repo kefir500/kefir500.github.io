@@ -33,7 +33,29 @@
 <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K92BKXW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-
+    <div id="donate" class="modal d-flex align-items-center">
+        <button class="modal__btn-close" data-close-modal="donate">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-8 offset-sm-2 col-lg-6 offset-lg-3 text-center">
+                    <h3>Thank you for downloading!</h3>
+                    <h2>Support us</h2>
+                    <p class="text-left">
+                        <b>APK Editor Studio</b> is totally free, so please consider supporting our project
+                        by donating via <b>PayPal</b>, <b>Patreon</b>, <b>Bitcoin</b> or one of many other options.
+                        We&nbsp;are thankful for every little bit of your help, all contributors are added to the list of donors.
+                    </p>
+                    <p>
+                        <a href="https://qwertycube.com/donate/" target="_blank" class="btn btn--attract round--left round--right">
+                            <i class="fas fa-heart"></i> Donate
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="header">
         <div class="container">
             <div class="row">
@@ -210,8 +232,8 @@
                     <div class="os os--windows">
                         <i class="os__logo fab fa-windows"></i>
                         <h3>Windows</h3>
-                        <a href="https://github.com/kefir500/apk-editor-studio/releases/download/v1.2.0/apk-editor-studio_win32_1.2.0.msi" class="btn btn--block btn--windows btn--msi round--left">Download <b>Installer</b></a>
-                        <a href="https://github.com/kefir500/apk-editor-studio/releases/download/v1.2.0/apk-editor-studio_win32_1.2.0.zip" class="btn btn--block btn--windows btn--zip round--right">Download <b>Portable</b></a>
+                        <a href="https://github.com/kefir500/apk-editor-studio/releases/download/v1.2.0/apk-editor-studio_win32_1.2.0.msi" class="btn btn--block btn--download btn--windows btn--msi round--left">Download <b>Installer</b></a>
+                        <a href="https://github.com/kefir500/apk-editor-studio/releases/download/v1.2.0/apk-editor-studio_win32_1.2.0.zip" class="btn btn--block btn--download btn--windows btn--zip round--right">Download <b>Portable</b></a>
                         <ul class="os__names">
                             <li class="os__name">Windows 7 &ndash; 10</li>
                         </ul>
@@ -222,8 +244,8 @@
                     <div class="os os--macos">
                         <i class="os__logo fab fa-apple"></i>
                         <h3>macOS</h3>
-                        <a href="https://github.com/kefir500/apk-editor-studio/releases/download/v1.2.0/apk-editor-studio_macos_1.2.0.dmg" class="btn btn--block btn--macos btn--dmg round--left">Download <b>DMG</b></a>
-                        <a href="https://github.com/kefir500/apk-editor-studio/releases/download/v1.2.0/apk-editor-studio_macos_1.2.0.app.zip" class="btn btn--block btn--macos btn--app round--right">Download <b>APP</b></a>
+                        <a href="https://github.com/kefir500/apk-editor-studio/releases/download/v1.2.0/apk-editor-studio_macos_1.2.0.dmg" class="btn btn--block btn--download btn--macos btn--dmg round--left">Download <b>DMG</b></a>
+                        <a href="https://github.com/kefir500/apk-editor-studio/releases/download/v1.2.0/apk-editor-studio_macos_1.2.0.app.zip" class="btn btn--block btn--download btn--macos btn--app round--right">Download <b>APP</b></a>
                         <ul class="os__names">
                             <li class="os__name">macOS 10.7 &ndash; 10.15</li>
                         </ul>
@@ -234,8 +256,8 @@
                     <div class="os os--linux">
                         <i class="os__logo fab fa-linux"></i>
                         <h3>Linux</h3>
-                        <a href="https://github.com/kefir500/apk-editor-studio/releases/download/v1.2.0/apk-editor-studio_linux_1.2.0.deb" class="btn btn--block btn--linux btn--deb round--left">Download <b>DEB</b></a>
-                        <a href="https://github.com/kefir500/apk-editor-studio/releases/download/v1.2.0/apk-editor-studio_linux_1.2.0.tar.xz" class="btn btn--block btn--linux btn--tar round--right">Download <b>ELF</b></a>
+                        <a href="https://github.com/kefir500/apk-editor-studio/releases/download/v1.2.0/apk-editor-studio_linux_1.2.0.deb" class="btn btn--block btn--download btn--linux btn--deb round--left">Download <b>DEB</b></a>
+                        <a href="https://github.com/kefir500/apk-editor-studio/releases/download/v1.2.0/apk-editor-studio_linux_1.2.0.tar.xz" class="btn btn--block btn--download btn--linux btn--elf round--right">Download <b>ELF</b></a>
                         <ul class="os__names">
                             <li class="os__name">Debian 8 &ndash; 10 (64 bit)</li>
                             <li class="os__name">Ubuntu 16.04 &ndash; 19.04 (64 bit)</li>
