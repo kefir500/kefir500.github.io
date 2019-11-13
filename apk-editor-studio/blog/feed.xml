@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://qwertycube.com/apk-editor-studio/blog/</id>
     <title>APK Editor Studio</title>
-    <updated>2019-07-11T06:23:54.448Z</updated>
+    <updated>2019-11-13T10:49:23.907Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Alexander Gorishnyak</name>
@@ -10,6 +10,15 @@
     <link rel="alternate" href="https://qwertycube.com/apk-editor-studio/blog/feed.xml"/>
     <link rel="self" href="https://qwertycube.com/apk-editor-studio/blog/feed.xml"/>
     <icon>https://qwertycube.com/apk-editor-studio/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[How to change Android app icon]]></title>
+        <id>https://qwertycube.com/apk-editor-studio/blog/how-to-change-android-app-icon/</id>
+        <link href="https://qwertycube.com/apk-editor-studio/blog/how-to-change-android-app-icon/">
+        </link>
+        <updated>2019-11-13T10:48:00.000Z</updated>
+        <summary type="html"><![CDATA[Easy way to replace Android application icon in 3 simple steps using APK Editor Studio]]></summary>
+        <content type="html"><![CDATA[Read the full article here: <a href="https://qwertycube.com/apk-editor-studio/blog/how-to-change-android-app-icon/">How to change Android app icon</a>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[APK Editor Studio v1.2.0 Released]]></title>
         <id>https://qwertycube.com/apk-editor-studio/blog/apk-editor-studio-v1.2.0-released/</id>
