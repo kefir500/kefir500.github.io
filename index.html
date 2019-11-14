@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Web & Desktop Development">
-    <title>Qwerty Cube &ndash; Web & Desktop Development</title>
+    <title>Qwerty Cube &ndash; Web &amp; Desktop Development</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,400&text=QWERTY%20CUBE">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200,400">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
@@ -62,12 +62,10 @@
                             <h3>Web &amp; Desktop Development</h3>
                             <div class="rotation-container">
                                 <div class="rotation">
-                                    <transition name="tech">
-                                        <div class="rotation__element" v-bind:key="rotations[index]">
-                                            <img class="rotation__image" v-if="rotations[index]" v-bind:src="'images/technologies/' + rotations[index].toLowerCase() + '.png'">
-                                            <p class="rotation__title notranslate">{{ rotations[index] }}</p>
-                                        </div>
-                                    </transition>
+                                    <div class="rotation__element" id="skill">
+                                        <img class="rotation__image">
+                                        <p class="rotation__title notranslate"></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -78,15 +76,443 @@
         <div class="page page--projects" id="projects">
             <div class="page__content">
                 <div class="projects">
-                    <div v-for="project in projects">
-                        <project v-bind:project="project"></project>
+                    <div class="project" data-index="0">
+                        <div class="project__content">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="project__background"></div>
+                                    <div class="col-12 col-sm-3 col-md-3 col-lg-2">
+                                        <div class="project__image">
+                                            <a tabindex="-1" href="apk-editor-studio/">
+                                                <img src="images/projects/apk-editor-studio.png" alt="APK Editor Studio">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-9 col-md-3 col-lg-2 d-md-none">
+                                        <h3 class="project__title">
+                                            <a tabindex="-1" href="apk-editor-studio/">
+                                                <span class="notranslate">APK Editor Studio</span>
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div class="col-12 col-md-9 col-lg-10">
+                                        <div class="row align-items-center">
+                                            <div class="col-12 col-lg-9">
+                                                <div class="project__description">
+                                                    <h3 class="project__title d-none d-md-block">
+                                                        <a tabindex="-1" href="apk-editor-studio/">
+                                                            <span class="notranslate">APK Editor Studio</span>
+                                                        </a>
+                                                    </h3>
+                                                    <p class="project__text">Powerful yet easy to use APK editor. Allows to edit Android application icons, images, name, version, translations and any other resources. <span class="text-nowrap">Written in C++/Qt.</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-3">
+                                                <ul class="project__links d-flex d-lg-block flex-column flex-sm-row">
+                                                    <li class="project__link"><a href="apk-editor-studio/"><i class="fas fa-globe"></i>Website</a></li>
+                                                    <li class="project__link"><a href="https://github.com/kefir500/apk-editor-studio"><i class="fab fa-github"></i>Source Code</a></li>
+                                                    <li class="project__link"><a href class="btn-screenshot"><i class="fas fa-image"></i>Screenshots</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project" data-index="1">
+                        <div class="project__content">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="project__background"></div>
+                                    <div class="col-12 col-sm-3 col-md-3 col-lg-2">
+                                        <div class="project__image">
+                                            <a tabindex="-1" href="apk-icon-editor/">
+                                                <img src="images/projects/apk-icon-editor.png" alt="APK Icon Editor">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-9 col-md-3 col-lg-2 d-md-none">
+                                        <h3 class="project__title">
+                                            <a tabindex="-1" href="apk-icon-editor/">
+                                                <span class="notranslate">APK Icon Editor</span>
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div class="col-12 col-md-9 col-lg-10">
+                                        <div class="row align-items-center">
+                                            <div class="col-12 col-lg-9">
+                                                <div class="project__description">
+                                                    <h3 class="project__title d-none d-md-block">
+                                                        <a tabindex="-1" href="apk-icon-editor/">
+                                                            <span class="notranslate">APK Icon Editor</span>
+                                                        </a>
+                                                    </h3>
+                                                    <p class="project__text">Simple APK editor designed to easily change application icons, name, version and other resources. <a class="text-nowrap" href="apk-editor-studio/">APK Editor Studio</a> predecessor. <span class="text-nowrap">Written in C++/Qt.</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-3">
+                                                <ul class="project__links d-flex d-lg-block flex-column flex-sm-row">
+                                                    <li class="project__link"><a href="apk-icon-editor/"><i class="fas fa-globe"></i>Website</a></li>
+                                                    <li class="project__link"><a href="https://github.com/kefir500/apk-icon-editor"><i class="fab fa-github"></i>Source Code</a></li>
+                                                    <li class="project__link"><a href class="btn-screenshot"><i class="fas fa-image"></i>Screenshots</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project" data-index="2">
+                        <div class="project__content">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="project__background"></div>
+                                    <div class="col-12 col-sm-3 col-md-3 col-lg-2">
+                                        <div class="project__image">
+                                            <a tabindex="-1" >
+                                                <img src="images/projects/mjolk.png" alt="Mjølk">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-9 col-md-3 col-lg-2 d-md-none">
+                                        <h3 class="project__title">
+                                            <a tabindex="-1" >
+                                                <span class="notranslate">Mjølk</span>
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div class="col-12 col-md-9 col-lg-10">
+                                        <div class="row align-items-center">
+                                            <div class="col-12 col-lg-9">
+                                                <div class="project__description">
+                                                    <h3 class="project__title d-none d-md-block">
+                                                        <a tabindex="-1" >
+                                                            <span class="notranslate">Mjølk</span>
+                                                        </a>
+                                                    </h3>
+                                                    <p class="project__text">Simple and flexible administration panel for RESTful services based on Angular framework. <span class="text-nowrap">Currently in development.</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-3">
+                                                <ul class="project__links d-flex d-lg-block flex-column flex-sm-row">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project" data-index="3">
+                        <div class="project__content">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="project__background"></div>
+                                    <div class="col-12 col-sm-3 col-md-3 col-lg-2">
+                                        <div class="project__image">
+                                            <a tabindex="-1" href="vk-api-angular/">
+                                                <img src="images/projects/vk-api-angular.png" alt="VK API Angular">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-9 col-md-3 col-lg-2 d-md-none">
+                                        <h3 class="project__title">
+                                            <a tabindex="-1" href="vk-api-angular/">
+                                                <span class="notranslate">VK API Angular</span>
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div class="col-12 col-md-9 col-lg-10">
+                                        <div class="row align-items-center">
+                                            <div class="col-12 col-lg-9">
+                                                <div class="project__description">
+                                                    <h3 class="project__title d-none d-md-block">
+                                                        <a tabindex="-1" href="vk-api-angular/">
+                                                            <span class="notranslate">VK API Angular</span>
+                                                        </a>
+                                                    </h3>
+                                                    <p class="project__text">VK social network Open API and widgets wrapper for AngularJS.</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-3">
+                                                <ul class="project__links d-flex d-lg-block flex-column flex-sm-row">
+                                                    <li class="project__link"><a href="vk-api-angular/"><i class="fas fa-globe"></i>Website</a></li>
+                                                    <li class="project__link"><a href="https://github.com/kefir500/vk-api-angular"><i class="fab fa-github"></i>Source Code</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project" data-index="4">
+                        <div class="project__content">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="project__background"></div>
+                                    <div class="col-12 col-sm-3 col-md-3 col-lg-2">
+                                        <div class="project__image">
+                                            <a tabindex="-1" href="bluprint/">
+                                                <img src="images/projects/bluprint.png" alt="Bluprint.css">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-9 col-md-3 col-lg-2 d-md-none">
+                                        <h3 class="project__title">
+                                            <a tabindex="-1" href="bluprint/">
+                                                <span class="notranslate">Bluprint.css</span>
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div class="col-12 col-md-9 col-lg-10">
+                                        <div class="row align-items-center">
+                                            <div class="col-12 col-lg-9">
+                                                <div class="project__description">
+                                                    <h3 class="project__title d-none d-md-block">
+                                                        <a tabindex="-1" href="bluprint/">
+                                                            <span class="notranslate">Bluprint.css</span>
+                                                        </a>
+                                                    </h3>
+                                                    <p class="project__text">Lightweight customizable minimalistic responsive CSS grid packed with multiple useful helper classes and generators.</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-3">
+                                                <ul class="project__links d-flex d-lg-block flex-column flex-sm-row">
+                                                    <li class="project__link"><a href="bluprint/"><i class="fas fa-globe"></i>Website</a></li>
+                                                    <li class="project__link"><a href="https://github.com/kefir500/bluprint"><i class="fab fa-github"></i>Source Code</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project" data-index="5">
+                        <div class="project__content">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="project__background"></div>
+                                    <div class="col-12 col-sm-3 col-md-3 col-lg-2">
+                                        <div class="project__image">
+                                            <a tabindex="-1" href="https://github.com/kefir500/onay">
+                                                <img src="images/projects/onay.png" alt="Onay">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-9 col-md-3 col-lg-2 d-md-none">
+                                        <h3 class="project__title">
+                                            <a tabindex="-1" href="https://github.com/kefir500/onay">
+                                                <span class="notranslate">Onay</span>
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div class="col-12 col-md-9 col-lg-10">
+                                        <div class="row align-items-center">
+                                            <div class="col-12 col-lg-9">
+                                                <div class="project__description">
+                                                    <h3 class="project__title d-none d-md-block">
+                                                        <a tabindex="-1" href="https://github.com/kefir500/onay">
+                                                            <span class="notranslate">Onay</span>
+                                                        </a>
+                                                    </h3>
+                                                    <p class="project__text">Google Chrome extension for checking the Onay (Kazakhstan transport card) balance. <span class="text-nowrap">No longer maintained.</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-3">
+                                                <ul class="project__links d-flex d-lg-block flex-column flex-sm-row">
+                                                    <li class="project__link"><a href="https://github.com/kefir500/onay"><i class="fab fa-github"></i>Source Code</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project" data-index="6">
+                        <div class="project__content">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="project__background"></div>
+                                    <div class="col-12 col-sm-3 col-md-3 col-lg-2">
+                                        <div class="project__image">
+                                            <a tabindex="-1" >
+                                                <img src="images/projects/unniq.png" alt="Unniq">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-9 col-md-3 col-lg-2 d-md-none">
+                                        <h3 class="project__title">
+                                            <a tabindex="-1" >
+                                                <span class="notranslate">Unniq</span>
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div class="col-12 col-md-9 col-lg-10">
+                                        <div class="row align-items-center">
+                                            <div class="col-12 col-lg-9">
+                                                <div class="project__description">
+                                                    <h3 class="project__title d-none d-md-block">
+                                                        <a tabindex="-1" >
+                                                            <span class="notranslate">Unniq</span>
+                                                        </a>
+                                                    </h3>
+                                                    <p class="project__text">Desktop software for checking KazNU student's progress with real-time notifications. <span class="text-nowrap">Written in C++/Qt.</span>. <span class="text-nowrap">No longer maintained.</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-3">
+                                                <ul class="project__links d-flex d-lg-block flex-column flex-sm-row">
+                                                    <li class="project__link"><a href class="btn-screenshot"><i class="fas fa-image"></i>Screenshots</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="websites" id="websites">
                     <div class="container">
                         <div class="row no-gutters">
-                            <div class="col-12 col-md-6 col-lg-4" v-for="(website, index) in websites">
-                                <website v-bind:website="website" v-bind:index="index"></website>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <a href class="website" data-index="0">
+                                    <div class="website__overlay text-light" style="background: #1f7bc4">
+                                        <h3 class="website__title notranslate">Aman Travelland</h3>
+                                        <h5 class="website__subtitle">Development</h5>
+                                    </div>
+                                    <img class="website__image" src="images/websites/thumbnails/aman.png" title="Aman Travelland" alt="Aman Travelland">
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <a href class="website" data-index="1">
+                                    <div class="website__overlay text-dark" style="background: #ffd133">
+                                        <h3 class="website__title notranslate">Magic Records</h3>
+                                        <h5 class="website__subtitle">Design &amp; Development</h5>
+                                    </div>
+                                    <img class="website__image" src="images/websites/thumbnails/magic.png" title="Magic Records" alt="Magic Records">
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <a href class="website" data-index="2">
+                                    <div class="website__overlay text-light" style="background: #151515">
+                                        <h3 class="website__title notranslate">Gobolight</h3>
+                                        <h5 class="website__subtitle">Development</h5>
+                                    </div>
+                                    <img class="website__image" src="images/websites/thumbnails/gobolight.png" title="Gobolight" alt="Gobolight">
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <a href class="website" data-index="3">
+                                    <div class="website__overlay text-light" style="background: #0091d4">
+                                        <h3 class="website__title notranslate">Vogue Escort</h3>
+                                        <h5 class="website__subtitle">Development</h5>
+                                    </div>
+                                    <img class="website__image" src="images/websites/thumbnails/vesc.png" title="Vogue Escort" alt="Vogue Escort">
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <a href class="website" data-index="4">
+                                    <div class="website__overlay text-light" style="background: #2578a2">
+                                        <h3 class="website__title notranslate">Namys Fight Club</h3>
+                                        <h5 class="website__subtitle">Development</h5>
+                                    </div>
+                                    <img class="website__image" src="images/websites/thumbnails/namys.png" title="Namys Fight Club" alt="Namys Fight Club">
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <a href class="website" data-index="5">
+                                    <div class="website__overlay text-dark" style="background: #dbc96f">
+                                        <h3 class="website__title notranslate">Simply Genius</h3>
+                                        <h5 class="website__subtitle">Design &amp; Development</h5>
+                                    </div>
+                                    <img class="website__image" src="images/websites/thumbnails/simplygenius.png" title="Simply Genius" alt="Simply Genius">
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <a href class="website" data-index="6">
+                                    <div class="website__overlay text-light" style="background: #94358f">
+                                        <h3 class="website__title notranslate">Vitis Advisors Group</h3>
+                                        <h5 class="website__subtitle">Development</h5>
+                                    </div>
+                                    <img class="website__image" src="images/websites/thumbnails/vitis.png" title="Vitis Advisors Group" alt="Vitis Advisors Group">
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <a href class="website" data-index="7">
+                                    <div class="website__overlay text-light" style="background: #43a0d9">
+                                        <h3 class="website__title notranslate">Bycar</h3>
+                                        <h5 class="website__subtitle">Development</h5>
+                                    </div>
+                                    <img class="website__image" src="images/websites/thumbnails/bycar.png" title="Bycar" alt="Bycar">
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <a href class="website" data-index="8">
+                                    <div class="website__overlay text-light" style="background: #0c3c73">
+                                        <h3 class="website__title notranslate">Viman</h3>
+                                        <h5 class="website__subtitle">Development</h5>
+                                    </div>
+                                    <img class="website__image" src="images/websites/thumbnails/viman.png" title="Viman" alt="Viman">
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <a href class="website" data-index="9">
+                                    <div class="website__overlay text-light" style="background: #528526">
+                                        <h3 class="website__title notranslate">KazBioChem</h3>
+                                        <h5 class="website__subtitle">Development</h5>
+                                    </div>
+                                    <img class="website__image" src="images/websites/thumbnails/kazbiochem.png" title="KazBioChem" alt="KazBioChem">
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <a href class="website" data-index="10">
+                                    <div class="website__overlay text-dark" style="background: #f6d258">
+                                        <h3 class="website__title notranslate">Light House</h3>
+                                        <h5 class="website__subtitle">Development</h5>
+                                    </div>
+                                    <img class="website__image" src="images/websites/thumbnails/lighthouse.png" title="Light House" alt="Light House">
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <a href class="website" data-index="11">
+                                    <div class="website__overlay text-light" style="background: #262c35">
+                                        <h3 class="website__title notranslate">White Collars</h3>
+                                        <h5 class="website__subtitle">Development</h5>
+                                    </div>
+                                    <img class="website__image" src="images/websites/thumbnails/wc.png" title="White Collars" alt="White Collars">
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <a href class="website" data-index="12">
+                                    <div class="website__overlay text-dark" style="background: #ffffff">
+                                        <h3 class="website__title notranslate">Suitman</h3>
+                                        <h5 class="website__subtitle">Development</h5>
+                                    </div>
+                                    <img class="website__image" src="images/websites/thumbnails/suitman.png" title="Suitman" alt="Suitman">
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <a href class="website" data-index="13">
+                                    <div class="website__overlay text-light" style="background: #d24a43">
+                                        <h3 class="website__title notranslate">Almaty Rollers Club</h3>
+                                        <h5 class="website__subtitle">Development</h5>
+                                    </div>
+                                    <img class="website__image" src="images/websites/thumbnails/rollers.png" title="Almaty Rollers Club" alt="Almaty Rollers Club">
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <a href class="website" data-index="14">
+                                    <div class="website__overlay text-light" style="background: #2b355f">
+                                        <h3 class="website__title notranslate">Global Translation Services</h3>
+                                        <h5 class="website__subtitle">Development</h5>
+                                    </div>
+                                    <img class="website__image" src="images/websites/thumbnails/gts.png" title="Global Translation Services" alt="Global Translation Services">
+                                </a>
                             </div>
                         </div>
                     </div>
