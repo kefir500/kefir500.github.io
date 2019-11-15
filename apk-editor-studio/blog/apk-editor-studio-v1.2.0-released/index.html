@@ -81,90 +81,84 @@
                             <div class="post__content">
                                 <p class="post__date"><i class="icon far fa-calendar-alt"></i>July 11, 2019</p>
                                 <main>
-<h2>Release</h2>
-<p>
-    APK Editor Studio v1.2.0 is now released.
-    It brings the support for WebP image format and activity icons,
-    provides better resource sorting, ability to remove resources and many other fixes and improvements.
-</p>
-
-<h2>What's New</h2>
-<ul>
-    <li><a href="#webp-format">Added support for WebP image format</a></li>
-    <li><a href="#activity-icons">Added support for activity icons</a></li>
-    <li><a href="#remove-resources">Added ability to remove resources</a></li>
-    <li>Added ability to sort resource tree</li>
-    <li>Added taskbar blinking / dock bouncing</li>
-    <li>Added button to instantly copy log text</li>
-    <li>Improved sorting by DPI</li>
-    <li>Fixed project status badge bug</li>
-    <li>Fixed resource replacement bug</li>
-    <li>Windows: Updated Qt to 5.12.3</li>
-</ul>
-
-<h3 id="webp-format">WebP image support</h3>
-<p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/WebP_Logo.png/320px-WebP_Logo.png" class="img-fluid" style="max-width: 200px">
-</p>
-<p>
-    WebP is a modern image format being developed by Google.
-    It supports both lossy and lossless compression and provides better quality in a smaller size
-    as stated on the <a href="https://developers.google.com/speed/webp/" target="_blank">WebP official page</a>.
-</p>
-<p>
-    Many Android applications already use this format for resources and icons.
-    Previous APK Editor Studio versions had the unofficial WebP support on some operating systems,
-    however now this type of images is explicitly supported across all platforms
-    including the seamless cross-conversion between different formats.
-</p>
-
-<h3 id="activity-icons">Activity icons support</h3>
-<p>
-    Apart from the application icons, Android also allows to specify separate icons for so-called activities.
-    In outline, a single activity represents a specific screen related to some action.
-    APK Editor Studio now can parse this type of icons allowing you to easily replace them.
-</p>
-<p>
-    <img src="activity-icons.png" class="img-fluid">
-</p>
-
-<h3 id="remove-resources">Ability to remove resources</h3>
-<p>
-    Sometimes you may want to remove some icons or other resources from an APK.
-    Instead of browsing through the unpacked contents and deleting the unneeded files manually,
-    you can now easily delete resources straight from the APK Editor Studio.
-</p>
-<p>
-    <img src="remove-resources.png" class="img-fluid">
-</p>
-
-<h3>Other changes</h3>
-<p>
-    APK Editor Studio v1.2.0 also brings many other changes.
-</p>
-<ul>
-    <li>
-        Improved resource sorting:
-        now you can sort the resource tree by specific qualifiers and other columns.
-        Also, the DPI sorting (previously done alphabetically) is now based on the proper size information &ndash;
-        from the smallest to the largest (or vice versa).
-    </li>
-    <li>
-        APK Editor Studio taskbar/dock icon now blinks/bounces (depending on the platform) to draw user's visual attention
-        and notify about some action progressed in the background (e.g. successful completion of repacking).
-        Though this is a small detail, it noticeably improves the user experience.
-    </li>
-    <li>
-        The log text can now be copied with a single click.
-        This can be useful when you need to export your error text or share it in order to get technical support.
-    </li>
-    <li>
-        Previously, an error was occurring when user tried to replace a resource with itself.
-        There was also an issue when the project status badge did not update under certain conditions.
-        Both bugs are now fixed.
-    </li>
-</ul>
-
+                                    <h2>Release</h2>
+                                    <p>
+                                        APK Editor Studio v1.2.0 is now released.
+                                        It brings the support for WebP image format and activity icons,
+                                        provides better resource sorting, ability to remove resources and many other fixes and improvements.
+                                    </p>
+                                    <h2>What's New</h2>
+                                    <ul>
+                                        <li><a href="#webp-format">Added support for WebP image format</a></li>
+                                        <li><a href="#activity-icons">Added support for activity icons</a></li>
+                                        <li><a href="#remove-resources">Added ability to remove resources</a></li>
+                                        <li>Added ability to sort resource tree</li>
+                                        <li>Added taskbar blinking / dock bouncing</li>
+                                        <li>Added button to instantly copy log text</li>
+                                        <li>Improved sorting by DPI</li>
+                                        <li>Fixed project status badge bug</li>
+                                        <li>Fixed resource replacement bug</li>
+                                        <li>Windows: Updated Qt to 5.12.3</li>
+                                    </ul>
+                                    <h3 id="webp-format">WebP image support</h3>
+                                    <p>
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/WebP_Logo.png/320px-WebP_Logo.png" class="img-fluid" style="max-width: 200px">
+                                    </p>
+                                    <p>
+                                        WebP is a modern image format being developed by Google.
+                                        It supports both lossy and lossless compression and provides better quality in a smaller size
+                                        as stated on the <a href="https://developers.google.com/speed/webp/" target="_blank">WebP official page</a>.
+                                    </p>
+                                    <p>
+                                        Many Android applications already use this format for resources and icons.
+                                        Previous APK Editor Studio versions had the unofficial WebP support on some operating systems,
+                                        however now this type of images is explicitly supported across all platforms
+                                        including the seamless cross-conversion between different formats.
+                                    </p>
+                                    <h3 id="activity-icons">Activity icons support</h3>
+                                    <p>
+                                        Apart from the application icons, Android also allows to specify separate icons for so-called activities.
+                                        In outline, a single activity represents a specific screen related to some action.
+                                        APK Editor Studio now can parse this type of icons allowing you to easily replace them.
+                                    </p>
+                                    <p>
+                                        <img src="activity-icons.png" class="img-fluid">
+                                    </p>
+                                    <h3 id="remove-resources">Ability to remove resources</h3>
+                                    <p>
+                                        Sometimes you may want to remove some icons or other resources from an APK.
+                                        Instead of browsing through the unpacked contents and deleting the unneeded files manually,
+                                        you can now easily delete resources straight from the APK Editor Studio.
+                                    </p>
+                                    <p>
+                                        <img src="remove-resources.png" class="img-fluid">
+                                    </p>
+                                    <h3>Other changes</h3>
+                                    <p>
+                                        APK Editor Studio v1.2.0 also brings many other changes.
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Improved resource sorting:
+                                            now you can sort the resource tree by specific qualifiers and other columns.
+                                            Also, the DPI sorting (previously done alphabetically) is now based on the proper size information &ndash;
+                                            from the smallest to the largest (or vice versa).
+                                        </li>
+                                        <li>
+                                            APK Editor Studio taskbar/dock icon now blinks/bounces (depending on the platform) to draw user's visual attention
+                                            and notify about some action progressed in the background (e.g. successful completion of repacking).
+                                            Though this is a small detail, it noticeably improves the user experience.
+                                        </li>
+                                        <li>
+                                            The log text can now be copied with a single click.
+                                            This can be useful when you need to export your error text or share it in order to get technical support.
+                                        </li>
+                                        <li>
+                                            Previously, an error was occurring when user tried to replace a resource with itself.
+                                            There was also an issue when the project status badge did not update under certain conditions.
+                                            Both bugs are now fixed.
+                                        </li>
+                                    </ul>
                                 </main>
                             </div>
                         </div>
