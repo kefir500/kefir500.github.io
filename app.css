@@ -4433,6 +4433,12 @@ h5 {
   bottom: 4px;
 }
 
+.menu__item {
+  -webkit-transform: matrix(0, 0, 0, 0, 0, 0);
+      -ms-transform: matrix(0, 0, 0, 0, 0, 0);
+          transform: matrix(0, 0, 0, 0, 0, 0);
+}
+
 .btn-round {
   display: block;
   width: 64px;
