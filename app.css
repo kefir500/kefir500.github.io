@@ -4102,15 +4102,11 @@ h5 {
 }
 
 .menu {
+  display: none;
   position: fixed;
   z-index: 100;
   right: 4px;
   bottom: 4px;
-}
-
-.menu__item {
-  -webkit-transform: matrix(0, 0, 0, 0, 0, 0);
-          transform: matrix(0, 0, 0, 0, 0, 0);
 }
 
 .btn-round {
