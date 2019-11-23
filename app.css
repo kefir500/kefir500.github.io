@@ -4067,6 +4067,40 @@ h5 {
   opacity: 0.75;
 }
 
+#loading {
+  border: 4px solid #f0f0f0;
+  border-top: 4px solid #2ca1de;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: loading 0.85s linear infinite;
+          animation: loading 0.85s linear infinite;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 .menu {
   position: fixed;
   z-index: 100;
@@ -4114,6 +4148,7 @@ h5 {
 }
 
 .keyboard {
+  display: none;
   opacity: 0;
 }
 
