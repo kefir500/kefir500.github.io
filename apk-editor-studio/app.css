@@ -4689,6 +4689,12 @@ h3 {
   }
 }
 
+#blog-post code {
+  font-size: 0.8em;
+  padding: 2px 6px;
+  background: #eee;
+}
+
 #blog-post .btn {
   background: #77b143;
 }
@@ -4790,7 +4796,7 @@ h3 {
 }
 
 #blog-post .post__date {
-  opacity: 0.5;
+  color: #b6b6b6;
 }
 
 #blog-post .post__content {
