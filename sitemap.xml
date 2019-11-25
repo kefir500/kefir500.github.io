@@ -16,6 +16,11 @@
 		<priority>1.0</priority>
 	</url>
 	<url>
+		<loc>https://qwertycube.com/apk-editor-studio/download/</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
 		<loc>https://qwertycube.com/apk-editor-studio/blog/</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
