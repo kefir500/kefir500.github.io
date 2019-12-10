@@ -4122,6 +4122,12 @@ h3 {
   margin-left: 20px;
 }
 
+@media (max-width: 767.98px) {
+  #versions .release__links {
+    margin-bottom: 24px;
+  }
+}
+
 #contribute {
   padding: 60px 0 50px 0;
   background: #e6f2d4;
