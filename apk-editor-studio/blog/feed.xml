@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://qwertycube.com/apk-editor-studio/blog/</id>
     <title>APK Editor Studio</title>
-    <updated>2019-12-07T17:57:36.139Z</updated>
+    <updated>2019-12-11T17:37:26.439Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Alexander Gorishnyak</name>
@@ -52,7 +52,7 @@
         <link href="https://qwertycube.com/apk-editor-studio/blog/apk-editor-studio-v1.1.0-released/">
         </link>
         <updated>2019-04-17T08:20:00.000Z</updated>
-        <summary type="html"><![CDATA[Android TV banners and round icons: what's new in the first APK Editor Studio update – v1.1.0.]]></summary>
+        <summary type="html"><![CDATA[Android TV banners and round icons: what's new in the first APK Editor Studio update.]]></summary>
         <content type="html"><![CDATA[Read the full article here: <a href="https://qwertycube.com/apk-editor-studio/blog/apk-editor-studio-v1.1.0-released/">APK Editor Studio v1.1.0 Released</a>]]></content>
     </entry>
     <entry>
