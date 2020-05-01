@@ -4334,15 +4334,15 @@ h3 {
   background: #c34113;
 }
 
-.os .btn--elf {
+.os .btn--appimage {
   background: #83b142;
 }
 
-.os .btn--elf:hover {
+.os .btn--appimage:hover {
   background: #759e3b;
 }
 
-.os .btn--elf:active {
+.os .btn--appimage:active {
   background: #688c34;
 }
 
