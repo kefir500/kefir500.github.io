@@ -4059,7 +4059,6 @@ h3 {
 
 #header .checkmarks {
   margin: 0;
-  vertical-align: middle;
 }
 
 #header .checkmarks li {
@@ -4151,36 +4150,26 @@ h3 {
 }
 
 .logo {
-  max-width: 200px;
-  margin-right: 32px;
+  width: 100%;
+  max-width: 160px;
+  height: auto;
   -webkit-filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.2));
           filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.2));
-  vertical-align: middle;
-}
-
-@media (max-width: 1199.98px) {
-  .logo {
-    max-width: 140px;
-  }
-}
-
-@media (max-width: 1199.98px) {
-  .logo {
-    max-width: 120px;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .logo {
-    max-width: 200px;
-  }
 }
 
 @media (max-width: 767.98px) {
   .logo {
     max-width: 140px;
-    margin-right: 0;
-    margin-bottom: 20px;
+  }
+}
+
+.headline {
+  margin: 0 32px;
+}
+
+@media (max-width: 767.98px) {
+  .headline {
+    margin: 20px 0 0 0;
   }
 }
 
