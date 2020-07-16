@@ -4097,8 +4097,7 @@ h3 {
 }
 
 #header {
-  background: linear-gradient(124deg, #f2fce0 55%, #a7d06b 55%);
-  background: url(images/header.png) no-repeat center;
+  background: url(images/header.webp) no-repeat center;
   background-size: cover;
   padding: 40px 0;
   position: relative;
@@ -4955,4 +4954,8 @@ h3 {
 
 .no-bullets li {
   list-style-type: none;
+}
+
+.no-webp #header {
+  background: url(images/header.png) no-repeat center;
 }
