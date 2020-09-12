@@ -7,8 +7,9 @@
     <title>APK Editor Studio v1.3.0 Released &ndash; Blog &ndash; APK Editor Studio</title>
     <link rel="canonical" href="https://qwertycube.com/apk-editor-studio/blog/apk-editor-studio-v1.3.0-released/">
     <!-- Styles -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
-    <link rel="stylesheet" href="../../app.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
+    <link rel="stylesheet" href="../app.css">
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicons/favicon-32x32.png">
@@ -38,175 +39,143 @@
 <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K92BKXW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-
-    <div id="blog">
-        <div id="blog-post">
-            <article class="post">
-                <header class="post__header">
-                    <nav>
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-12">
-                                    <a href="../.."><img src="../../images/favicons/favicon-32x32.png"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-6">
-                                <a href=".."><i class="icon fas fa-chevron-left"></i>Back to all posts</a>
-                            </div>
-                            <div class="col-6 text-right">
-                                <a target="_blank" class="social social--facebook social--white" title="Share on Facebook" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fqwertycube.com%2Fapk-editor-studio%2Fblog%2Fapk-editor-studio-v1.3.0-released%2F"><i class="fab fa-fw fa-facebook"></i></a><!--
-                                --><a target="_blank" class="social social--telegram social--white" title="Share on Telegram" href="https://telegram.me/share/url?url=https%3A%2F%2Fqwertycube.com%2Fapk-editor-studio%2Fblog%2Fapk-editor-studio-v1.3.0-released%2F&text=APK%20Editor%20Studio%20v1.3.0%20Released"><i class="fab fa-fw fa-telegram-plane"></i></a><!--
-                                --><a target="_blank" class="social social--twitter social--white" title="Share on Twitter" href="https://twitter.com/intent/tweet?text=APK%20Editor%20Studio%20v1.3.0%20Released: Permission%20editor%2C%20four%20new%20translations%20and%20other%20major%20improvements%20and%20bug%20fixes.&url=https%3A%2F%2Fqwertycube.com%2Fapk-editor-studio%2Fblog%2Fapk-editor-studio-v1.3.0-released%2F&hashtags=android,apk"><i class="fab fa-fw fa-twitter"></i></a><!--
-                                --><a target="_blank" class="social social--rss social--white" title="RSS Feed" href="../feed.xml"><i class="fas fa-fw fa-rss"></i></a>
-                            </div>
-                            <div class="col-12">
-                                <h1 class="post__title">APK Editor Studio v1.3.0 Released</h1>
-                            </div>
-                            <div class="col-12 col-lg-9">
-                                <h2 class="post__subtitle">Permission editor, four new translations and other major improvements and bug fixes.</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <svg viewBox="0 0 100 100" preserveAspectRatio="none">
-                        <polygon points="0,0 100,0 100,20 0,100" />
-                    </svg>
-                </header>
+    <article class="post">
+        <header class="header">
+            <nav class="header__navigation">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-lg-9">
-                            <div class="post__content">
-                                <p class="post__date"><i class="icon far fa-calendar-alt"></i>November 25, 2019</p>
-                                <main>
-                                    <h2>Release</h2>
-                                    <p>
-                                        APK Editor Studio v1.3.0 is out now:
-                                        meet the built-in Android permission editor, four new languages,
-                                        lots of improvements and major bug fixes.
-                                    </p>
-                                    <h2>What's New</h2>
-                                    <ul>
-                                        <li><a href="#permission-editor">Added Permission Editor</a></li>
-                                    	<li><a href="#broken-resources">Added ability to keep broken resources</a></li>
-                                    	<li><a href="#translations">Added 4 new translations</a></li>
-                                    	<li>Added ability to specify path to Java</li>
-                                    	<li>Added sorting to title editor</li>
-                                    	<li>Improved code editor layout</li>
-                                    	<li><a href="#handling-tool-paths">Improved handling of tool paths</a></li>
-                                    	<li><a href="#icon-replacement-bug">Fixed adaptive icon bug on bulk replacement</a></li>
-                                    	<li><a href="#validity-field-bug">Fixed Validity field on key store creation</a></li>
-                                    	<li>Made JKS a default key store type</li>
-                                    	<li><a href="#loading-animation">Changed loading animation to spinner</a></li>
-                                        <li>Windows: Updated Qt to 5.13.2</li>
-                                    </ul>
-                                    <h3 id="permission-editor">Permission Editor</h3>
-                                    <p>
-                                        Now you can edit application permissions without having to concern about the Android manifest contents.
-                                        It has become possible due to the Permission Editor which provides a simple yet easy way to add and remove permissions.
-                                    </p>
-                                    <p>
-                                        <img src="permission-editor.png" class="img-fluid">
-                                    </p>
-                                    <h3 id="broken-resources">Ability to keep broken resources</h3>
-                                    <p>
-                                        Apktool has a <code>--keep-broken-res</code> option which, according to its documentation,
-                                        allows to decode APK with a newer or non-standard structure giving you an ability to manually fix the errors.
-                                        APK Editor Studio now also supports this switch: it can be turned on in <i>Settings &#8594; Options &#8594; Repacking</i> section.
-                                    </p>
-                                    <h3 id="translations">Added 4 new translations</h3>
-                                    <p>
-                                        In addition to 2 already available translations (English and Russian), APK Editor Studio is now localized into 4 new languages:
-                                    </p>
-                                    <ul>
-                                        <li>German</li>
-                                        <li>Japanese</li>
-                                        <li>Portuguese</li>
-                                        <li>Spanish</li>
-                                    </ul>
-                                    <p>
-                                        Thanks to the <a href="https://github.com/kefir500/apk-editor-studio/blob/master/AUTHORS.md">volunteers</a>
-                                        for this contribution.
-                                    </p>
-                                    <h3 id="handling-tool-paths">Improved handling of tool paths</h3>
-                                    <ul>
-                                        <li>Now users can manually specify path to Java.</li>
-                                        <li>APK Editor Studio now also searches for Java in <code>JAVA_HOME</code> environment variable.</li>
-                                        <li>The default paths are no longer saved to config. This largely improves the portability and side-by-side installation of APK Editor Studio.</li>
-                                    </ul>
-                                    <h3 id="icon-replacement-bug">Fixed bulk icon replacement</h3>
-                                    <p>
-                                        When user changes the APK icon using the <i>Application Icon</i> button,
-                                        all related image resources are automatically replaced with a new one.
-                                        However, adaptive XML icons were also replaced mistakenly in previous versions.
-                                        APK Editor Studio v1.3.0 fixes this bug and brings a much smoother Android icon replacement experience.
-                                    </p>
-                                    <h3 id="validity-field-bug">Fixed Validity field</h3>
-                                    <p>
-                                        The key store generating dialog contains a Validity field which specifies the expiration date of a new key.
-                                        Though the input field description refers to years, there was a bug in previous versions where days counted instead.
-                                        This miscalculation was fixed in v1.3.0.
-                                    </p>
-                                    <h3 id="loading-animation">Spinner loading animation</h3>
-                                    <p>
-                                        Previously the loading process was animated with a green blinking line. This pattern was neither noticeable nor intuitive.
-                                        Now the loading process is represented with a classic spinner animation bringing a more familiar user experience.
-                                    </p>
-                                    <p>
-                                        <img src="loading-animation.gif" class="img-fluid">
-                                    </p>
-                                </main>
-                            </div>
-                        </div>
-                        <aside class="col-12 col-lg-3">
-                            <div class="ads">
-                                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1799419862660242" data-ad-slot="1323668650" data-ad-format="auto" data-full-width-responsive="true"></ins>
-                                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-                            </div>
-                            <div class="related">
-                                <a target="_blank" class="social social--facebook" title="Share on Facebook" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fqwertycube.com%2Fapk-editor-studio%2Fblog%2Fapk-editor-studio-v1.3.0-released%2F"><i class="fab fa-fw fa-facebook"></i></a><!--
-                                --><a target="_blank" class="social social--telegram" title="Share on Telegram" href="https://telegram.me/share/url?url=https%3A%2F%2Fqwertycube.com%2Fapk-editor-studio%2Fblog%2Fapk-editor-studio-v1.3.0-released%2F&text=APK%20Editor%20Studio%20v1.3.0%20Released"><i class="fab fa-fw fa-telegram"></i></a><!--
-                                --><a target="_blank" class="social social--twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?text=APK%20Editor%20Studio%20v1.3.0%20Released: Permission%20editor%2C%20four%20new%20translations%20and%20other%20major%20improvements%20and%20bug%20fixes.&url=https%3A%2F%2Fqwertycube.com%2Fapk-editor-studio%2Fblog%2Fapk-editor-studio-v1.3.0-released%2F&hashtags=android,apk"><i class="fab fa-fw fa-twitter"></i></a><!--
-                                --><a target="_blank" class="social social--rss" title="RSS Feed" href="../feed.xml"><i class="fas fa-fw fa-rss"></i></a>
-                                <h4>Read also:</h4>
-                                <ul>
-                                    <li><a href="../apk-editor-studio-v1.4.0-released/">APK Editor Studio v1.4.0 Released</a></li>
-                                    <li><a href="../apk-editor-studio-v1.3.1-released/">APK Editor Studio v1.3.1 Released</a></li>
-                                    <li><a href="../how-to-change-android-app-icon/">How to change Android app icon</a></li>
-                                    <li><a href="../apk-editor-studio-v1.2.0-released/">APK Editor Studio v1.2.0 Released</a></li>
-                                    <li><a href="../apk-editor-studio-v1.1.0-released/">APK Editor Studio v1.1.0 Released</a></li>
-                                    <li><a href="../apk-editor-studio-vs-apk-icon-editor/">APK Editor Studio vs APK Icon Editor</a></li>
-                                    <li><a href="../apk-editor-studio-v1.0.0-released/">APK Editor Studio v1.0.0 Released</a></li>
-                                </ul>
-                            </div>
-                        </aside>
+                    <div class="navigation">
+                        <a class="navigation__link" href="../..">APK Editor Studio</a>
+                        &nbsp;&raquo;&nbsp;
+                        <a class="navigation__link" href="..">Blog</a>
+                        &nbsp;&raquo;&nbsp;
+                        APK Editor Studio v1.3.0 Released
                     </div>
                 </div>
-            </article>
-            <aside>
+            </nav>
+            <div class="header__content">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-lg-9 text-left text-lg-right">
-                            <a href="https://qwertycube.com/apk-editor-studio/" class="btn btn--lg round--left round--right">Download APK Editor Studio</a>
-                        </div>
+                    <h1 class="header__title">APK Editor Studio v1.3.0 Released</h1>
+                    <h2 class="header__subtitle">Permission editor, four new translations and other major improvements and bug fixes.</h2>
+                    <p class="post__date"><i class="date-icon far fa-calendar"></i>November 25, 2019</p>
+                </div>
+            </div>
+        </header>
+        <div class="post__container">
+            <div class="post__body">
+                <div class="post__content">
+                    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1799419862660242" data-ad-slot="1323668650" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                    <main class="content">
+                        <h2>Release</h2>
+                        <p>
+                            APK Editor Studio v1.3.0 is out now:
+                            meet the built-in Android permission editor, four new languages,
+                            lots of improvements and major bug fixes.
+                        </p>
+                        <h2>What's New</h2>
+                        <ul>
+                            <li><a href="#permission-editor">Added Permission Editor</a></li>
+                        	<li><a href="#broken-resources">Added ability to keep broken resources</a></li>
+                        	<li><a href="#translations">Added 4 new translations</a></li>
+                        	<li>Added ability to specify path to Java</li>
+                        	<li>Added sorting to title editor</li>
+                        	<li>Improved code editor layout</li>
+                        	<li><a href="#handling-tool-paths">Improved handling of tool paths</a></li>
+                        	<li><a href="#icon-replacement-bug">Fixed adaptive icon bug on bulk replacement</a></li>
+                        	<li><a href="#validity-field-bug">Fixed Validity field on key store creation</a></li>
+                        	<li>Made JKS a default key store type</li>
+                        	<li><a href="#loading-animation">Changed loading animation to spinner</a></li>
+                            <li>Windows: Updated Qt to 5.13.2</li>
+                        </ul>
+                        <h3 id="permission-editor">Permission Editor</h3>
+                        <p>
+                            Now you can edit application permissions without having to concern about the Android manifest contents.
+                            It has become possible due to the Permission Editor which provides a simple yet easy way to add and remove permissions.
+                        </p>
+                        <p>
+                            <img src="permission-editor.png" alt="Permission Editor" title="Permission Editor">
+                        </p>
+                        <h3 id="broken-resources">Ability to keep broken resources</h3>
+                        <p>
+                            Apktool has a <code>--keep-broken-res</code> option which, according to its documentation,
+                            allows to decode APK with a newer or non-standard structure giving you an ability to manually fix the errors.
+                            APK Editor Studio now also supports this switch: it can be turned on in <i>Settings &#8594; Options &#8594; Repacking</i> section.
+                        </p>
+                        <h3 id="translations">Added 4 new translations</h3>
+                        <p>
+                            In addition to 2 already available translations (English and Russian), APK Editor Studio is now localized into 4 new languages:
+                        </p>
+                        <ul>
+                            <li>German</li>
+                            <li>Japanese</li>
+                            <li>Portuguese</li>
+                            <li>Spanish</li>
+                        </ul>
+                        <p>
+                            Thanks to the <a href="https://github.com/kefir500/apk-editor-studio/blob/master/AUTHORS.md">volunteers</a>
+                            for this contribution.
+                        </p>
+                        <h3 id="handling-tool-paths">Improved handling of tool paths</h3>
+                        <ul>
+                            <li>Now users can manually specify path to Java.</li>
+                            <li>APK Editor Studio now also searches for Java in <code>JAVA_HOME</code> environment variable.</li>
+                            <li>The default paths are no longer saved to config. This largely improves the portability and side-by-side installation of APK Editor Studio.</li>
+                        </ul>
+                        <h3 id="icon-replacement-bug">Fixed bulk icon replacement</h3>
+                        <p>
+                            When user changes the APK icon using the <i>Application Icon</i> button,
+                            all related image resources are automatically replaced with a new one.
+                            However, adaptive XML icons were also replaced mistakenly in previous versions.
+                            APK Editor Studio v1.3.0 fixes this bug and brings a much smoother Android icon replacement experience.
+                        </p>
+                        <h3 id="validity-field-bug">Fixed Validity field</h3>
+                        <p>
+                            The key store generating dialog contains a Validity field which specifies the expiration date of a new key.
+                            Though the input field description refers to years, there was a bug in previous versions where days counted instead.
+                            This miscalculation was fixed in v1.3.0.
+                        </p>
+                        <h3 id="loading-animation">Spinner loading animation</h3>
+                        <p>
+                            Previously the loading process was animated with a green blinking line. This pattern was neither noticeable nor intuitive.
+                            Now the loading process is represented with a classic spinner animation bringing a more familiar user experience.
+                        </p>
+                        <p>
+                            <img src="loading-animation.gif">
+                        </p>
+                    </main>
+                </div>
+                <div class="post__aside">
+                    <a target="_blank" class="social social--facebook" title="Share on Facebook" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fqwertycube.com%2Fapk-editor-studio%2Fblog%2Fapk-editor-studio-v1.3.0-released%2F"><i class="fab fa-fw fa-facebook-square"></i></a><!--
+                    --><a target="_blank" class="social social--telegram" title="Share on Telegram" href="https://telegram.me/share/url?url=https%3A%2F%2Fqwertycube.com%2Fapk-editor-studio%2Fblog%2Fapk-editor-studio-v1.3.0-released%2F&text=APK%20Editor%20Studio%20v1.3.0%20Released"><i class="fab fa-fw fa-telegram"></i></a><!--
+                    --><a target="_blank" class="social social--twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?text=APK%20Editor%20Studio%20v1.3.0%20Released: Permission%20editor%2C%20four%20new%20translations%20and%20other%20major%20improvements%20and%20bug%20fixes.&url=https%3A%2F%2Fqwertycube.com%2Fapk-editor-studio%2Fblog%2Fapk-editor-studio-v1.3.0-released%2F&hashtags=android,apk"><i class="fab fa-fw fa-twitter"></i></a><!--
+                    --><a target="_blank" class="social social--rss" title="RSS Feed" href="../feed.xml"><i class="fas fa-fw fa-rss"></i></a>
+                    <div class="related">
+                        <h4 class="related__title">Read also:</h4>
+                        <ul class="no-bullets">
+                            <li class="related__item"><a href="../apk-editor-studio-v1.4.0-released/">APK Editor Studio v1.4.0 Released</a></li>
+                            <li class="related__item"><a href="../apk-editor-studio-v1.3.1-released/">APK Editor Studio v1.3.1 Released</a></li>
+                            <li class="related__item"><a href="../how-to-change-android-app-icon/">How to change Android app icon</a></li>
+                            <li class="related__item"><a href="../apk-editor-studio-v1.2.0-released/">APK Editor Studio v1.2.0 Released</a></li>
+                            <li class="related__item"><a href="../apk-editor-studio-v1.1.0-released/">APK Editor Studio v1.1.0 Released</a></li>
+                            <li class="related__item"><a href="../apk-editor-studio-vs-apk-icon-editor/">APK Editor Studio vs APK Icon Editor</a></li>
+                            <li class="related__item"><a href="../apk-editor-studio-v1.0.0-released/">APK Editor Studio v1.0.0 Released</a></li>
+                        </ul>
                     </div>
                 </div>
-            </aside>
-            <footer id="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            Copyright &copy; 2019&ndash;2020<br>
-                            <a href="https://qwertycube.com">Alexander Gorishnyak</a> and <a href="https://github.com/kefir500/apk-editor-studio/blob/master/AUTHORS.md" target="_blank">Contributors</a><br>
-                            Licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">GNU GPL v3</a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            </div>
+            <div class="post__buttons">
+                <a href="https://qwertycube.com/apk-editor-studio/" class="btn btn--lg round-left round-right">Download APK Editor Studio</a>
+            </div>
+        </div>
+    </article>
+    <div id="footer" class="section">
+        <div class="container">
+            Copyright &copy; 2019&ndash;2020<br>
+            <a href="https://qwertycube.com">Alexander Gorishnyak</a> and <a href="https://github.com/kefir500/apk-editor-studio/blob/master/AUTHORS.md" target="_blank">Contributors</a><br>
+            Licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">GNU GPL v3</a>
         </div>
     </div>
+    <script src="../app.js"></script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -219,6 +188,5 @@
       "image": "https://qwertycube.com/apk-editor-studio/blog/apk-editor-studio-v1.3.0-released/og.png"
     }
     </script>
-    <script src="../../app.js"></script>
 </body>
 </html>

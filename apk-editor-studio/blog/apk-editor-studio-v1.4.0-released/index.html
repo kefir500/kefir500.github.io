@@ -7,8 +7,9 @@
     <title>APK Editor Studio v1.4.0 Released &ndash; Blog &ndash; APK Editor Studio</title>
     <link rel="canonical" href="https://qwertycube.com/apk-editor-studio/blog/apk-editor-studio-v1.4.0-released/">
     <!-- Styles -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
-    <link rel="stylesheet" href="../../app.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
+    <link rel="stylesheet" href="../app.css">
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicons/favicon-32x32.png">
@@ -38,200 +39,168 @@
 <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K92BKXW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-
-    <div id="blog">
-        <div id="blog-post">
-            <article class="post">
-                <header class="post__header">
-                    <nav>
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-12">
-                                    <a href="../.."><img src="../../images/favicons/favicon-32x32.png"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-6">
-                                <a href=".."><i class="icon fas fa-chevron-left"></i>Back to all posts</a>
-                            </div>
-                            <div class="col-6 text-right">
-                                <a target="_blank" class="social social--facebook social--white" title="Share on Facebook" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fqwertycube.com%2Fapk-editor-studio%2Fblog%2Fapk-editor-studio-v1.4.0-released%2F"><i class="fab fa-fw fa-facebook"></i></a><!--
-                                --><a target="_blank" class="social social--telegram social--white" title="Share on Telegram" href="https://telegram.me/share/url?url=https%3A%2F%2Fqwertycube.com%2Fapk-editor-studio%2Fblog%2Fapk-editor-studio-v1.4.0-released%2F&text=APK%20Editor%20Studio%20v1.4.0%20Released"><i class="fab fa-fw fa-telegram-plane"></i></a><!--
-                                --><a target="_blank" class="social social--twitter social--white" title="Share on Twitter" href="https://twitter.com/intent/tweet?text=APK%20Editor%20Studio%20v1.4.0%20Released: Android%20Explorer%2C%20improved%20GUI%20responsiveness%2C%20AAPT2%2C%20AppImage%20and%20new%20translations.&url=https%3A%2F%2Fqwertycube.com%2Fapk-editor-studio%2Fblog%2Fapk-editor-studio-v1.4.0-released%2F&hashtags=android,apk"><i class="fab fa-fw fa-twitter"></i></a><!--
-                                --><a target="_blank" class="social social--rss social--white" title="RSS Feed" href="../feed.xml"><i class="fas fa-fw fa-rss"></i></a>
-                            </div>
-                            <div class="col-12">
-                                <h1 class="post__title">APK Editor Studio v1.4.0 Released</h1>
-                            </div>
-                            <div class="col-12 col-lg-9">
-                                <h2 class="post__subtitle">Android Explorer, improved GUI responsiveness, AAPT2, AppImage and new translations.</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <svg viewBox="0 0 100 100" preserveAspectRatio="none">
-                        <polygon points="0,0 100,0 100,20 0,100" />
-                    </svg>
-                </header>
+    <article class="post">
+        <header class="header">
+            <nav class="header__navigation">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-lg-9">
-                            <div class="post__content">
-                                <p class="post__date"><i class="icon far fa-calendar-alt"></i>May 01, 2020</p>
-                                <main>
-                                    <h2>Release</h2>
-                                    <p>
-                                        We are happy to announce the release of APK&nbsp;Editor&nbsp;Studio v1.4.0!
-                                        There are a number of new features and options in this version
-                                        that create lots of new possibilities for the upcoming updates.
-                                    </p>
-                                    <h2>What's New</h2>
-                                    <ul>
-                                        <li><a href="#android-explorer">Added Android Explorer</a></li>
-                                    	<li><a href="#aapt2">Added AAPT2 support</a></li>
-                                    	<li><a href="#take-screenshots">Added ability to take screenshots</a></li>
-                                    	<li>Added ability to set Java heap size</li>
-                                    	<li>Added support for UTF-16 and UTF-32</li>
-                                    	<li><a href="#translations">Added 4 new translations</a></li>
-                                    	<li><a href="#fixed-freezes">Fixed GUI freezes and crashes</a></li>
-                                    	<li>Fixed project modified state triggers</li>
-                                    	<li>Updated QtKeychain to 0.10.0</li>
-                                    	<li>Updated action icons</li>
-                                    	<li>Improved Key Manager layout</li>
-                                    	<li><a href="#macos-minimum">macOS: Updated minimum version to 10.11 (El Capitan)</a></li>
-                                    	<li><a href="#macos-minimum">macOS: Updated Qt to 5.11.2</a></li>
-                                    	<li>Linux: Improved image format support</li>
-                                        <li><a href="#appimage">Linux: Released first AppImage package</a></li>
-                                    </ul>
-                                    <h3 id="android-explorer">Android Explorer</h3>
-                                    <p>
-                                        The major feature of this release is the Android Explorer.
-                                        It includes the Android file manager which allows you to easily
-                                        browse through the files on your device, manage, download, and upload them.
-                                    </p>
-                                    <p>
-                                        <img src="android-explorer.png" class="img-fluid">
-                                    </p>
-                                    <p>
-                                        Many other improvements and features for Android Explorer are planned
-                                        to be introduced in the future APK&nbsp;Editor&nbsp;Studio releases.
-                                    </p>
-                                    <h3 id="take-screenshots">Take screenshots</h3>
-                                    <p>
-                                        As a part of the newly introduced <a href="#android-explorer">Android Explorer</a>, you can now easily take screenshots
-                                        from your device and save them to the computer.
-                                    </p>
-                                    <h3 id="translations">Added 4 new translations</h3>
-                                    <p>
-                                        Thanks to our volunteer <a href="https://github.com/kefir500/apk-editor-studio/blob/master/AUTHORS.md">contributors</a>,
-                                        APK Editor Studio international community is getting bigger on every release.
-                                        In addition to 6 already available translations
-                                        (English, German, Japanese, Portuguese, Russian, and Spanish),
-                                        4 new languages were added to the APK Editor Studio v1.4.0:
-                                    </p>
-                                    <ul>
-                                    	<li>Greek</li>
-                                    	<li>Polish</li>
-                                    	<li>Romanian</li>
-                                    	<li>Turkish</li>
-                                    </ul>
-                                    <h3 id="fixed-freezes">Fixed freezes and crashes</h3>
-                                    <p>
-                                        Previously, the time-consuming processes and synchronous initializations had a negative effect on the user experience.
-                                        Since v1.4.0, the GUI is not being blocked on these operations anymore,
-                                        and the spinner loading animation is displayed instead.
-                                    </p>
-                                    <p>
-                                        This release fixes and improves the responsiveness of the following processes and dialogs:
-                                    </p>
-                                    <ul>
-                                        <li>APK initialization</li>
-                                        <li>Title Editor</li>
-                                        <li>Key Manager</li>
-                                        <li>Device Manager</li>
-                                        <li>About Dialog</li>
-                                    </ul>
-                                    <h3 id="aapt2">AAPT2 Support</h3>
-                                    <p>
-                                        AAPT is a tool used for building Android applications.
-                                        Since the first version of AAPT is deprecated,
-                                        many modern applications are moving to AAPT2.
-                                        The underlying Apktool has an option to enable AAPT2,
-                                        and now APK&nbsp;Editor&nbsp;Studio also supports this switch.
-                                    </p>
-                                    <h3 id="macos-minimum">Minimum required macOS</h3>
-                                    <p>
-                                        According to our statistics, more than 97% of APK&nbsp;Editor&nbsp;Studio macOS users are running 10.11 and newer.
-                                        As a result, we decided to bump the minimum required macOS version to 10.11 El Capitan.
-                                        This allows to compile APK&nbsp;Editor&nbsp;Studio against the newer Qt 5.11.2
-                                        which includes lots of improvements and bug fixes.
-                                    </p>
-                                    <p>
-                                        If you still need support for the older Mac systems,
-                                        you can download the previous APK Editor Studio releases
-                                        or manually build the newer ones from the <a href="https://github.com/kefir500/apk-editor-studio">source code</a>
-                                        since the codebase still allows you to compile against the older macOS and Qt versions.
-                                    </p>
-                                    <h3 id="appimage">AppImage release</h3>
-                                    <p>
-                                        AppImage is a self-contained standalone binary package for Linux
-                                        which provides an ability to run an application on most distributions
-                                        without having to dive into dependencies, configuration, and compilation.
-                                        From now on, in addition to DEB, APK Editor Studio for Linux also comes
-                                        as an AppImage package instead of plain ELF packed into tar.xz.
-                                    </p>
-                                </main>
-                            </div>
-                        </div>
-                        <aside class="col-12 col-lg-3">
-                            <div class="ads">
-                                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1799419862660242" data-ad-slot="1323668650" data-ad-format="auto" data-full-width-responsive="true"></ins>
-                                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-                            </div>
-                            <div class="related">
-                                <a target="_blank" class="social social--facebook" title="Share on Facebook" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fqwertycube.com%2Fapk-editor-studio%2Fblog%2Fapk-editor-studio-v1.4.0-released%2F"><i class="fab fa-fw fa-facebook"></i></a><!--
-                                --><a target="_blank" class="social social--telegram" title="Share on Telegram" href="https://telegram.me/share/url?url=https%3A%2F%2Fqwertycube.com%2Fapk-editor-studio%2Fblog%2Fapk-editor-studio-v1.4.0-released%2F&text=APK%20Editor%20Studio%20v1.4.0%20Released"><i class="fab fa-fw fa-telegram"></i></a><!--
-                                --><a target="_blank" class="social social--twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?text=APK%20Editor%20Studio%20v1.4.0%20Released: Android%20Explorer%2C%20improved%20GUI%20responsiveness%2C%20AAPT2%2C%20AppImage%20and%20new%20translations.&url=https%3A%2F%2Fqwertycube.com%2Fapk-editor-studio%2Fblog%2Fapk-editor-studio-v1.4.0-released%2F&hashtags=android,apk"><i class="fab fa-fw fa-twitter"></i></a><!--
-                                --><a target="_blank" class="social social--rss" title="RSS Feed" href="../feed.xml"><i class="fas fa-fw fa-rss"></i></a>
-                                <h4>Read also:</h4>
-                                <ul>
-                                    <li><a href="../apk-editor-studio-v1.3.1-released/">APK Editor Studio v1.3.1 Released</a></li>
-                                    <li><a href="../apk-editor-studio-v1.3.0-released/">APK Editor Studio v1.3.0 Released</a></li>
-                                    <li><a href="../how-to-change-android-app-icon/">How to change Android app icon</a></li>
-                                    <li><a href="../apk-editor-studio-v1.2.0-released/">APK Editor Studio v1.2.0 Released</a></li>
-                                    <li><a href="../apk-editor-studio-v1.1.0-released/">APK Editor Studio v1.1.0 Released</a></li>
-                                    <li><a href="../apk-editor-studio-vs-apk-icon-editor/">APK Editor Studio vs APK Icon Editor</a></li>
-                                    <li><a href="../apk-editor-studio-v1.0.0-released/">APK Editor Studio v1.0.0 Released</a></li>
-                                </ul>
-                            </div>
-                        </aside>
+                    <div class="navigation">
+                        <a class="navigation__link" href="../..">APK Editor Studio</a>
+                        &nbsp;&raquo;&nbsp;
+                        <a class="navigation__link" href="..">Blog</a>
+                        &nbsp;&raquo;&nbsp;
+                        APK Editor Studio v1.4.0 Released
                     </div>
                 </div>
-            </article>
-            <aside>
+            </nav>
+            <div class="header__content">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-lg-9 text-left text-lg-right">
-                            <a href="https://qwertycube.com/apk-editor-studio/" class="btn btn--lg round--left round--right">Download APK Editor Studio</a>
-                        </div>
+                    <h1 class="header__title">APK Editor Studio v1.4.0 Released</h1>
+                    <h2 class="header__subtitle">Android Explorer, improved GUI responsiveness, AAPT2, AppImage and new translations.</h2>
+                    <p class="post__date"><i class="date-icon far fa-calendar"></i>May 1, 2020</p>
+                </div>
+            </div>
+        </header>
+        <div class="post__container">
+            <div class="post__body">
+                <div class="post__content">
+                    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1799419862660242" data-ad-slot="1323668650" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                    <main class="content">
+                        <h2>Release</h2>
+                        <p>
+                            We are happy to announce the release of APK&nbsp;Editor&nbsp;Studio v1.4.0!
+                            There are a number of new features and options in this version
+                            that create lots of new possibilities for the upcoming updates.
+                        </p>
+                        <h2>What's New</h2>
+                        <ul>
+                            <li><a href="#android-explorer">Added Android Explorer</a></li>
+                        	<li><a href="#aapt2">Added AAPT2 support</a></li>
+                        	<li><a href="#take-screenshots">Added ability to take screenshots</a></li>
+                        	<li>Added ability to set Java heap size</li>
+                        	<li>Added support for UTF-16 and UTF-32</li>
+                        	<li><a href="#translations">Added 4 new translations</a></li>
+                        	<li><a href="#fixed-freezes">Fixed GUI freezes and crashes</a></li>
+                        	<li>Fixed project modified state triggers</li>
+                        	<li>Updated QtKeychain to 0.10.0</li>
+                        	<li>Updated action icons</li>
+                        	<li>Improved Key Manager layout</li>
+                        	<li><a href="#macos-minimum">macOS: Updated minimum version to 10.11 (El Capitan)</a></li>
+                        	<li><a href="#macos-minimum">macOS: Updated Qt to 5.11.2</a></li>
+                        	<li>Linux: Improved image format support</li>
+                            <li><a href="#appimage">Linux: Released first AppImage package</a></li>
+                        </ul>
+                        <h3 id="android-explorer">Android Explorer</h3>
+                        <p>
+                            The major feature of this release is the Android Explorer.
+                            It includes the Android file manager which allows you to easily
+                            browse through the files on your device, manage, download, and upload them.
+                        </p>
+                        <p>
+                            <img src="android-explorer.png" alt="Android Explorer" title="Android Explorer">
+                        </p>
+                        <p>
+                            Many other improvements and features for Android Explorer are planned
+                            to be introduced in the future APK&nbsp;Editor&nbsp;Studio releases.
+                        </p>
+                        <h3 id="take-screenshots">Take screenshots</h3>
+                        <p>
+                            As a part of the newly introduced <a href="#android-explorer">Android Explorer</a>, you can now easily take screenshots
+                            from your device and save them to the computer.
+                        </p>
+                        <h3 id="translations">Added 4 new translations</h3>
+                        <p>
+                            Thanks to our volunteer <a href="https://github.com/kefir500/apk-editor-studio/blob/master/AUTHORS.md">contributors</a>,
+                            APK Editor Studio international community is getting bigger on every release.
+                            In addition to 6 already available translations
+                            (English, German, Japanese, Portuguese, Russian, and Spanish),
+                            4 new languages were added to the APK Editor Studio v1.4.0:
+                        </p>
+                        <ul>
+                        	<li>Greek</li>
+                        	<li>Polish</li>
+                        	<li>Romanian</li>
+                        	<li>Turkish</li>
+                        </ul>
+                        <h3 id="fixed-freezes">Fixed freezes and crashes</h3>
+                        <p>
+                            Previously, the time-consuming processes and synchronous initializations had a negative effect on the user experience.
+                            Since v1.4.0, the GUI is not being blocked on these operations anymore,
+                            and the spinner loading animation is displayed instead.
+                        </p>
+                        <p>
+                            This release fixes and improves the responsiveness of the following processes and dialogs:
+                        </p>
+                        <ul>
+                            <li>APK initialization</li>
+                            <li>Title Editor</li>
+                            <li>Key Manager</li>
+                            <li>Device Manager</li>
+                            <li>About Dialog</li>
+                        </ul>
+                        <h3 id="aapt2">AAPT2 Support</h3>
+                        <p>
+                            AAPT is a tool used for building Android applications.
+                            Since the first version of AAPT is deprecated,
+                            many modern applications are moving to AAPT2.
+                            The underlying Apktool has an option to enable AAPT2,
+                            and now APK&nbsp;Editor&nbsp;Studio also supports this switch.
+                        </p>
+                        <h3 id="macos-minimum">Minimum required macOS</h3>
+                        <p>
+                            According to our statistics, more than 97% of APK&nbsp;Editor&nbsp;Studio macOS users are running 10.11 and newer.
+                            As a result, we decided to bump the minimum required macOS version to 10.11 El Capitan.
+                            This allows to compile APK&nbsp;Editor&nbsp;Studio against the newer Qt 5.11.2
+                            which includes lots of improvements and bug fixes.
+                        </p>
+                        <p>
+                            If you still need support for the older Mac systems,
+                            you can download the previous APK Editor Studio releases
+                            or manually build the newer ones from the <a href="https://github.com/kefir500/apk-editor-studio">source code</a>
+                            since the codebase still allows you to compile against the older macOS and Qt versions.
+                        </p>
+                        <h3 id="appimage">AppImage release</h3>
+                        <p>
+                            AppImage is a self-contained standalone binary package for Linux
+                            which provides an ability to run an application on most distributions
+                            without having to dive into dependencies, configuration, and compilation.
+                            From now on, in addition to DEB, APK Editor Studio for Linux also comes
+                            as an AppImage package instead of plain ELF packed into tar.xz.
+                        </p>
+                    </main>
+                </div>
+                <div class="post__aside">
+                    <a target="_blank" class="social social--facebook" title="Share on Facebook" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fqwertycube.com%2Fapk-editor-studio%2Fblog%2Fapk-editor-studio-v1.4.0-released%2F"><i class="fab fa-fw fa-facebook-square"></i></a><!--
+                    --><a target="_blank" class="social social--telegram" title="Share on Telegram" href="https://telegram.me/share/url?url=https%3A%2F%2Fqwertycube.com%2Fapk-editor-studio%2Fblog%2Fapk-editor-studio-v1.4.0-released%2F&text=APK%20Editor%20Studio%20v1.4.0%20Released"><i class="fab fa-fw fa-telegram"></i></a><!--
+                    --><a target="_blank" class="social social--twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?text=APK%20Editor%20Studio%20v1.4.0%20Released: Android%20Explorer%2C%20improved%20GUI%20responsiveness%2C%20AAPT2%2C%20AppImage%20and%20new%20translations.&url=https%3A%2F%2Fqwertycube.com%2Fapk-editor-studio%2Fblog%2Fapk-editor-studio-v1.4.0-released%2F&hashtags=android,apk"><i class="fab fa-fw fa-twitter"></i></a><!--
+                    --><a target="_blank" class="social social--rss" title="RSS Feed" href="../feed.xml"><i class="fas fa-fw fa-rss"></i></a>
+                    <div class="related">
+                        <h4 class="related__title">Read also:</h4>
+                        <ul class="no-bullets">
+                            <li class="related__item"><a href="../apk-editor-studio-v1.3.1-released/">APK Editor Studio v1.3.1 Released</a></li>
+                            <li class="related__item"><a href="../apk-editor-studio-v1.3.0-released/">APK Editor Studio v1.3.0 Released</a></li>
+                            <li class="related__item"><a href="../how-to-change-android-app-icon/">How to change Android app icon</a></li>
+                            <li class="related__item"><a href="../apk-editor-studio-v1.2.0-released/">APK Editor Studio v1.2.0 Released</a></li>
+                            <li class="related__item"><a href="../apk-editor-studio-v1.1.0-released/">APK Editor Studio v1.1.0 Released</a></li>
+                            <li class="related__item"><a href="../apk-editor-studio-vs-apk-icon-editor/">APK Editor Studio vs APK Icon Editor</a></li>
+                            <li class="related__item"><a href="../apk-editor-studio-v1.0.0-released/">APK Editor Studio v1.0.0 Released</a></li>
+                        </ul>
                     </div>
                 </div>
-            </aside>
-            <footer id="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            Copyright &copy; 2019&ndash;2020<br>
-                            <a href="https://qwertycube.com">Alexander Gorishnyak</a> and <a href="https://github.com/kefir500/apk-editor-studio/blob/master/AUTHORS.md" target="_blank">Contributors</a><br>
-                            Licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">GNU GPL v3</a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            </div>
+            <div class="post__buttons">
+                <a href="https://qwertycube.com/apk-editor-studio/" class="btn btn--lg round-left round-right">Download APK Editor Studio</a>
+            </div>
+        </div>
+    </article>
+    <div id="footer" class="section">
+        <div class="container">
+            Copyright &copy; 2019&ndash;2020<br>
+            <a href="https://qwertycube.com">Alexander Gorishnyak</a> and <a href="https://github.com/kefir500/apk-editor-studio/blob/master/AUTHORS.md" target="_blank">Contributors</a><br>
+            Licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">GNU GPL v3</a>
         </div>
     </div>
+    <script src="../app.js"></script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -244,6 +213,5 @@
       "image": "https://qwertycube.com/apk-editor-studio/blog/apk-editor-studio-v1.4.0-released/og.png"
     }
     </script>
-    <script src="../../app.js"></script>
 </body>
 </html>
