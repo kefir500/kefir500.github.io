@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Support Alexander Gorishnyak via PayPal, Patreon and other donation options.">
     <title>Support Alexander Gorishnyak</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200,400">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
     <link rel="stylesheet" href="app.css">
     <link rel="apple-touch-icon" sizes="180x180" href="../images/favicons/apple-touch-icon.png">
@@ -28,275 +27,232 @@
     </script>
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <a href="https://qwertycube.com">
-                        <img id="logo" src="../images/favicons/android-chrome-192x192.png" alt="Qwerty Cube">
+    <div class="panel">
+        <div class="greeting">
+            <h1>Hi,</h1>
+            <h4>My name is <b>Alexander Gorishnyak</b> and I am a software developer.</h4>
+            <p>
+                Your donations support the development and help to improve the free software I&nbsp;create. If you like
+                <a href="https://qwertycube.com/apk-editor-studio/" target="_blank">APK&nbsp;Editor&nbsp;Studio</a>,
+                <a href="https://qwertycube.com/apk-icon-editor" target="_blank">APK&nbsp;Icon&nbsp;Editor</a>,
+                or my other free open&nbsp;source <a href="https://github.com/kefir500" target="_blank">projects</a>,
+                please consider contributing and becoming a donor.
+            </p>
+            <p>
+                I would be very grateful for every little bit of your help. Thank you!
+            </p>
+        </div>
+        <div class="donation-methods">
+            <div class="donation-method">
+                <h3><i class="fab fa-paypal fa-fw"></i> Donate via <b>PayPal</b></h3>
+                <a href="https://paypal.me/kefir500" class="btn-paypal" target="_blank"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donate via PayPal"></a>
+            </div>
+            <div class="donation-method">
+                <h3><i class="fab fa-patreon fa-fw"></i> Become a <b>Patron</b></h3>
+                <a href="https://www.patreon.com/bePatron?u=20736726" target="_blank" data-patreon-widget-type="become-patron-button">Become a Patron!</a>
+                <script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+            </div>
+        </div>
+        <div id="more-donations">
+            <div class="donation-methods">
+                <div class="donation-method">
+                    <h3>Donate via <b>Liberapay</b></h3>
+                    <script src="https://liberapay.com/kefir500/widgets/button.js"></script>
+                </div>
+                <div class="donation-method">
+                    <h3>Contribute via <b>Flattr</b></h3>
+                    <a href="https://flattr.com/@kefir500" class="btn-flattr" target="_blank">
+                        <svg viewbox="0 0 32 32">
+                            <path xmlns="http://www.w3.org/2000/svg" d="M3.403 16A12.578 12.578 0 0 1 16 3.402h6.797l-3.633 3.633 1.7 1.7L28.365 1H16C7.738 1 1 7.739 1 16v11.66l2.403-2.168V16h-.001zM31 4.34l-2.403 2.17V16A12.579 12.579 0 0 1 16 28.599H9.202l3.633-3.633-1.7-1.7-7.5 7.735H16c8.262 0 15-6.739 15-15V4.34z"/>
+                        </svg>
+                        Start contributing
                     </a>
                 </div>
-                <div class="col-12 col-md-6">
-                    <h1>Support <b>Alexander Gorishnyak</b></h1>
-                    <p>
-                        Your donations support the development and help to improve the free software I&nbsp;create. If you like
-                        <a href="https://qwertycube.com/apk-editor-studio/" target="_blank">APK&nbsp;Editor&nbsp;Studio</a>,
-                        <a href="https://qwertycube.com/apk-icon-editor" target="_blank">APK&nbsp;Icon&nbsp;Editor</a>
-                        or my other <a href="https://github.com/kefir500" target="_blank">open&nbsp;source&nbsp;projects</a>,
-                        please consider contributing and becoming a <a href="#donors"> donor</a>.
-                        I appreciate any help!
-                    </p>
+                <div class="donation-method">
+                    <h3>Support me on <b>Ko-fi</b></h3>
+                    <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
+                    <script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'kefir500');kofiwidget2.draw();</script>
+                </div>
+                <div class="donation-method">
+                    <h3>Buy Me a Coffee</h3>
+                    <a href="https://www.buymeacoffee.com/kefir500" class="btn-buymeacoffee" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" style="height: 40px !important; width: auto !important;"></a>
+                </div>
+                <div class="donation-method">
+                    <h3><i class="fab fa-bitcoin fa-fw"></i> <b>Bitcoin</b> address:</h3>
+                    <span class="bitcoin">bc1qqc5732wy8gjg2pqgtut4e4gx33l39lpgvzn0um</span>
                 </div>
             </div>
-            <div class="hr"></div>
         </div>
+        <button id="btn-more-donations">
+            <i class="fas fa-chevron-down" id="arrow-more-donations"></i> More donation options
+        </button>
     </div>
-    <div id="donations">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="donation">
-                        <h3><i class="fab fa-paypal fa-fw"></i> Donate via <b>PayPal</b></h3>
-                        <a href="https://paypal.me/kefir500" class="btn-paypal" target="_blank"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donate via PayPal"></a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="donation">
-                        <h3><i class="fab fa-patreon fa-fw"></i> Become a <b>Patron</b></h3>
-                        <a href="https://www.patreon.com/bePatron?u=20736726" target="_blank" data-patreon-widget-type="become-patron-button">Become a Patron!</a>
-                        <script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-6">
-                    <div class="donation">
-                        <h3><i class="fab fa-bitcoin fa-fw"></i> <b>Bitcoin</b> address:</h3>
-                        <span id="bitcoin">bc1qqc5732wy8gjg2pqgtut4e4gx33l39lpgvzn0um</span>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <button id="btn-more-donations">
-                        <i class="fas fa-chevron-down" id="arrow-more-donations"></i> More donation options
-                    </button>
-                </div>
-            </div>
-            <div id="more-donations">
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="donation">
-                            <h3>Donate via <b>Liberapay</b></h3>
-                            <script src="https://liberapay.com/kefir500/widgets/button.js"></script>
-                            <noscript><a href="https://liberapay.com/kefir500/donate"><img alt="Donate via Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="donation">
-                            <h3>Contribute via <b>Flattr</b></h3>
-                            <a href="https://flattr.com/@kefir500" class="btn-flattr" target="_blank">
-                                <svg viewbox="0 0 32 32">
-                                    <path xmlns="http://www.w3.org/2000/svg" d="M3.403 16A12.578 12.578 0 0 1 16 3.402h6.797l-3.633 3.633 1.7 1.7L28.365 1H16C7.738 1 1 7.739 1 16v11.66l2.403-2.168V16h-.001zM31 4.34l-2.403 2.17V16A12.579 12.579 0 0 1 16 28.599H9.202l3.633-3.633-1.7-1.7-7.5 7.735H16c8.262 0 15-6.739 15-15V4.34z"/>
-                                </svg>
-                                Start contributing
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="donation">
-                            <h3>Support me on <b>Ko-fi</b></h3>
-                            <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
-                            <script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'kefir500');kofiwidget2.draw();</script>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="donation">
-                            <h3>Buy Me a Coffee</h3>
-                            <a href="https://www.buymeacoffee.com/kefir500" class="btn-buymeacoffee" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" style="height: 40px !important; width: auto !important;"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="hr"></div>
-        </div>
-    </div>
-    <div id="donors">
-        <div class="container">
-            <div class="row" id="about">
-                <div class="col-12">
-                    <h2>Donors</h2>
-                    <p>Thanks to all our donors for the contributions!</p>
-                </div>
-                <div class="col-12 col-md-6">
-                    <h3>APK Icon Editor</h3>
-                    <ul>
-                        <li><a href="https://www.wakdev.com" target="_blank">Wakdev</a> <span class="amount">&euro;100</span></li>
-                        <li><a href="https://www.cyclos.org" target="_blank">Cyclos</a> <span class="amount">&euro;50</span></li>
-                        <li>Khalida Begum <span class="amount">&dollar;35</span></li>
-                        <li>Benjamin Hahn <span class="amount">&dollar;15</span></li>
-                        <li>Evolanguage <span class="amount">&dollar;10</span></li>
-                        <li>Berend Jan Dunnewold <span class="amount">&dollar;10</span></li>
-                        <li>Adam Domanski <span class="amount">&dollar;10</span></li>
-                        <li>Juegos Destrem <span class="amount">&dollar;10</span></li>
-                        <li>Martina Laska <span class="amount">&dollar;10</span></li>
-                        <li>Luiz A. Nascimento <span class="amount">&dollar;10</span></li>
-                        <li>Hussam Hussein <span class="amount">&dollar;10</span></li>
-                        <li>Dennis Jones <span class="amount">&dollar;10</span></li>
-                        <li>Harshtag <span class="amount">&dollar;5</span></li>
-                        <li>Spyridon Moschopoulos <span class="amount">&dollar;5</span></li>
-                        <li>Rebecca McFarland <span class="amount">&dollar;5</span></li>
-                        <li>Stefania Lavinia Szabo <span class="amount">&dollar;5</span></li>
-                        <li>Nico Mak <span class="amount">&dollar;5</span></li>
-                        <li>Ivan Sudarev <span class="amount">&dollar;5</span></li>
-                        <li>Abel Bejan <span class="amount">&dollar;5</span></li>
-                        <li>Loubna Fathani <span class="amount">&dollar;5</span></li>
-                        <li>Philio Publishing <span class="amount">&dollar;5</span></li>
-                        <li>Endrit Endrithoxha <span class="amount">&dollar;5</span></li>
-                        <li>Christine Mbella <span class="amount">&dollar;5</span></li>
-                        <li>Nelson Silva Fernandes <span class="amount">&dollar;5</span></li>
-                        <li>Custom Media Installation <span class="amount">&dollar;5</span></li>
-                        <li>Thorsten Appel <span class="amount">&dollar;5</span></li>
-                        <li>Innovaciones Interactivas <span class="amount">&dollar;5</span></li>
-                        <li>Angelo Giannetti <span class="amount">&dollar;5</span></li>
-                        <li>Tom McKee <span class="amount">&dollar;5</span></li>
-                        <li>Urban Pompe <span class="amount">&dollar;5</span></li>
-                        <li>Marco Santiago <span class="amount">&dollar;2</span></li>
-                        <li>Adan Ramirez <span class="amount">&dollar;2</span></li>
-                        <li>Halton Powell <span class="amount">&dollar;2</span></li>
-                        <li>Lon Panissidi <span class="amount">&dollar;2</span></li>
-                        <li>Marcos Barbosa <span class="amount">&dollar;2</span></li>
-                        <li>Siegfried Engelbrecht <span class="amount">&dollar;2</span></li>
-                        <li>Orrin Duncan <span class="amount">&dollar;2</span></li>
-                        <li>Simone Osnaghi <span class="amount">&dollar;2</span></li>
-                        <li>Airran McKeown <span class="amount">&dollar;2</span></li>
-                        <li>Hernando Durana <span class="amount">&dollar;2</span></li>
-                        <li>Rolf Califice <span class="amount">&dollar;2</span></li>
-                        <li>Kathleen Cross <span class="amount">&dollar;2</span></li>
-                        <li>Panwei Fu <span class="amount">&dollar;2</span></li>
-                        <li>Adam Dupre <span class="amount">&dollar;2</span></li>
-                        <li>Paulo Roberto <span class="amount">&dollar;2</span></li>
-                        <li>Bruno Glasoviq <span class="amount">&dollar;2</span></li>
-                        <li>Olaf Kühn <span class="amount">&dollar;2</span></li>
-                        <li>Privato <span class="amount">&dollar;2</span></li>
-                        <li>Now Prepay USA <span class="amount">&dollar;2</span></li>
-                        <li>Tara Scharlau <span class="amount">&dollar;2</span></li>
-                        <li>Willian Tiburcio Sanchez <span class="amount">&dollar;2</span></li>
-                        <li>Samantha Lopez Rodriguez <span class="amount">&dollar;1.10</span></li>
-                        <li>Niket Kanchan <span class="amount">&dollar;1</span></li>
-                        <li>Sheng-Yang Huang <span class="amount">&dollar;1</span></li>
-                        <li>Nicholas Ford <span class="amount">&dollar;1</span></li>
-                        <li>Mania Media Repair <span class="amount">&dollar;1</span></li>
-                        <li>Elijah Kabucwa <span class="amount">&dollar;1</span></li>
-                        <li>Tatiana Leon <span class="amount">&dollar;1</span></li>
-                        <li>Andrea Hainc <span class="amount">&dollar;1</span></li>
-                        <li>USD Mint Inc <span class="amount">&dollar;1</span></li>
-                        <li>Agueda Miranda <span class="amount">&dollar;1</span></li>
-                        <li>Jon Tranchida <span class="amount">&dollar;1</span></li>
-                        <li>Space Digital <span class="amount">&dollar;1</span></li>
-                        <li>Charles Rhyddian <span class="amount">&dollar;1</span></li>
-                        <li>김 윤주 <span class="amount">&dollar;1</span></li>
-                        <li>Juan Perla <span class="amount">&dollar;1</span></li>
-                        <li>Bobby Liem <span class="amount">&dollar;1</span></li>
-                        <li>Darcy Clark <span class="amount">&dollar;1</span></li>
-                        <li>Mihaela Stemate <span class="amount">&dollar;1</span></li>
-                        <li>Ventas Online <span class="amount">&dollar;1</span></li>
-                        <li>Russell Gaither <span class="amount">&dollar;1</span></li>
-                        <li>Paola Zucchi <span class="amount">&dollar;1</span></li>
-                        <li>Universalip.tv <span class="amount">&dollar;1</span></li>
-                        <li>Brian Kerr <span class="amount">&dollar;1</span></li>
-                        <li>Lydia Sovar Kihalić <span class="amount">&dollar;1</span></li>
-                        <li>Marcio Roberto de Almeida Souza <span class="amount">&dollar;1</span></li>
-                        <li>Online Unlimited, LLC <span class="amount">&dollar;1</span></li>
-                        <li>Aleksandar Petrov <span class="amount">&dollar;1</span></li>
-                        <li>Mario Riquelme <span class="amount">&dollar;1</span></li>
-                        <li>Adolfo Silerio <span class="amount">&dollar;1</span></li>
-                        <li>Eric Romero <span class="amount">&dollar;1</span></li>
-                        <li>Duc Truong <span class="amount">&dollar;1</span></li>
-                        <li>Joshua Bingham <span class="amount">&dollar;1</span></li>
-                        <li>Marcelo Ferreira <span class="amount">&dollar;1</span></li>
-                        <li>Michael Allen <span class="amount">&dollar;1</span></li>
-                        <li>Juan Suarez <span class="amount">&dollar;1</span></li>
-                        <li>LF Hill Merchandising Service <span class="amount">&dollar;1</span></li>
-                        <li>Katarzyna Kluk <span class="amount">&dollar;1</span></li>
-                        <li>Steffen Weiß <span class="amount">&dollar;1</span></li>
-                        <li>Teagan Norrey <span class="amount">&dollar;1</span></li>
-                        <li>Flavio Engracia Rodriguez <span class="amount">&dollar;1</span></li>
-                        <li>Ray Ward <span class="amount">&dollar;1</span></li>
-                        <li>Ruben Egea Belmonte <span class="amount">&dollar;1</span></li>
-                        <li>Joel Acosta <span class="amount">&dollar;1</span></li>
-                        <li>Arijit Das <span class="amount">&dollar;1</span></li>
-                        <li>Mark Williams <span class="amount">&dollar;1</span></li>
-                        <li>Nathanaelle Edwiges <span class="amount">&dollar;1</span></li>
-                        <li>Luca Costantino <span class="amount">&dollar;1</span></li>
-                        <li>Edson Valle Favaris <span class="amount">&dollar;1</span></li>
-                        <li>Susana Aros <span class="amount">&dollar;1</span></li>
-                        <li>Nicole Boucher <span class="amount">&dollar;1</span></li>
-                        <li>Juvencio Medeiros <span class="amount">&dollar;1</span></li>
-                        <li>Andrew Farrow <span class="amount">&dollar;1</span></li>
-                        <li>Jose Arce <span class="amount">&dollar;1</span></li>
-                        <li>Stewart Flecknoe-Brown <span class="amount">&dollar;1</span></li>
-                        <li>Andi Ahirid <span class="amount">&dollar;1</span></li>
-                        <li>Dorian Machuca <span class="amount">&dollar;1</span></li>
-                        <li>Marcin Matejak <span class="amount">&dollar;1</span></li>
-                        <li>Fixella <span class="amount">&dollar;1</span></li>
-                        <li>Flor Cedillo Chica <span class="amount">&dollar;1</span></li>
-                        <li>Ahmed Hanani <span class="amount">&dollar;1</span></li>
-                        <li>Petr Michalek <span class="amount">&dollar;1</span></li>
-                        <li>Peter Kmec <span class="amount">&dollar;1</span></li>
-                        <li>Crazy Monkey TV <span class="amount">&dollar;1</span></li>
-                        <li>Donell Chresfield <span class="amount">&dollar;1</span></li>
-                        <li>Carmelo Rinallo <span class="amount">&dollar;1</span></li>
-                        <li>Sadique Aryee <span class="amount">&dollar;1</span></li>
-                        <li>Leandro R Dias <span class="amount">&dollar;1</span></li>
-                        <li>Sam Jackson <span class="amount">&dollar;1</span></li>
-                        <li>Viviana Da Silva Reyes <span class="amount">&dollar;1</span></li>
-                        <li>Pierre Maigne <span class="amount">&dollar;1</span></li>
-                        <li>Mun Jun Ho <span class="amount">&dollar;1</span></li>
-                        <li>Emilio Vargas Tordecilla <span class="amount">&dollar;0.75</span></li>
-                        <li>Andreas Mamesa <span class="amount">&dollar;0.40</span></li>
-                        <li>Claudia Janeth Tiga Useche <span class="amount">&dollar;0.39</span></li>
-                        <li>Manuel Lopez <span class="amount">&dollar;0.10</span></li>
-                        <li>Tiago Canastra <span class="amount">&dollar;0.10</span></li>
-                        <li>Denis Parakhin <span class="amount">&dollar;0.01</span></li>
-                        <li>MeP Host <span class="amount">&dollar;0.01</span></li>
-                        <li>Uhuru TV <span class="amount">&dollar;0.01</span></li>
-                        <li>Gabriel Calderon <span class="amount">&dollar;0.01</span></li>
-                        <li>Heru Yudiono <span class="amount">&dollar;0.01</span></li>
-                    </ul>
-                </div>
-                <div class="col-12 col-md-6">
-                    <h3>APK Editor Studio</h3>
-                    <ul>
-                        <li>Majed Almaramihi <span class="amount">&dollar;100</span></li>
-                        <li>Luis Corominas <span class="amount">&dollar;15</span></li>
-                        <li>Mykola Rozhkov <span class="amount">&dollar;15</span></li>
-                        <li>Kevin Gentry <span class="amount">&dollar;10</span></li>
-                        <li>David McAuley <span class="amount">&dollar;10</span></li>
-                        <li>Jack Sukiert <span class="amount">&pound;5</span></li>
-                        <li>Fu Panwei <span class="amount">&dollar;5</span></li>
-                        <li>Smart Shopping <span class="amount">&dollar;5</span></li>
-                        <li>Raymond Laing <span class="amount">&dollar;5</span></li>
-                        <li>Jason Swain <span class="amount">&dollar;5</span></li>
-                        <li>Shing Kai Chan <span class="amount">&dollar;5</span></li>
-                        <li>Hoa Ngo <span class="amount">&dollar;5</span></li>
-                        <li>Remigiusz Krajczyński <span class="amount">&dollar;5</span></li>
-                        <li>Blofton Designs and Advertising LLC <span class="amount">&dollar;5</span></li>
-                        <li>LMG Graphics <span class="amount">&dollar;2</span></li>
-                        <li>Jason Leon Castillo <span class="amount">&dollar;1</span></li>
-                        <li>Wisata Gili Permai <span class="amount">&dollar;1</span></li>
-                        <li>Samuel Radoc <span class="amount">&dollar;1</span></li>
-                        <li>Juris Baranovskis <span class="amount">&dollar;1</span></li>
-                        <li>Edmundo Paz <span class="amount">&dollar;1</span></li>
-                        <li>Heru Yudiono <span class="amount">&dollar;1</span></li>
-                        <li>Kariveda Narasimha Reddy <span class="amount">&dollar;1</span></li>
-                        <li>Ammar Towir <span class="amount">&dollar;1</span></li>
-                        <li>Pham Van Vu <span class="amount">&dollar;0.97</span></li>
-                        <li>Luis Hilário Machado <span class="amount">&dollar;0.20</span></li>
-                        <li>Mikhail Alekseyev <span class="amount">&dollar;0.02</span></li>
-                        <li>Yamaç Alp Karabulut <span class="amount">&dollar;0.01</span></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <div class="panel">
+        <h2>Donors</h2>
+        <p>Thanks to all these people for their contribution!</p>
+        <ul class="donors">
+            <li><a href="https://www.wakdev.com" target="_blank">Wakdev</a> <span class="amount">&euro;100.00</span></li>
+            <li>Majed Almaramihi <span class="amount">&dollar;100.00</span></li>
+            <li><a href="https://www.cyclos.org" target="_blank">Cyclos</a> <span class="amount">&euro;50.00</span></li>
+            <li>Khalida Begum <span class="amount">&dollar;35.00</span></li>
+            <li>Benjamin Hahn <span class="amount">&dollar;15.00</span></li>
+            <li>Luis Corominas <span class="amount">&dollar;15.00</span></li>
+            <li>Mykola Rozhkov <span class="amount">&dollar;15.00</span></li>
+            <li>IceCold <span class="amount">&euro;10.00</span></li>
+            <li>Evolanguage <span class="amount">&dollar;10.00</span></li>
+            <li>Berend Jan Dunnewold <span class="amount">&dollar;10.00</span></li>
+            <li>Adam Domanski <span class="amount">&dollar;10.00</span></li>
+            <li>Juegos Destrem <span class="amount">&dollar;10.00</span></li>
+            <li>Martina Laska <span class="amount">&dollar;10.00</span></li>
+            <li>Luiz A. Nascimento <span class="amount">&dollar;10.00</span></li>
+            <li>Hussam Hussein <span class="amount">&dollar;10.00</span></li>
+            <li>Kevin Gentry <span class="amount">&dollar;10.00</span></li>
+            <li>Dennis Jones <span class="amount">&dollar;10.00</span></li>
+            <li>David McAuley <span class="amount">&dollar;10.00</span></li>
+            <li>Angelo Orabona <span class="amount">&dollar;10.00</span></li>
+            <li>Panwei Fu <span class="amount">&dollar;7.00</span></li>
+            <li>Jack Sukiert <span class="amount">&pound;5.00</span></li>
+            <li>Harshtag <span class="amount">&dollar;5.00</span></li>
+            <li>Spyridon Moschopoulos <span class="amount">&dollar;5.00</span></li>
+            <li>Rebecca McFarland <span class="amount">&dollar;5.00</span></li>
+            <li>Stefania Lavinia Szabo <span class="amount">&dollar;5.00</span></li>
+            <li>Nico Mak <span class="amount">&dollar;5.00</span></li>
+            <li>Ivan Sudarev <span class="amount">&dollar;5.00</span></li>
+            <li>Abel Bejan <span class="amount">&dollar;5.00</span></li>
+            <li>Loubna Fathani <span class="amount">&dollar;5.00</span></li>
+            <li>Philio Publishing <span class="amount">&dollar;5.00</span></li>
+            <li>Endrit Endrithoxha <span class="amount">&dollar;5.00</span></li>
+            <li>Christine Mbella <span class="amount">&dollar;5.00</span></li>
+            <li>Nelson Silva Fernandes <span class="amount">&dollar;5.00</span></li>
+            <li>Custom Media Installation <span class="amount">&dollar;5.00</span></li>
+            <li>Thorsten Appel <span class="amount">&dollar;5.00</span></li>
+            <li>Innovaciones Interactivas <span class="amount">&dollar;5.00</span></li>
+            <li>Angelo Giannetti <span class="amount">&dollar;5.00</span></li>
+            <li>Tom McKee <span class="amount">&dollar;5.00</span></li>
+            <li>Smart Shopping <span class="amount">&dollar;5.00</span></li>
+            <li>Raymond Laing <span class="amount">&dollar;5.00</span></li>
+            <li>Jason Swain <span class="amount">&dollar;5.00</span></li>
+            <li>Urban Pompe <span class="amount">&dollar;5.00</span></li>
+            <li>Shing Kai Chan <span class="amount">&dollar;5.00</span></li>
+            <li>Hoa Ngo <span class="amount">&dollar;5.00</span></li>
+            <li>Remigiusz Krajczyński <span class="amount">&dollar;5.00</span></li>
+            <li>Blofton Designs and Advertising LLC <span class="amount">&dollar;5.00</span></li>
+            <li>Paul Starkie <span class="amount">&dollar;5.00</span></li>
+            <li>Marco Santiago <span class="amount">&dollar;2.00</span></li>
+            <li>Adan Ramirez <span class="amount">&dollar;2.00</span></li>
+            <li>Halton Powell <span class="amount">&dollar;2.00</span></li>
+            <li>Lon Panissidi <span class="amount">&dollar;2.00</span></li>
+            <li>Marcos Barbosa <span class="amount">&dollar;2.00</span></li>
+            <li>Siegfried Engelbrecht <span class="amount">&dollar;2.00</span></li>
+            <li>Orrin Duncan <span class="amount">&dollar;2.00</span></li>
+            <li>Simone Osnaghi <span class="amount">&dollar;2.00</span></li>
+            <li>Airran McKeown <span class="amount">&dollar;2.00</span></li>
+            <li>Hernando Durana <span class="amount">&dollar;2.00</span></li>
+            <li>Rolf Califice <span class="amount">&dollar;2.00</span></li>
+            <li>Kathleen Cross <span class="amount">&dollar;2.00</span></li>
+            <li>Adam Dupre <span class="amount">&dollar;2.00</span></li>
+            <li>Paulo Roberto <span class="amount">&dollar;2.00</span></li>
+            <li>Bruno Glasoviq <span class="amount">&dollar;2.00</span></li>
+            <li>Olaf Kühn <span class="amount">&dollar;2.00</span></li>
+            <li>Privato <span class="amount">&dollar;2.00</span></li>
+            <li>Now Prepay USA <span class="amount">&dollar;2.00</span></li>
+            <li>Tara Scharlau <span class="amount">&dollar;2.00</span></li>
+            <li>Willian Tiburcio Sanchez <span class="amount">&dollar;2.00</span></li>
+            <li>LMG Graphics <span class="amount">&dollar;2.00</span></li>
+            <li>Samantha Lopez Rodriguez <span class="amount">&dollar;1.10</span></li>
+            <li>Heru Yudiono <span class="amount">&dollar;1.01</span></li>
+            <li>Niket Kanchan <span class="amount">&dollar;1.00</span></li>
+            <li>Sheng-Yang Huang <span class="amount">&dollar;1.00</span></li>
+            <li>Nicholas Ford <span class="amount">&dollar;1.00</span></li>
+            <li>Mania Media Repair <span class="amount">&dollar;1.00</span></li>
+            <li>Elijah Kabucwa <span class="amount">&dollar;1.00</span></li>
+            <li>Tatiana Leon <span class="amount">&dollar;1.00</span></li>
+            <li>Andrea Hainc <span class="amount">&dollar;1.00</span></li>
+            <li>USD Mint Inc <span class="amount">&dollar;1.00</span></li>
+            <li>Agueda Miranda <span class="amount">&dollar;1.00</span></li>
+            <li>Jon Tranchida <span class="amount">&dollar;1.00</span></li>
+            <li>Space Digital <span class="amount">&dollar;1.00</span></li>
+            <li>Charles Rhyddian <span class="amount">&dollar;1.00</span></li>
+            <li>김 윤주 <span class="amount">&dollar;1.00</span></li>
+            <li>Juan Perla <span class="amount">&dollar;1.00</span></li>
+            <li>Bobby Liem <span class="amount">&dollar;1.00</span></li>
+            <li>Darcy Clark <span class="amount">&dollar;1.00</span></li>
+            <li>Mihaela Stemate <span class="amount">&dollar;1.00</span></li>
+            <li>Ventas Online <span class="amount">&dollar;1.00</span></li>
+            <li>Russell Gaither <span class="amount">&dollar;1.00</span></li>
+            <li>Paola Zucchi <span class="amount">&dollar;1.00</span></li>
+            <li>Universalip.tv <span class="amount">&dollar;1.00</span></li>
+            <li>Brian Kerr <span class="amount">&dollar;1.00</span></li>
+            <li>Lydia Sovar Kihalić <span class="amount">&dollar;1.00</span></li>
+            <li>Marcio Roberto de Almeida Souza <span class="amount">&dollar;1.00</span></li>
+            <li>Online Unlimited, LLC <span class="amount">&dollar;1.00</span></li>
+            <li>Aleksandar Petrov <span class="amount">&dollar;1.00</span></li>
+            <li>Mario Riquelme <span class="amount">&dollar;1.00</span></li>
+            <li>Adolfo Silerio <span class="amount">&dollar;1.00</span></li>
+            <li>Eric Romero <span class="amount">&dollar;1.00</span></li>
+            <li>Duc Truong <span class="amount">&dollar;1.00</span></li>
+            <li>Joshua Bingham <span class="amount">&dollar;1.00</span></li>
+            <li>Marcelo Ferreira <span class="amount">&dollar;1.00</span></li>
+            <li>Michael Allen <span class="amount">&dollar;1.00</span></li>
+            <li>Juan Suarez <span class="amount">&dollar;1.00</span></li>
+            <li>LF Hill Merchandising Service <span class="amount">&dollar;1.00</span></li>
+            <li>Katarzyna Kluk <span class="amount">&dollar;1.00</span></li>
+            <li>Steffen Weiß <span class="amount">&dollar;1.00</span></li>
+            <li>Teagan Norrey <span class="amount">&dollar;1.00</span></li>
+            <li>Flavio Engracia Rodriguez <span class="amount">&dollar;1.00</span></li>
+            <li>Ray Ward <span class="amount">&dollar;1.00</span></li>
+            <li>Jason Leon Castillo <span class="amount">&dollar;1.00</span></li>
+            <li>Ruben Egea Belmonte <span class="amount">&dollar;1.00</span></li>
+            <li>Joel Acosta <span class="amount">&dollar;1.00</span></li>
+            <li>Arijit Das <span class="amount">&dollar;1.00</span></li>
+            <li>Mark Williams <span class="amount">&dollar;1.00</span></li>
+            <li>Nathanaelle Edwiges <span class="amount">&dollar;1.00</span></li>
+            <li>Luca Costantino <span class="amount">&dollar;1.00</span></li>
+            <li>Edson Valle Favaris <span class="amount">&dollar;1.00</span></li>
+            <li>Wisata Gili Permai <span class="amount">&dollar;1.00</span></li>
+            <li>Samuel Radoc <span class="amount">&dollar;1.00</span></li>
+            <li>Susana Aros <span class="amount">&dollar;1.00</span></li>
+            <li>Juris Baranovskis <span class="amount">&dollar;1.00</span></li>
+            <li>Edmundo Paz <span class="amount">&dollar;1.00</span></li>
+            <li>Nicole Boucher <span class="amount">&dollar;1.00</span></li>
+            <li>Juvencio Medeiros <span class="amount">&dollar;1.00</span></li>
+            <li>Andrew Farrow <span class="amount">&dollar;1.00</span></li>
+            <li>Jose Arce <span class="amount">&dollar;1.00</span></li>
+            <li>Stewart Flecknoe-Brown <span class="amount">&dollar;1.00</span></li>
+            <li>Andi Ahirid <span class="amount">&dollar;1.00</span></li>
+            <li>Dorian Machuca <span class="amount">&dollar;1.00</span></li>
+            <li>Marcin Matejak <span class="amount">&dollar;1.00</span></li>
+            <li>Fixella <span class="amount">&dollar;1.00</span></li>
+            <li>Flor Cedillo Chica <span class="amount">&dollar;1.00</span></li>
+            <li>Ahmed Hanani <span class="amount">&dollar;1.00</span></li>
+            <li>Petr Michalek <span class="amount">&dollar;1.00</span></li>
+            <li>Peter Kmec <span class="amount">&dollar;1.00</span></li>
+            <li>Crazy Monkey TV <span class="amount">&dollar;1.00</span></li>
+            <li>Donell Chresfield <span class="amount">&dollar;1.00</span></li>
+            <li>Carmelo Rinallo <span class="amount">&dollar;1.00</span></li>
+            <li>Sadique Aryee <span class="amount">&dollar;1.00</span></li>
+            <li>Leandro R Dias <span class="amount">&dollar;1.00</span></li>
+            <li>Sam Jackson <span class="amount">&dollar;1.00</span></li>
+            <li>Kariveda Narasimha Reddy <span class="amount">&dollar;1.00</span></li>
+            <li>Viviana Da Silva Reyes <span class="amount">&dollar;1.00</span></li>
+            <li>Ammar Towir <span class="amount">&dollar;1.00</span></li>
+            <li>Pierre Maigne <span class="amount">&dollar;1.00</span></li>
+            <li>Mun Jun Ho <span class="amount">&dollar;1.00</span></li>
+            <li>Eniel Rodríguez <span class="amount">&dollar;1.00</span></li>
+            <li>Pham Van Vu <span class="amount">&dollar;0.97</span></li>
+            <li>Emilio Vargas Tordecilla <span class="amount">&dollar;0.75</span></li>
+            <li>Andreas Mamesa <span class="amount">&dollar;0.40</span></li>
+            <li>Claudia Janeth Tiga Useche <span class="amount">&dollar;0.39</span></li>
+            <li>Luis Hilário Machado <span class="amount">&dollar;0.20</span></li>
+            <li>Manuel Lopez <span class="amount">&dollar;0.10</span></li>
+            <li>Tiago Canastra <span class="amount">&dollar;0.10</span></li>
+            <li>Mikhail Alekseyev <span class="amount">&dollar;0.02</span></li>
+            <li>Denis Parakhin <span class="amount">&dollar;0.01</span></li>
+            <li>MeP Host <span class="amount">&dollar;0.01</span></li>
+            <li>Uhuru TV <span class="amount">&dollar;0.01</span></li>
+            <li>Gabriel Calderon <span class="amount">&dollar;0.01</span></li>
+            <li>Yamaç Alp Karabulut <span class="amount">&dollar;0.01</span></li>
+        </ul>
     </div>
     <script src="app.js"></script>
 </body>
